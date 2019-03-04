@@ -1,0 +1,29 @@
+/************************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+*************************************************************/
+
+.projects {
+    border: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.authors, .title, .character, .legal {
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.description-knowl {
+    display: none;
+}
+
+.description {
+    margin: 20px;
+}
