@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   1 -->
+<!-- ########### -->
+
+<project xml:id="beezer-FCLA" updated="2019-03-03">
+    <title>A First Course in Linear Algebra</title>
+    <author url="http://buzzard.ups.edu">
+        <displayname>Robert A. Beezer</displayname>
+        <affiliation>U of Puget Sound</affiliation>
+    </author>
+    <license 
+        code="GFDL"
+        version="1.3" 
+        pub-year="2004"
+        price="$30.19"
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="mature"
+        />
+    <sites
+        landing="http://linear.pugetsound.edu/"
+        source="https://github.com/rbeezer/fcla"
+        html="http://linear.pugetsound.edu/fcla/"
+        pdf="http://linear.pugetsound.edu/download.html"
+        print="http://linear.pugetsound.edu/physical.html"
+        />
+    <description>
+        <p>The book that started it all, now converted to PreTeXt (its third source format).</p>
+        <p>This book is aimed at mathematics majors, seeing their first course after calculus that stresses theorems and their proofs.  It contains a very thorough introduction to the use of the open source system, <a href="http://sagemath.org">Sage</a>, for linear algebra.  Besides an extensive collection of traditional exercises, there are also reading questions for each of the thirty-seven (daily) sections.</p>
+    </description>
+</project>
