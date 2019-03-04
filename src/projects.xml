@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Add new files in reverse chronological (new files at the top),     -->
+<!-- with dates.  Output will be sorted, so order here is not relevant. -->
+
+<register xmlns:xi="http://www.w3.org/2001/XInclude">
+</register>
