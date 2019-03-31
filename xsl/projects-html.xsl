@@ -1,3 +1,4 @@
+<?xml version='1.0'?>
 <!--**********************************************************
 Copyright 2019  All Rights Reserved
 Robert A. Beezer, David W. Farmer, Alex Jordan
@@ -7,7 +8,6 @@ authored and distributed with PreTeXt.  By contributing edits,
 or new project files, you agree to transfer your copyright
 interest to the individuals named above.
 ***********************************************************-->
-<?xml version='1.0'?>
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
@@ -237,6 +237,63 @@ interest to the individuals named above.
                     <xsl:message>Phase code not recognized (<xsl:value-of select="character/@phase"/>)</xsl:message>
                 </xsl:otherwise>
             </xsl:choose>
+        </xsl:if>
+        <!-- Features -->
+        <!-- Line of abbreviations, tool tips will decode -->
+        <xsl:if test="features">
+            <xsl:if test="character/@subject|character/@level|character/@phase">
+                <br/>
+            </xsl:if>
+            <!-- Hints -->
+            <xsl:if test="features/@hints= 'yes'">
+                <span title="Hints to exercises">H</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Answers -->
+            <xsl:if test="features/@answers = 'yes'">
+                <span title="Answers to exercises">A</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Solutions -->
+            <xsl:if test="features/@solutions = 'yes'">
+                <span title="Solutions to exercises">S</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Reading Questions -->
+            <xsl:if test="features/@reading-questions = 'yes'">
+                <span title="Reading Questions">RQ</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- WeBWorK -->
+            <xsl:if test="features/@webwork = 'yes'">
+                <span title="WeBWorK">WW</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Worksheets -->
+            <xsl:if test="features/@worksheets = 'yes'">
+                <span title="Worksheets">W</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Projects -->
+            <xsl:if test="features/@projects = 'yes'">
+                <span title="Projects">P</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Instructor Solutions -->
+            <xsl:if test="features/@instructor-solutions = 'yes'">
+                <span title="Instructor Solutions">IS</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Instructor Guide -->
+            <xsl:if test="features/@instructor-guide = 'yes'">
+                <span title="Instructor Guide">IG</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Test Bank -->
+            <xsl:if test="features/@test-bank = 'yes'">
+                <span title="Test Bank">TB</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
         </xsl:if>
     </td>
 </xsl:template>

@@ -160,12 +160,43 @@ interest to the individuals named above.
     <!--   * a sequence of HTML "p" elements, lists should be OK      -->
     <!--   * can contain simple markup, additional URLs               -->
     <!--   * a narrative description of the project's aims            -->
-    <!--   * include distinctive features not possible above          -->
+    <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
     <description>
         <p>An <em>algebraic</em> approach to linear algebra.</p>
         <p>And more!</p>
     </description>
+
+    <!-- Features (Binary) -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises)                                      -->
+    <!--   @answers (to exercises)                                    -->
+    <!--   @solutions (to exercises)                                  -->
+    <!--   @reading-questions                                         -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @instructor-solutions                                      -->
+    <!--   @instructor-guide                                          -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
 
 </project>

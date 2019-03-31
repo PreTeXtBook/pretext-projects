@@ -42,4 +42,16 @@ interest to the individuals named above.
         <p>The book that started it all, now converted to PreTeXt (its third source format).</p>
         <p>This book is aimed at mathematics majors, seeing their first course after calculus that stresses theorems and their proofs.  It contains a very thorough introduction to the use of the open source system, <a href="http://sagemath.org">Sage</a>, for linear algebra.  Besides an extensive collection of traditional exercises, there are also reading questions for each of the thirty-seven (daily) sections.</p>
     </description>
+    <features
+        hints="no"
+        answers="no"
+        solutions="yes"
+        reading-questions="yes"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
 </project>
