@@ -24,9 +24,9 @@ annotated file you can use to create the entry for your
 project.  This file **is** the documentation.  So start
 there, not with some other project's file.
 
-Also, the file in the `doc` directory as the correct
-version number for the XML, which will help us maintain
-this data and this repository.
+Also, the file in the `doc` directory has the correct
+version number for the XML format, which will help us
+maintain this data and this repository.
 
 Plea
 ====
