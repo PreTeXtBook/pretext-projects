@@ -199,4 +199,29 @@ interest to the individuals named above.
         test-bank="no"
         />
 
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="no"
+        />
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+    <awards>
+        <p>Full details of some <em>award</em> received!</p>
+        <p>Second paragraph for second award.</p>
+    </awards>
+
 </project>

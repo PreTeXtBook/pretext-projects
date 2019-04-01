@@ -101,15 +101,47 @@ interest to the individuals named above.
             <br/>
             <xsl:apply-templates select="description"/>
         </xsl:if>
+        <!-- Awards blurb on same line as description -->
+        <xsl:if test="awards">
+            <xsl:if test="not(description)">
+                <br/>
+            </xsl:if>
+            <xsl:apply-templates select="awards"/>
+        </xsl:if>
+        <!-- Line of binary recognitions, such as AIM Approved Textbooks -->
+        <xsl:if test="recognition">
+            <br/>
+            <!-- AIM Approved Textbooks -->
+            <xsl:if test="recognition/@aim = 'yes'">
+                <span title="American Institute of Mathematics Approved Textbooks">AIM</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+        </xsl:if>
     </td>
 </xsl:template>
 
-<xsl:template match="description">
+<!-- Dual-purpose template -->
+<xsl:template match="description|awards">
     <xsl:variable name="id">
         <xsl:value-of select="../@xml:id"/>
+        <xsl:choose>
+            <xsl:when test="self::description">
+                <xsl:text>description</xsl:text>
+            </xsl:when>
+            <xsl:when test="self::awards">
+                <xsl:text>awards</xsl:text>
+            </xsl:when>
+        </xsl:choose>
     </xsl:variable>
     <a data-knowl="" class="id-ref" data-refid="hk-{$id}">
-        <xsl:text>Description</xsl:text>
+        <xsl:choose>
+            <xsl:when test="self::description">
+                <xsl:text>Description</xsl:text>
+            </xsl:when>
+            <xsl:when test="self::awards">
+                <xsl:text>Awards</xsl:text>
+            </xsl:when>
+        </xsl:choose>
     </a>
     <div class="description-knowl" id="hk-{$id}">
         <article class="description">
@@ -117,9 +149,6 @@ interest to the individuals named above.
         </article>
     </div>
 </xsl:template>
-
-
-    <!-- <div id="hk-Jkl" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-34">We simply take the indicated derivative, applying Theorem <a data-knowl="./knowl/theorem-FTC.html" title="Theorem 2.1: The Fundamental Theorem of Calculus">2.1</a> at <a data-knowl="./knowl/equation-use-FTC.html" title="Equation 4.2">(4.2)</a></p> -->
 
 <xsl:template match="project" mode="site-list">
     <xsl:if test="sites/@source|sites/@html|sites/@pdf|sites/@print|sites/@ancillary1">
