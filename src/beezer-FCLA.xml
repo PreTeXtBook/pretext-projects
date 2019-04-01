@@ -11,10 +11,10 @@ interest to the individuals named above.
 ***********************************************************-->
 
 <!-- ########### -->
-<!-- Version   1 -->
+<!-- Version   2 -->
 <!-- ########### -->
 
-<project xml:id="beezer-FCLA" updated="2019-03-03">
+<project xml:id="beezer-FCLA" updated="2019-03-31">
     <title>A First Course in Linear Algebra</title>
     <author url="http://buzzard.ups.edu">
         <displayname>Robert A. Beezer</displayname>
