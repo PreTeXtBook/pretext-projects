@@ -148,8 +148,8 @@ interest to the individuals named above.
         source="https://github.com/mphitchman/eight"
         html="https://mphitchman.com/geometry/"
         pdf="http://mphitchman.com/geometry/download.html"
-        print="https://www.amazon.com/Geometry-Introduction-Topology-Michael-Hitchman/dp/1717134815/ref=zg_bsnr_13936_1?_encoding=UTF8&psc=1&refRID=4SG6HF02PHMZQWTFZA2T"
-        ancillary1=""
+        print="https://www.amazon.com/Geometry-Introduction-Topology-Michael-Hitchman/dp/1717134815/"
+        ancillary1="https://mphitchman.com/sketchpad.html"
         />
 
     <!-- Description (Blurb) -->
