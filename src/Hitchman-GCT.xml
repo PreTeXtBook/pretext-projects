@@ -145,7 +145,7 @@ interest to the individuals named above.
 
     <sites
         landing="http://mphitchman.com/"
-        source="https://github.com/mphitchman/eight"
+        source=""
         html="https://mphitchman.com/geometry/"
         pdf="http://mphitchman.com/geometry/download.html"
         print="https://www.amazon.com/Geometry-Introduction-Topology-Michael-Hitchman/dp/1717134815/"
