@@ -14,6 +14,9 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="hitchman-GCT.xml"/>               <!-- 2019-04-16 -->
+    <xi:include href="hitchman-eight.xml"/>               <!-- 2019-04-16 -->
+    <xi:include href="pcc-ORCCA.xml"/>                  <!-- 2019-03-31 -->
     <xi:include href="pcc-ORCCA.xml"/>                  <!-- 2019-03-31 -->
     <xi:include href="beezer-FCLA.xml"/>                <!-- 2019-03-03 -->
 </register>
