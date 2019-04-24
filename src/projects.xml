@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="plantz-ICO-RPi.xml"/>               <!-- 2019-04-19 -->
     <xi:include href="judson-AATA.xml"/>               <!-- 2019-04-19 -->
     <xi:include href="vdG-myers-parikh-LAFF-On-PfHP.xml"/>               <!-- 2019-04-18 -->
     <xi:include href="hitchman-GCT.xml"/>               <!-- 2019-04-16 -->
