@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="bogart-GTGD.xml"/>
     <xi:include href="levin-DMOI.xml"/>               <!-- 2019-04-26 -->
     <xi:include href="pretext-PG.xml"/>               <!-- 2019-04-25 -->
     <xi:include href="pretext-AG.xml"/>               <!-- 2019-04-25 -->
