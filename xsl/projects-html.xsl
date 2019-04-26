@@ -44,7 +44,7 @@ interest to the individuals named above.
     <td class="authors">
         <xsl:apply-templates select="author"/>
         <!-- overall affiliation, presumes no individual affiliations -->
-        <xsl:if test="affiliation">
+        <xsl:if test="normalize-space(affiliation)">
             <xsl:apply-templates select="affiliation"/>
         </xsl:if>
     </td>
