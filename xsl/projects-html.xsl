@@ -414,6 +414,18 @@ interest to the individuals named above.
         <xsl:text>Computer Science: </xsl:text>
         <xsl:value-of select="count(project/character[@subject='cs'])"/>
         <br/>
+        <xsl:text>Music: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='music'])"/>
+        <br/>
+        <xsl:text>Writing: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='writing'])"/>
+        <br/>
+        <xsl:text>Documentation: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='doc'])"/>
+        <br/>
+        <xsl:text>Miscellaneous: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='misc'])"/>
+        <br/>
     </p>
     <!-- Licenses -->
     <p>
