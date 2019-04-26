@@ -449,6 +449,27 @@ interest to the individuals named above.
         <xsl:value-of select="$total - count(project/license/@code)"/>
         <br/>
     </p>
+    <!-- Level -->
+    <p>
+        <xsl:text>Secondary: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='secondary'])"/>
+        <br/>
+        <xsl:text>Undergraduate, Lower-Division: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='ugld'])"/>
+        <br/>
+        <xsl:text>Undergraduate, Upper-Division: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='ugud'])"/>
+        <br/>
+        <xsl:text>Graduate: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='grad'])"/>
+        <br/>
+        <xsl:text>Research: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='research'])"/>
+        <br/>
+        <xsl:text>Not stated: </xsl:text>
+        <xsl:value-of select="$total - count(project/character/@level)"/>
+        <br/>
+    </p>
 
 </xsl:template>
 
