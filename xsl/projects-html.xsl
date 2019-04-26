@@ -334,17 +334,24 @@ interest to the individuals named above.
                 <xsl:when test="license/@code='all-rights'">
                     <xsl:text>&#xa9; </xsl:text>
                 </xsl:when>
-                <xsl:otherwise>
+                <xsl:when test="license/@code ='CC'">
                     <xsl:text>&#x1F12F; </xsl:text>
-                </xsl:otherwise>
+                </xsl:when>
+                <xsl:when test="license/@code ='GFDL'">
+                    <xsl:text>&#x1F12F; </xsl:text>
+                </xsl:when>
+                <xsl:otherwise/>
             </xsl:choose>
             <xsl:choose>
                 <xsl:when test="license/@code='all-rights'">
                     <xsl:text>Rights Reserved</xsl:text>
                 </xsl:when>
-                <xsl:when test="(license/@code='CC') or (license/@code='GFDL')">
+                <xsl:when test="license/@code='GFDL'">
                     <xsl:value-of select="license/@code"/>
-                    <xsl:if test="license/@variant">
+                </xsl:when>
+                <xsl:when test="license/@code='CC'">
+                    <xsl:value-of select="license/@code"/>
+                    <xsl:if test="normalize-space(license/@variant)">
                         <xsl:text>-</xsl:text>
                         <xsl:value-of select="license/@variant"/>
                     </xsl:if>
@@ -354,7 +361,7 @@ interest to the individuals named above.
                 </xsl:otherwise>
             </xsl:choose>
             <!-- perhaps modified by a version -->
-            <xsl:if test="license/@version">
+            <xsl:if test="normalize-space(license/@version)">
                 <xsl:text> v</xsl:text>
                 <xsl:value-of select="license/@version"/>
             </xsl:if>
