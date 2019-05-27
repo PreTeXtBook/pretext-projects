@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+
+<project xml:id="sylvestre-DLA" updated="2019-05-27">
+    <title>Discover Linear Algebra</title>
+    <subtitle>A First Course in Linear Algebra</subtitle>
+    <author url="https://sites.ualberta.ca/~jsylvest/"> <!-- or mailto: -->
+        <displayname>Jeremy Sylvestre</displayname>
+        <affiliation>U of Alberta (Augustana Campus)</affiliation>
+    </author>
+    <license 
+        code="GFDL"
+        variant="" 
+        version="" 
+        pub-year="2017"
+        price=""
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="ready"
+        />
+    <sites
+        landing="https://sites.ualberta.ca/~jsylvest/books/dla.html"
+        source="https://github.com/jjrsylvestre/dla"
+        html="https://sites.ualberta.ca/~jsylvest/books/DLA/"
+        />
+    <description>
+        <p>A discovery-based approach to linear algebra.</p>
+        <p>Extended material to cover a second course in linear algebra is being finalized and will be released Summer 2019.</p>
+    </description>
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="yes"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+</project>
+
