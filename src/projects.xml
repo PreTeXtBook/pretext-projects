@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="rocca-CTHI.xml"/>                <!-- 2019-05-30 -->
     <xi:include href="FRY-CLP2.xml"/>              <!-- 2019-05-29 -->
     <xi:include href="FRY-CLP1.xml"/>              <!-- 2019-05-29 -->
     <xi:include href="austin-ula.xml"/>              <!-- 2019-05-27 -->
