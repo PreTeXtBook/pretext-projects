@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="rocca-CTHI" updated="2019-03-31">
+    <title>Cryptology Through History and Inquiry</title>
+
+    <author url="https://sites.wcsu.edu/roccac/">
+        <displayname>Charles F. Rocca</displayname>
+        <affiliation>Western Connecticut State University</affiliation>
+    </author>
+
+    <license 
+        code="GFDL"
+        pub-year="2017"
+    />
+
+    <character 
+        subject="math"
+        level="ugld"
+        phase="develop"
+    />
+
+    <sites
+        landing="https://sites.wcsu.edu/roccac/cryptology-through-history-inquiry/"
+        source="https://github.com/cfroccajr/Inquiry-Into-Cryptology"
+        html="https://sites.wcsu.edu/mbxml/html/Intro_Crypto_Main.html"
+    />
+
+    <description>
+        <p>A hands-on, original source, look at the evolution of cryptology.</p>
+    </description>
+
+    <!-- Features (Binary) -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises)                                      -->
+    <!--   @answers (to exercises)                                    -->
+    <!--   @solutions (to exercises)                                  -->
+    <!--   @reading-questions                                         -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @instructor-solutions                                      -->
+    <!--   @instructor-guide                                          -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="yes"
+        answers="yes"
+        solutions="yes"
+        reading-questions="yes"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+    />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="no"
+    />
+
+</project>
