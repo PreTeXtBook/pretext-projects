@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="keller-AC" updated="2019-05-31">
+
+    <!-- Project Title -->
+
+    <!-- title (required):                                            -->
+    <!--   * complete project (book) title, capitalized               -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+    <title>Applied Combinatorics</title>
+    <!-- subtitle (optional):                                         -->
+    <!--   * same formatting as "title"                               -->
+    <!-- <subtitle>an Open Introduction</subtitle> -->
+
+    <!-- Authors   -->
+
+    <!--   * there may be multiple authors, order here will           -->
+    <!--     be respected                                             -->
+    <!--   * each author may have an affiliation, or a group of       -->
+    <!--     colleagues may specify a single overall affiliation.     -->
+    <!--     Do not mix these mechanisms, one or the other            -->
+
+    <!-- author (at least one required)                               -->
+
+    <!-- author/@url (optional)                                       -->
+    <!--   * include protocol (i.e. https://)                         -->
+    <!--   * can be a "mailto:" (e.g. mailto:beezer@ips.edu)          -->
+
+    <!-- author/displayname (required)                                -->
+    <!--   * as suggested, full name in order as written              -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- author/affiliation (optional)                                -->
+    <!--   * use "U" for university, "C" for college, etc             -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- affiliation (optional)                                       -->
+    <!--   * ALL authors at the same institution                      -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <author url="http://rellek.net/home"> <!-- or mailto: -->
+        <displayname>Mitchel T. Keller</displayname>
+        <affiliation>Morningside C</affiliation>
+    </author>
+    <author url="https://people.math.gatech.edu/~trotter/"> <!-- or mailto: -->
+        <displayname>William T. Trotter</displayname>
+        <affiliation>Georgia Institute of Technology</affiliation>
+    </author>
+    
+    <!-- multiple authors, all colleagues  -->
+    <!-- <affiliation></affiliation> -->
+
+    <!-- License/Terms of Distribution -->
+
+    <!-- * license refers to the status of editable source, not       -->
+    <!--   derived products.  Source could be a Word document, but    -->
+    <!--   a PDF is not an editable source                            -->
+
+    <!-- license/@code (required)                                     -->
+    <!--   * CC = Creative Commons                                    -->
+    <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * all-rights = "All Rights Reserved", regular copyright    -->
+    <!--   * public = Public Domain, no copyright                     -->
+    <!--   * request additional                                       -->
+    <!-- license/@variant (CC only)                                   -->
+    <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
+
+    <!-- license/@version (optional)                                  -->
+    <!--   * the version of the *license*, if applicable/important    -->
+
+    <!-- license/pub-year (optional)                                  -->
+    <!--   * first year copyright asserted, in any format             -->
+
+    <!-- license/price (optional)                                     -->
+    <!--   * if availabe in physical form, the least expensive format -->
+    <!--   * include a currency symbol                                -->
+
+    <license 
+        code="CC"
+        variant="BY-SA" 
+        version="4.0" 
+        pub-year="2006"
+        price="$15"
+        />
+
+    <!-- Character of the Project -->
+
+    <!-- * these are all codes, use literally                         -->
+    <!-- * send requests to enable new ones                           -->
+    <!--                                                              -->
+    <!--   @subject: math, cs, physics, engr,                         -->
+    <!--             writing, music, doc, misc                        -->
+    <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--   @phase: develop, ready, mature                             -->
+
+    <character 
+        subject="math"
+        level="ugud"
+        phase="mature"
+        />
+
+    <!-- Pointers to Project Resources Online -->
+
+    <!-- * optional, may choose to have all, some, or none            -->
+    <!-- * these are all URLs, include the protocol (e.g., https://)  -->
+    <!-- * @landing is an overall project page                        -->
+    <!-- * @pdf may be the actual PDF or a page with download links   -->
+    <!-- * @print is a page with info, or link to a bookseller's page -->
+    <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
+    <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <sites
+        landing="http://rellek.net/appcomb"
+        source="https://github.com/mitchkeller/applied-combinatorics/"
+        html="https://www.rellek.net/book/"
+        pdf="http://www.rellek.net/book/app-comb-2017.pdf"
+        print="https://bit.ly/appcomb"
+        ancillary1=""
+        />
+
+    <!-- Description (Blurb) -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+
+    <description>
+      <p>This is a text with more than enough material for a one-semester introduction to combinatorics. The original target audience was primarily computer science majors, but the topics included make it suitable for a variety of different students. Topics include:
+      <ul>
+	<li>Basic enumeration: strings, sets, binomial coefficients</li>
+	<li>Recursion and mathematical induction</li>
+	<li>Graph theory</li>
+	<li>Partially ordered sets</li>
+	<li>Additional enumeration techniques: inclusion-exclusion, generating functions, recurrence relations, and Polya theory</li>
+	<li>Graph algorithms: minimum weight spanning trees, Dijkstra's
+algorithm, network flows</li>
+      </ul>
+      </p>
+      <p>For some sections, embedded SageMath Cells are used to provide
+      assistance with computations.</p>
+    </description>
+
+    <!-- Features (Binary) -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises)                                      -->
+    <!--   @answers (to exercises)                                    -->
+    <!--   @solutions (to exercises)                                  -->
+    <!--   @reading-questions                                         -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @instructor-solutions                                      -->
+    <!--   @instructor-guide                                          -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="yes"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="yes"
+        />
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+    <!-- <awards>
+        <p>Full details of some <em>award</em> received!</p>
+        <p>Second paragraph for second award.</p>
+    </awards> -->
+
+</project>
