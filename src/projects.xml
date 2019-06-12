@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="lebl-DIFFYQS.xml"/>           <!-- 2019-06-12 -->
     <xi:include href="judson-odeproject.xml"/>           <!-- 2019-06-06 -->
     <xi:include href="boelkins-ACS.xml"/>                <!-- 2019-06-03 -->
     <xi:include href="keller-AC.xml"/>                <!-- 2019-06-03 -->
