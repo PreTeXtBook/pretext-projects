@@ -168,6 +168,10 @@ interest to the individuals named above.
 	and applied sciences.  Covers undergraduate ODEs including linear
 	and nonlinear systems and very basic PDE theory.
 	Usable for one or two semester sequences.</p>
+      <p>The PreTeXt code for this project is automatically generated from
+	the LaTeX source code, and uses some custom tags, therefore it
+	requires a custom xsl (see the github repository) to build the
+	HTML version.</p>
     </description>
 
     <!-- Features (Binary) -->
