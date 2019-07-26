@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="pretext-TPG.xml"/>           <!-- 2019-06-28 -->
     <xi:include href="doob-MATH1220.xml"/>           <!-- 2019-06-20 -->
     <xi:include href="lebl-DIFFYQS.xml"/>           <!-- 2019-06-12 -->
     <xi:include href="judson-odeproject.xml"/>           <!-- 2019-06-06 -->
@@ -28,8 +29,6 @@ interest to the individuals named above.
     <xi:include href="godsil-EAGTS.xml"/>               <!-- 2019-04-26 -->
     <xi:include href="bogart-CTGD.xml"/>               <!-- 2019-04-26 -->
     <xi:include href="levin-DMOI.xml"/>               <!-- 2019-04-26 -->
-    <xi:include href="pretext-PG.xml"/>               <!-- 2019-04-25 -->
-    <xi:include href="pretext-AG.xml"/>               <!-- 2019-04-25 -->
     <xi:include href="pugetsound-SW.xml"/>               <!-- 2019-04-25 -->
     <xi:include href="hutchinson-mt21c.xml"/>               <!-- 2019-04-25 -->
     <xi:include href="yoshiwara-trig.xml"/>               <!-- 2019-04-25 -->

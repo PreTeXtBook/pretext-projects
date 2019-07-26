@@ -40,14 +40,14 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="pretext-PG" updated="2019-04-25">
+<project xml:id="pretext-TPG" updated="2019-06-29">
 
     <!-- Project Title -->
 
     <!-- title (required):                                            -->
     <!--   * complete project (book) title, capitalized               -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-    <title>PreTeXt Publisher's Guide</title>
+    <title>The PreTeXt Guide</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
     <!-- <subtitle></subtitle> -->
@@ -77,15 +77,20 @@ interest to the individuals named above.
     <!-- affiliation (optional)                                       -->
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-
     <author url="http://buzzard.ups.edu"> <!-- or mailto: -->
         <displayname>Robert A. Beezer</displayname>
     </author>
     <author url="https://aimath.org/about/staff/"> <!-- or mailto: -->
         <displayname>David Farmer</displayname>
     </author>
+    <author> <!-- or mailto: -->
+        <displayname>Alex Jordan</displayname>
+    </author>
+    <author url="http://rellek.net/home/"> <!-- or mailto: -->
+        <displayname>Mitchel T. Keller</displayname>
+    </author>
     <!-- multiple authors, all colleagues  -->
-        <affiliation>PreTeXt</affiliation>
+    <affiliation>PreTeXt</affiliation>
 
     <!-- License/Terms of Distribution -->
 
@@ -116,7 +121,7 @@ interest to the individuals named above.
         code="GFDL"
         variant="" 
         version="" 
-        pub-year="2017"
+        pub-year="2016"
         />
 
     <!-- Character of the Project -->
@@ -131,7 +136,7 @@ interest to the individuals named above.
 
     <character 
         subject="doc"
-        phase="develop"
+        phase="ready"
         />
         <!-- level="ugld" -->
 
@@ -147,9 +152,9 @@ interest to the individuals named above.
 
     <sites
         landing="https://pretextbook.org/documentation.html"
-        source="https://github.com/rbeezer/mathbook/tree/dev/doc/publisher-guide"
-        html="https://pretextbook.org/doc/publisher-guide/html/"
-        pdf="https://pretextbook.org/doc/author-guide/pretext-publisher-guide.pdf"
+        source="https://github.com/rbeezer/mathbook/tree/dev/doc/guide"
+        html="https://pretextbook.org/doc/guide/html/"
+        pdf="https://pretextbook.org/doc/guide/pretext-guide.pdf"
         />
 
     <!-- Description (Blurb) -->
