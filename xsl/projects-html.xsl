@@ -24,11 +24,77 @@ interest to the individuals named above.
         </head>
         <body>
             <table class="projects">
-                <xsl:apply-templates select="project"/>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Mathematics, Lower Division'"/>
+                    <xsl:with-param name="subject" select="'math'"/>
+                    <xsl:with-param name="level"   select="'ugld'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Mathematics, Upper Division'"/>
+                    <xsl:with-param name="subject" select="'math'"/>
+                    <xsl:with-param name="level"   select="'ugud'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Mathematics, Graduate'"/>
+                    <xsl:with-param name="subject" select="'math'"/>
+                    <xsl:with-param name="level"   select="'grad'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Computer Science'"/>
+                    <xsl:with-param name="subject" select="'cs'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Documentation'"/>
+                    <xsl:with-param name="subject" select="'doc'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Humor'"/>
+                    <xsl:with-param name="subject" select="'misc'"/>
+                </xsl:apply-templates>
+<!-- 
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Music'"/>
+                    <xsl:with-param name="subject" select="'music'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Writing'"/>
+                    <xsl:with-param name="subject" select="'writing'"/>
+                </xsl:apply-templates>
+ -->
+                <xsl:apply-templates select="." mode="development">
+                    <xsl:with-param name="heading" select="'In Development'"/>
+                </xsl:apply-templates>
             </table>
             <xsl:apply-templates select="." mode="summary-stats"/>
         </body>
     </html>
+</xsl:template>
+
+<xsl:template match="register" mode="subject-level">
+    <xsl:param name="heading"/>
+    <xsl:param name="subject"/>
+    <xsl:param name="level" select="''"/>
+    <th colspan="4" class="heading">
+        <xsl:value-of select="$heading"/>
+    </th>
+    <xsl:for-each select="project[(character/@subject = $subject) and
+                                  ((character/@level = $level) or ($level = '')) and
+                                  ((character/@phase = 'ready') or (character/@phase = 'mature'))
+                                  ]">
+        <xsl:sort select="title"/>
+        <xsl:apply-templates select="."/>
+    </xsl:for-each>
+</xsl:template>
+
+<xsl:template match="register" mode="development">
+    <xsl:param name="heading"/>
+    <th colspan="4" class="heading">
+        <xsl:value-of select="$heading"/>
+    </th>
+    <xsl:for-each select="project[not((character/@phase = 'ready') or (character/@phase = 'mature'))]">
+        <xsl:sort select="title"/>
+        <xsl:apply-templates select="."/>
+    </xsl:for-each>
 </xsl:template>
 
 <xsl:template match="project">
