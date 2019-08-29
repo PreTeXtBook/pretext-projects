@@ -168,6 +168,11 @@ interest to the individuals named above.
         <p>And more!</p>
     </description>
 
+    <onesentence>
+        One (not too long!) sentence that immediately tells an instructor if
+        this book has appropriate topics, at the appropriate level, for their course.
+    </onesentence>
+
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->
