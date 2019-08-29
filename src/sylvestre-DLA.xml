@@ -47,6 +47,10 @@ interest to the individuals named above.
         <p>A discovery-based approach to linear algebra.</p>
         <p>Extended material to cover a second course in linear algebra is being finalized and will be released Summer 2019.</p>
     </description>
+
+    <onesentence>
+        Textbook for a discovery-based approach to linear algebra.
+    </onesentence>
     <features
         hints="no"
         answers="no"

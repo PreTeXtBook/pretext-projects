@@ -171,6 +171,11 @@ interest to the individuals named above.
         <p>Includes numerous videos, images, Geogebra apps, JSXGraph apps, SageMath worksheets, as well as Tutorials.</p>
     </description>
 
+    <onesentence>
+        A textbook for a one-semester introductory linear algebra course,
+        using real vector spaces and linear maps to introduce abstract mathematical thinking.
+    </onesentence>
+
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

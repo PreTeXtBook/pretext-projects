@@ -51,6 +51,12 @@ interest to the individuals named above.
             ORCCA is available as an interactive eBook, as a downloadable PDF (in B/W or color), and as a printed/bound copy.
         </p>
     </description>
+
+    <onesentence>
+        A textbook package for basic and intermediate algebra,
+        suitable for a three-term course at a community college.
+    </onesentence>
+
     <features
         hints="no"
         answers="yes"

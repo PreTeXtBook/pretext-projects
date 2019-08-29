@@ -157,6 +157,11 @@ interest to the individuals named above.
       </p>
     </description>
 
+    <onesentence>
+        An introduction to high-performance computing, using
+        matrix-matrix multiplication as an illustrative example.
+    </onesentence>
+
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

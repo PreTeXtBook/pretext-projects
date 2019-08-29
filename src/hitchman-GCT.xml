@@ -167,6 +167,11 @@ interest to the individuals named above.
         <p>It is written for students who have taken vector calculus, and intended to be suitable as a one-semester course or as a guide to independent study in non-Euclidean geometry and the geometry of surfaces.</p>
     </description>
 
+    <onesentence>
+        An introduction to hyperbolic, elliptic, and Euclidean geometry,
+        motivated by questions in cosmology.
+    </onesentence>
+
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

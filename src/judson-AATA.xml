@@ -169,6 +169,12 @@ interest to the individuals named above.
         <p>The first half of the book presents group theory, through the Sylow theorems, with enough material for a semester-long course. The second-half is suitable for a second semester and presents rings, integral domains, Boolean algebras, vector spaces, and fields, concluding with Galois Theory.</p>
     </description>
 
+    <onesentence>
+        A standard two-semester introductory course in abstract algebra covering groups, rings, and fields,
+        plus other topics including Galois theory,
+        featuring computations and nontrivial applications.
+    </onesentence>
+
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

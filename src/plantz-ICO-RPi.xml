@@ -167,6 +167,10 @@ interest to the individuals named above.
         <p>This is the first computer science textbook authored with PreTeXt. It has been used in the classroom two semesters (2016/17 AY) at Sonoma State University and Santa Rosa Jr. College. I and the PreTeXt developers would very much appreciate hearing your feedback about the formats used to display the various elements in the book. And of course, I welcome any comments you have about the content, especially any errors that your find. I maintain a log of corrections in <q>Errata</q> so you can see if any sections you have already read may have been changed.</p>
     </description>
 
+    <onesentence>
+        An introduction to how computer hardware works from a programmer's point of view,
+        using assembly language programming on the Raspberry Pi.
+    </onesentence>
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->
