@@ -40,14 +40,14 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="yoshiwara-trig" updated="2019-03-03">
+<project xml:id="yoshiwara-elem-alg" updated="2019-09-13">
 
     <!-- Project Title -->
 
     <!-- title (required):                                            -->
     <!--   * complete project (book) title, capitalized               -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-    <title>Trigonometry</title>
+    <title>Elementary Algebra</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
 
@@ -83,8 +83,7 @@ interest to the individuals named above.
     <author> <!-- or mailto: -->
         <displayname>Bruce Yoshiwara</displayname>
     </author>
-    <!-- multiple authors, all colleagues  -->
-    
+
     <!-- License/Terms of Distribution -->
 
     <!-- * license refers to the status of editable source, not       -->
@@ -113,7 +112,7 @@ interest to the individuals named above.
     <license 
         code="GFDL"
         pub-year="2018"
-        price="$42.00"
+        price="$45.00"
         />
 
     <!-- Character of the Project -->
@@ -144,8 +143,8 @@ interest to the individuals named above.
 
     <sites
         landing="https://yoshiwarabooks.org/"
-        source="https://github.com/byoshiwara/trig"
-        html="https://yoshiwarabooks.org/trig/"
+        source="https://github.com/byoshiwara/elem-alg"
+        html="https://yoshiwarabooks.org/elem-alg/"
         print="https://yoshiwarabooks.org/"
         />
 
@@ -160,16 +159,18 @@ interest to the individuals named above.
     <!--   * knowled, so brevity not required                         -->
 
     <description>
-        <p>This text covers the basic content of a trigonometry course.</p>
-        <p>Chapter 1 reviews only the most basic facts about triangles and circles that students will need to begin their study of trigonometry, and may be omitted or assigned as homework. Other facts about functions and angles are introduced when they are needed. For example, minutes and seconds are discussed in the context of parallax in the section on Law of Sines in Chapter 3. Nautical bearings occur in Section 4.1, Angles and Rotation.</p>
-        <p>Chapter 2 introduces the three (not six) basic trig ratios, and considers angles in the first quadrant only. We believe this initial simplicity allows students to focus on the fundamental concepts without simultaneously trying to master a welter of peripheral detail.</p>
-        <p>In Chapter 3 we introduce reference angles for the second quadrant in order to study obtuse triangles and the Laws of Sines and Cosines. Reference angles are covered again in more generality in Chapter 4.</p>
-        <p>Chapter 4 considers angles as rotations in preparation for the graphs of sine and cosine. Note that the applications of periodic functions in this chapter are functions of degrees only, to fit with our approach: radians come later, after students have some experience with sinusoidal graphs.</p>
-        <p>Chapter 5 begins with a section on algebraic manipulations with trig ratios, a skill that is often neglected but can engender endless confusion for students. This chapter treats only simple equations and identities; more equations and identities appear in Chapters 7 and 8. We solve equations both graphically and analytically, and we use graphs as well as algebra to verify trigonometric identities.</p>
-        <p>Chapter 6 introduces radians and the circular functions of real numbers. Most of this chapter and Chapter 7 revisit basic skills such as analyzing graphs and solving equations, but working now in radians rather than degrees.</p>
-        <p>Chapter 8 studies identities and their use in more detail, including the sum and difference formulas and the double angle identities. Inverse trig functions are included here, and are the three reciprocal trig functions.</p>
-        <p>Chapters 9 and 10 cover ancillary topics; typical trigonometry courses may include one or more of these topics: vectors, polar coordinates, and complex numbers.</p>
-    </description>
+<p><pubtitle>Elementary Algebra: Equations and Graphs</pubtitle> was written with two goals in mind: to present the skills of algebra in the context of modeling and problem solving, and to engage students in an activity-based course.</p> 
+
+<p>Throughout the book, we use applications to motivate new topics.  We present ideas using verbal, numerical, and graphical tools. We use graphs extensively to illustrate algebraic techniques and to help students visualize relationships between variables. In the Homework Problems we break up skills practice into smaller sets of exercises and combine them with conceptual questions, graphing, and applications of various types.</p>
+
+<p>We have included a number of features to encourage student participation. We want students to learn how to read a math book, so we have included Reading Questions that mirror the content of the lesson.  For example, the first Reading Question is "A numerical quantity that changes over time or in different situations is called a <m><fillin characters="6"/></m>." Ideally, students would answer these questions before class, perhaps through an on-line homework system.  Each section ends with a Skills Warm-Up (with answers) for students to complete on their own. The Skills Warm-Up problems review an arithmetic or algebraic technique needed for the Lesson that follows.</p> 
+
+<p>Because choosing appropriate scales for the axes is a time-consuming task for beginning
+students, the text includes labeled grids for most of the graphing exercises. Ready-made grids allow students to consider a wider range of examples (with "harder" numbers) and to focus on the properties of the graphs, such as intercepts and slope, and on interpreting the information given by the graph. If students are using technology to create graphs, the grids can help them choose an appropriate window.</p>
+
+<p>The textbook is accompanied by an Activities Workbook that provides a Lesson for each section in the book.  These Lessons consist of Activities for students to complete in groups or with guidance from the instructor; or they can be used as support for a lecture format. Each Lesson ends with a Wrap-Up and a set of Homework Preview exercises.</p>
+
+<p>Chapter Reviews include a Summary, Review Questions, and a set of Review Problems. Answers to odd-numbered Homework problems are provided, as well as a Glossary of mathematical terms. A Review of Arithmetic Skills, with Exercises, appears in Appendix A.</p>    </description>
 
     <!-- Features (Binary) -->
 
