@@ -115,7 +115,7 @@ interest to the individuals named above.
         variant="BY-SA" 
         version="" 
         pub-year="2008"
-        price="$15.68"
+        price="$18.80"
         />
 
     <!-- Character of the Project -->
@@ -167,7 +167,8 @@ interest to the individuals named above.
     <description>
       <p>An undergraduate course on differential equations aimed at engineers
 	and applied sciences.  Covers undergraduate ODEs including linear
-	and nonlinear systems and very basic PDE theory.
+	and nonlinear systems and very basic PDE theory.  Also includes
+	an appendix on basic linear algebra.
 	Usable for one or two semester sequences.</p>
       <p>The PreTeXt code for this project is automatically generated from
 	the LaTeX source code, and uses some custom tags, therefore it
