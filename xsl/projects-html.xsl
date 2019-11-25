@@ -24,7 +24,7 @@ interest to the individuals named above.
             <link rel="stylesheet" type="text/css" href="https://pretextbook.org/css/0.31/catalog.css"/>
         </head>
         <body>
-            <table class="projects">
+            <div class="projects">
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Mathematics, Lower Division'"/>
                     <xsl:with-param name="subject" select="'math'"/>
@@ -48,68 +48,159 @@ interest to the individuals named above.
                     <xsl:with-param name="heading" select="'Documentation'"/>
                     <xsl:with-param name="subject" select="'doc'"/>
                 </xsl:apply-templates>
-                <xsl:apply-templates select="." mode="subject-level">
-                    <xsl:with-param name="heading" select="'Humor'"/>
-                    <xsl:with-param name="subject" select="'misc'"/>
-                </xsl:apply-templates>
-<!-- 
+                <!-- all "music" are under development -->
+                <!-- 
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Music'"/>
                     <xsl:with-param name="subject" select="'music'"/>
                 </xsl:apply-templates>
+                 -->
+                <!-- all "writing" are under development -->
+                <!-- 
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Writing'"/>
                     <xsl:with-param name="subject" select="'writing'"/>
                 </xsl:apply-templates>
- -->
-                <xsl:apply-templates select="." mode="development">
+                 -->
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Humor'"/>
+                    <xsl:with-param name="subject" select="'misc'"/>
+                </xsl:apply-templates>
+                 <xsl:apply-templates select="." mode="development">
                     <xsl:with-param name="heading" select="'In Development'"/>
                 </xsl:apply-templates>
-            </table>
+             </div>
             <xsl:apply-templates select="." mode="summary-stats"/>
         </body>
     </html>
 </xsl:template>
 
+<!-- ######################### -->
+<!-- Category Sections/Filters -->
+<!-- ######################### -->
+
+<!-- Create multiple  div.category  holding multiple projects each -->
+
+<!-- Does not include character/@phase = 'develop' -->
 <xsl:template match="register" mode="subject-level">
     <xsl:param name="heading"/>
     <xsl:param name="subject"/>
     <xsl:param name="level" select="''"/>
-    <th colspan="4" class="heading">
-        <xsl:value-of select="$heading"/>
-    </th>
-    <xsl:for-each select="project[(character/@subject = $subject) and
-                                  ((character/@level = $level) or ($level = '')) and
-                                  ((character/@phase = 'ready') or (character/@phase = 'mature'))
-                                  ]">
-        <xsl:sort select="title"/>
-        <xsl:apply-templates select="."/>
-    </xsl:for-each>
+
+    <div class="category">
+        <span class="title">
+            <xsl:value-of select="$heading"/>
+        </span>
+        <xsl:for-each select="project[(character/@subject = $subject) and
+                                      ((character/@level = $level) or ($level = '')) and
+                                      ((character/@phase = 'ready') or (character/@phase = 'mature'))
+                                      ]">
+            <xsl:sort select="title"/>
+            <xsl:apply-templates select="."/>
+        </xsl:for-each>
+    </div>
 </xsl:template>
 
+<!-- *Everything* with character/@phase = 'develop' -->
+<!-- So no $subject or $level parameters            -->
 <xsl:template match="register" mode="development">
     <xsl:param name="heading"/>
-    <th colspan="4" class="heading">
-        <xsl:value-of select="$heading"/>
-    </th>
-    <xsl:for-each select="project[not((character/@phase = 'ready') or (character/@phase = 'mature'))]">
-        <xsl:sort select="title"/>
-        <xsl:apply-templates select="."/>
-    </xsl:for-each>
+
+    <div class="category">
+        <span class="title">
+            <xsl:value-of select="$heading"/>
+        </span>
+        <xsl:for-each select="project[character/@phase = 'ready']">
+            <xsl:sort select="title"/>
+            <xsl:apply-templates select="."/>
+        </xsl:for-each>
+    </div>
 </xsl:template>
 
+<!-- ############### -->
+<!-- Single Projects -->
+<!-- ############### -->
+
+<!-- Each project is a  div.book-summary -->
+
 <xsl:template match="project">
-    <tr>
-        <xsl:apply-templates select="." mode="author-cell"/>
-        <xsl:apply-templates select="." mode="title-cell"/>
-        <xsl:apply-templates select="." mode="character-cell"/>
-        <xsl:apply-templates select="." mode="legal-cell"/>
-    </tr>
+    <!-- A string to match knowl-clickable to content -->
+    <xsl:variable name="id">
+        <xsl:value-of select="@xml:id"/>
+        <xsl:text>-fact-sheet</xsl:text>
+    </xsl:variable>
+    <!-- project's div -->
+    <div class="book-summary">
+        <div class="biblio">
+            <!-- project title as knowl to "fact sheet" -->
+            <a data-knowl="" class="id-ref title" data-refid="hk-{$id}" title="Fact Sheet">
+                <xsl:apply-templates select="title"/>
+            </a>
+            <xsl:text>, </xsl:text>
+            <span class="authors">
+                <xsl:apply-templates select="author"/>
+            </span>
+        </div>
+        <!-- "onesentence" is required, once enforced can drop test on "description" -->
+        <xsl:if test="onesentence|description">
+            <div class="blurb">
+                <p>
+                    <xsl:apply-templates select="onesentence"/>
+                    <!-- no optional"description",            -->
+                    <!-- then next template won't match       -->
+                    <!-- "description" hidden as "More" knowl -->
+                    <xsl:apply-templates select="description"/>
+                </p>
+            </div>
+        </xsl:if>
+        <div class="badges">
+            <xsl:apply-templates select="recognition"/>
+            <xsl:apply-templates select="features"/>
+            <xsl:apply-templates select="license"/>
+        </div>
+        <!-- knowl-content as trailing div      -->
+        <!-- simple one-row "table" from before -->
+        <div class="fact-sheet-knowl" id="hk-{$id}">
+            <table class="fact-sheet">
+                <tr>
+                    <xsl:apply-templates select="." mode="author-cell"/>
+                    <xsl:apply-templates select="." mode="title-cell"/>
+                    <xsl:apply-templates select="." mode="character-cell"/>
+                    <xsl:apply-templates select="." mode="legal-cell"/>
+                </tr>
+            </table>
+        </div>
+    </div>
 </xsl:template>
+
+<xsl:template match="recognition">
+    <xsl:if test="@aim = 'yes'">
+        <img class="badge" title="AIM Approved" src="images/aim.png"/>
+    </xsl:if>
+</xsl:template>
+
+<xsl:template match="features">
+    <xsl:if test="@solutions = 'yes'">
+        <img class="badge" title="Solutions" src="images/solutions.png"/>
+    </xsl:if>
+    <xsl:if test="@solutions = 'yes'">
+        <img class="badge" title="Projects" src="images/projects.png"/>
+    </xsl:if>
+</xsl:template>
+
+<xsl:template match="license">
+    <xsl:if test="@code = 'CC'">
+        <img class="license" title="Creative Commons License" src="images/cc.png"/>
+    </xsl:if>
+    <xsl:if test="@code = 'GFDL'">
+        <img class="badge" title="GNU Free Documentation License" src="images/gfdl.png"/>
+    </xsl:if>
+</xsl:template>
+
 
 <xsl:template match="project" mode="author-cell">
     <td class="authors">
-        <xsl:apply-templates select="author"/>
+        <xsl:apply-templates select="author" mode="author-cell"/>
         <!-- overall affiliation, presumes no individual affiliations -->
         <xsl:if test="normalize-space(affiliation)">
             <xsl:apply-templates select="affiliation"/>
@@ -117,7 +208,7 @@ interest to the individuals named above.
     </td>
 </xsl:template>
 
-<xsl:template match="author">
+<xsl:template match="author" mode="author-cell">
     <!-- issue newline for multiple author case -->
     <xsl:if test="preceding-sibling::author">
         <br/>
@@ -135,6 +226,14 @@ interest to the individuals named above.
     </xsl:choose>
     <!-- affiliation is option, no-op is OK -->
     <xsl:apply-templates select="affiliation"/>
+</xsl:template>
+
+<xsl:template match="author">
+    <!-- issue newline for multiple author case -->
+    <xsl:if test="preceding-sibling::author">
+        <xsl:text>, </xsl:text>
+    </xsl:if>
+    <xsl:apply-templates select="displayname"/>
 </xsl:template>
 
 <!-- *always* onto a newline -->
@@ -164,21 +263,11 @@ interest to the individuals named above.
             </xsl:otherwise>
         </xsl:choose>
         <xsl:apply-templates select="." mode="site-list"/>
-        <xsl:if test="onesentence|description">
-            <p>
-                <xsl:apply-templates select="onesentence"/>
-                <xsl:if test="onesentence and description">
-                    <xsl:text> </xsl:text>
-                </xsl:if>
-                <xsl:apply-templates select="description"/>
-            </p>
-        </xsl:if>
         <!-- Awards blurb on same line as description -->
         <xsl:if test="awards">
-            <xsl:if test="not(description)">
-                <br/>
-            </xsl:if>
-            <xsl:apply-templates select="awards"/>
+            <p>
+                <xsl:apply-templates select="awards"/>
+            </p>
         </xsl:if>
         <!-- Line of binary recognitions, such as AIM Approved Textbooks -->
         <xsl:if test="recognition">
@@ -192,31 +281,39 @@ interest to the individuals named above.
     </td>
 </xsl:template>
 
-<!-- Dual-purpose template for knowl'ed itmes-->
-<xsl:template match="description|awards">
+<!-- ############# -->
+<!-- Knowled Items -->
+<!-- ############# -->
+
+<xsl:template match="description">
     <xsl:variable name="id">
         <xsl:value-of select="../@xml:id"/>
-        <xsl:choose>
-            <xsl:when test="self::description">
-                <xsl:text>description</xsl:text>
-            </xsl:when>
-            <xsl:when test="self::awards">
-                <xsl:text>awards</xsl:text>
-            </xsl:when>
-        </xsl:choose>
+        <xsl:text>-description</xsl:text>
     </xsl:variable>
-    <a data-knowl="" class="id-ref" data-refid="hk-{$id}">
-        <xsl:choose>
-            <xsl:when test="self::description">
-                <xsl:text>More</xsl:text>
-            </xsl:when>
-            <xsl:when test="self::awards">
-                <xsl:text>Awards</xsl:text>
-            </xsl:when>
-        </xsl:choose>
+    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="Description">
+        <!-- space after "onesentence" could be controlled by CSS -->
+        <xsl:text> </xsl:text>
+        <xsl:text>More</xsl:text>
     </a>
     <div class="description-knowl" id="hk-{$id}">
         <article class="description">
+            <xsl:copy-of select="*"/>
+        </article>
+    </div>
+</xsl:template>
+
+<xsl:template match="awards">
+    <xsl:variable name="id">
+        <xsl:value-of select="../@xml:id"/>
+        <xsl:text>-awards</xsl:text>
+    </xsl:variable>
+    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="awards">
+        <!-- space after "onesentence" could be controlled by CSS -->
+        <xsl:text> </xsl:text>
+        <xsl:text>Awards</xsl:text>
+    </a>
+    <div class="awards-knowl" id="hk-{$id}">
+        <article class="awards">
             <xsl:copy-of select="*"/>
         </article>
     </div>

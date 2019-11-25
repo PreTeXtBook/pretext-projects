@@ -8,12 +8,12 @@ or new project files, you agree to transfer your copyright
 interest to the individuals named above.
 *************************************************************/
 
-.projects {
+/*.projects {
     border: 1px solid black;
     border-spacing: 0;
     border-collapse: collapse;
 }
-
+*/
 .heading {
 	text-align: left;
 	padding-left: 4ex;
@@ -22,16 +22,44 @@ interest to the individuals named above.
 	padding-bottom: 1ex;
 }
 
-.authors, .title, .character, .legal {
+/*.authors, .title, .character, .legal {
     vertical-align: top;
     padding: 5px;
     border: 1px solid black;
+}
+*/
+.fact-sheet-knowl {
+    display: none;
 }
 
 .description-knowl {
     display: none;
 }
 
+.awards-knowl {
+    display: none;
+}
+
 .description {
     margin: 20px;
+}
+
+div.category > span.title {
+    color:red;
+}
+
+div.book-summary > div.biblio > a.title {
+    color:green;
+}
+
+div.book-summary > div.biblio > span.authors {
+    color:purple;
+}
+
+div.book-summary > div.blurb {
+    color:brown;
+}
+
+div.book-summary > div.badges > img.badge {
+    right-margin:20px;
 }
