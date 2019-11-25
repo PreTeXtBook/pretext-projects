@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="yoshiwara-elem-alg.xml"/>    <!-- 2019-09-13 -->
     <xi:include href="pretext-GFA.xml"/>           <!-- 2019-07-25 -->
     <xi:include href="pretext-TPG.xml"/>           <!-- 2019-06-28 -->
     <xi:include href="doob-MATH1220.xml"/>           <!-- 2019-06-20 -->
