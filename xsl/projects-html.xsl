@@ -163,9 +163,14 @@ interest to the individuals named above.
             </xsl:otherwise>
         </xsl:choose>
         <xsl:apply-templates select="." mode="site-list"/>
-        <xsl:if test="description">
-            <br/>
-            <xsl:apply-templates select="description"/>
+        <xsl:if test="onesentence|description">
+            <p>
+                <xsl:apply-templates select="onesentence"/>
+                <xsl:if test="onesentence and description">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+                <xsl:apply-templates select="description"/>
+            </p>
         </xsl:if>
         <!-- Awards blurb on same line as description -->
         <xsl:if test="awards">
@@ -186,7 +191,7 @@ interest to the individuals named above.
     </td>
 </xsl:template>
 
-<!-- Dual-purpose template -->
+<!-- Dual-purpose template for knowl'ed itmes-->
 <xsl:template match="description|awards">
     <xsl:variable name="id">
         <xsl:value-of select="../@xml:id"/>
@@ -202,7 +207,7 @@ interest to the individuals named above.
     <a data-knowl="" class="id-ref" data-refid="hk-{$id}">
         <xsl:choose>
             <xsl:when test="self::description">
-                <xsl:text>Description</xsl:text>
+                <xsl:text>More</xsl:text>
             </xsl:when>
             <xsl:when test="self::awards">
                 <xsl:text>Awards</xsl:text>

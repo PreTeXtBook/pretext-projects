@@ -155,6 +155,10 @@ interest to the individuals named above.
 
     <!-- Description (Blurb) -->
 
+    <!-- onesentence (required) -->
+    <!--   * Likely visible, so short and succinct                    -->
+    <!--   * "description" (following) will amplify the "onesentence" -->
+
     <!-- description (optional, but highly encouraged) -->
     <!--   * optional                                                 -->
     <!--   * a sequence of HTML "p" elements, lists should be OK      -->
@@ -163,15 +167,15 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>An <em>algebraic</em> approach to linear algebra.</p>
-        <p>And more!</p>
-    </description>
-
     <onesentence>
         One (not too long!) sentence that immediately tells an instructor if
         this book has appropriate topics, at the appropriate level, for their course.
     </onesentence>
+
+    <description>
+        <p>An <em>algebraic</em> approach to linear algebra.</p>
+        <p>And more!</p>
+    </description>
 
     <!-- Features (Binary) -->
 
