@@ -404,19 +404,7 @@ interest to the individuals named above.
         <xsl:if test="license">
             <xsl:choose>
                 <xsl:when test="license/@code='all-rights'">
-                    <xsl:text>&#xa9; </xsl:text>
-                </xsl:when>
-                <xsl:when test="license/@code ='CC'">
-                    <xsl:text>&#x1F12F; </xsl:text>
-                </xsl:when>
-                <xsl:when test="license/@code ='GFDL'">
-                    <xsl:text>&#x1F12F; </xsl:text>
-                </xsl:when>
-                <xsl:otherwise/>
-            </xsl:choose>
-            <xsl:choose>
-                <xsl:when test="license/@code='all-rights'">
-                    <xsl:text>Rights Reserved</xsl:text>
+                    <xsl:text>&#xa9; Rights Reserved</xsl:text>
                 </xsl:when>
                 <xsl:when test="license/@code='GFDL'">
                     <xsl:value-of select="license/@code"/>
