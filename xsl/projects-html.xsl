@@ -21,6 +21,7 @@ interest to the individuals named above.
             <script src="https://pretextbook.org/js/lib/jquery.min.js"/>
             <script src="https://pretextbook.org/js/lib/knowl.js"/>
             <link rel="stylesheet" type="text/css" href="./pretext-projects.css"/>
+            <link rel="stylesheet" type="text/css" href="https://pretextbook.org/css/0.31/catalog.css"/>
         </head>
         <body>
             <table class="projects">
