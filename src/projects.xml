@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="hartman-APEX.xml"/>          <!-- 2019-11-27 -->
     <xi:include href="crisman-NTIC.xml"/>          <!-- 2019-11-27 -->
     <xi:include href="giol-MAA.xml"/>                  <!-- 2019-11-25 -->
     <xi:include href="turcotte-ALIR.xml"/>         <!-- 2019-11-25 -->
