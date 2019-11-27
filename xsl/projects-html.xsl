@@ -117,6 +117,7 @@ interest to the individuals named above.
     </div>
 </xsl:template>
 
+
 <!-- ############### -->
 <!-- Single Projects -->
 <!-- ############### -->
@@ -160,6 +161,7 @@ interest to the individuals named above.
         </div>
         <!-- knowl-content as trailing div      -->
         <!-- simple one-row "table" from before -->
+        <!-- This should change radically       -->
         <div class="fact-sheet-knowl" id="hk-{$id}">
             <table class="fact-sheet">
                 <tr>
@@ -172,6 +174,19 @@ interest to the individuals named above.
         </div>
     </div>
 </xsl:template>
+
+<xsl:template match="author">
+    <!-- issue newline for multiple author case -->
+    <xsl:if test="preceding-sibling::author">
+        <xsl:text>, </xsl:text>
+    </xsl:if>
+    <xsl:apply-templates select="displayname"/>
+</xsl:template>
+
+
+<!-- ################# -->
+<!-- Badges, In Groups -->
+<!-- ################# -->
 
 <xsl:template match="recognition">
     <xsl:if test="@aim = 'yes'">
@@ -197,6 +212,120 @@ interest to the individuals named above.
     </xsl:if>
 </xsl:template>
 
+
+<!-- ############# -->
+<!-- Knowled Items -->
+<!-- ############# -->
+
+<xsl:template match="description">
+    <xsl:variable name="id">
+        <xsl:value-of select="../@xml:id"/>
+        <xsl:text>-description</xsl:text>
+    </xsl:variable>
+    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="Description">
+        <!-- space after "onesentence" could be controlled by CSS -->
+        <xsl:text> </xsl:text>
+        <xsl:text>More</xsl:text>
+    </a>
+    <div class="description-knowl" id="hk-{$id}">
+        <article class="description">
+            <xsl:copy-of select="*"/>
+        </article>
+    </div>
+</xsl:template>
+
+<xsl:template match="awards">
+    <xsl:variable name="id">
+        <xsl:value-of select="../@xml:id"/>
+        <xsl:text>-awards</xsl:text>
+    </xsl:variable>
+    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="awards">
+        <!-- space after "onesentence" could be controlled by CSS -->
+        <xsl:text> </xsl:text>
+        <xsl:text>Awards</xsl:text>
+    </a>
+    <div class="awards-knowl" id="hk-{$id}">
+        <article class="awards">
+            <xsl:copy-of select="*"/>
+        </article>
+    </div>
+</xsl:template>
+
+
+<!-- ################## -->
+<!-- Summary Statistics -->
+<!-- ################## -->
+
+<xsl:template match="register" mode="summary-stats">
+    <xsl:variable name="total" select="count(project)"/>
+    <!-- Total Projects -->
+    <p>
+        <xsl:value-of select="$total"/>
+        <xsl:text> projects.</xsl:text>
+    </p>
+    <!-- Subjects -->
+    <p>
+        <xsl:text>Mathematics: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='math'])"/>
+        <br/>
+        <xsl:text>Computer Science: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='cs'])"/>
+        <br/>
+        <xsl:text>Music: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='music'])"/>
+        <br/>
+        <xsl:text>Writing: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='writing'])"/>
+        <br/>
+        <xsl:text>Documentation: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='doc'])"/>
+        <br/>
+        <xsl:text>Miscellaneous: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='misc'])"/>
+        <br/>
+    </p>
+    <!-- Licenses -->
+    <p>
+        <xsl:text>CC License: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='CC'])"/>
+        <br/>
+        <xsl:text>GFDL License: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='GFDL'])"/>
+        <br/>
+        <xsl:text>All Rights Reserved: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='all-rights'])"/>
+        <br/>
+        <xsl:text>Not stated: </xsl:text>
+        <xsl:value-of select="$total - count(project/license/@code)"/>
+        <br/>
+    </p>
+    <!-- Level -->
+    <p>
+        <xsl:text>Secondary: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='secondary'])"/>
+        <br/>
+        <xsl:text>Undergraduate, Lower-Division: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='ugld'])"/>
+        <br/>
+        <xsl:text>Undergraduate, Upper-Division: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='ugud'])"/>
+        <br/>
+        <xsl:text>Graduate: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='grad'])"/>
+        <br/>
+        <xsl:text>Research: </xsl:text>
+        <xsl:value-of select="count(project/character[@level='research'])"/>
+        <br/>
+        <xsl:text>Not stated: </xsl:text>
+        <xsl:value-of select="$total - count(project/character/@level)"/>
+        <br/>
+    </p>
+</xsl:template>
+
+
+<!-- ############################### -->
+<!-- Obsolete, to Support Fact Sheet -->
+<!-- ############################### -->
 
 <xsl:template match="project" mode="author-cell">
     <td class="authors">
@@ -226,14 +355,6 @@ interest to the individuals named above.
     </xsl:choose>
     <!-- affiliation is option, no-op is OK -->
     <xsl:apply-templates select="affiliation"/>
-</xsl:template>
-
-<xsl:template match="author">
-    <!-- issue newline for multiple author case -->
-    <xsl:if test="preceding-sibling::author">
-        <xsl:text>, </xsl:text>
-    </xsl:if>
-    <xsl:apply-templates select="displayname"/>
 </xsl:template>
 
 <!-- *always* onto a newline -->
@@ -279,44 +400,6 @@ interest to the individuals named above.
             </xsl:if>
         </xsl:if>
     </td>
-</xsl:template>
-
-<!-- ############# -->
-<!-- Knowled Items -->
-<!-- ############# -->
-
-<xsl:template match="description">
-    <xsl:variable name="id">
-        <xsl:value-of select="../@xml:id"/>
-        <xsl:text>-description</xsl:text>
-    </xsl:variable>
-    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="Description">
-        <!-- space after "onesentence" could be controlled by CSS -->
-        <xsl:text> </xsl:text>
-        <xsl:text>More</xsl:text>
-    </a>
-    <div class="description-knowl" id="hk-{$id}">
-        <article class="description">
-            <xsl:copy-of select="*"/>
-        </article>
-    </div>
-</xsl:template>
-
-<xsl:template match="awards">
-    <xsl:variable name="id">
-        <xsl:value-of select="../@xml:id"/>
-        <xsl:text>-awards</xsl:text>
-    </xsl:variable>
-    <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="awards">
-        <!-- space after "onesentence" could be controlled by CSS -->
-        <xsl:text> </xsl:text>
-        <xsl:text>Awards</xsl:text>
-    </a>
-    <div class="awards-knowl" id="hk-{$id}">
-        <article class="awards">
-            <xsl:copy-of select="*"/>
-        </article>
-    </div>
 </xsl:template>
 
 <xsl:template match="project" mode="site-list">
@@ -538,98 +621,8 @@ interest to the individuals named above.
                 <xsl:value-of select="license/@price"/>
             </xsl:if>
 
-
-
-
-
         </xsl:if>
     </td>
 </xsl:template>
-
-
-
-
-
-
-
-
-    <!-- License/Terms of Distribution -->
-    <!-- CC-BY-SA, "All Rights Reserved", content allowed -->
-    <!-- multiple licenses possible -->
-    <!-- <license code="GFDL" variant="" version="" price="$30.19"/> -->
-
-
-
-
-<!-- Summary Statistics -->
-
-<xsl:template match="register" mode="summary-stats">
-    <xsl:variable name="total" select="count(project)"/>
-    <!-- Total Projects -->
-    <p>
-        <xsl:value-of select="$total"/>
-        <xsl:text> projects.</xsl:text>
-    </p>
-    <!-- Subjects -->
-    <p>
-        <xsl:text>Mathematics: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='math'])"/>
-        <br/>
-        <xsl:text>Computer Science: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='cs'])"/>
-        <br/>
-        <xsl:text>Music: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='music'])"/>
-        <br/>
-        <xsl:text>Writing: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='writing'])"/>
-        <br/>
-        <xsl:text>Documentation: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='doc'])"/>
-        <br/>
-        <xsl:text>Miscellaneous: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='misc'])"/>
-        <br/>
-    </p>
-    <!-- Licenses -->
-    <p>
-        <xsl:text>CC License: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='CC'])"/>
-        <br/>
-        <xsl:text>GFDL License: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='GFDL'])"/>
-        <br/>
-        <xsl:text>All Rights Reserved: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='all-rights'])"/>
-        <br/>
-        <xsl:text>Not stated: </xsl:text>
-        <xsl:value-of select="$total - count(project/license/@code)"/>
-        <br/>
-    </p>
-    <!-- Level -->
-    <p>
-        <xsl:text>Secondary: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='secondary'])"/>
-        <br/>
-        <xsl:text>Undergraduate, Lower-Division: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='ugld'])"/>
-        <br/>
-        <xsl:text>Undergraduate, Upper-Division: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='ugud'])"/>
-        <br/>
-        <xsl:text>Graduate: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='grad'])"/>
-        <br/>
-        <xsl:text>Research: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='research'])"/>
-        <br/>
-        <xsl:text>Not stated: </xsl:text>
-        <xsl:value-of select="$total - count(project/character/@level)"/>
-        <br/>
-    </p>
-
-</xsl:template>
-
-
 
 </xsl:stylesheet>
