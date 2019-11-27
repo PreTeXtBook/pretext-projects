@@ -160,8 +160,22 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
+    <onesentence>A textbook that covers the content of a typical college algebra course with an emphasis on functions and modeling; when combined with a trigonometry text or supplement, this text can be used in a precalculus course.</onesentence>
+
     <description>
-        <p>This text covers the content of a college algebra course with an emphasis on modeling and applications.</p>
+        <p>The text employs a variety of applications to motivate mathematical thinking.  Each chapter opens with a problem of historical or contemporary significance highlighting the material in the chapter.  We have also provided a set of more challenging Projects at the end of each chapter.</p>
+
+        <p>Function notation is introduced in Chapter 1 and is used consistently in subsequent chapters treating the various families of functions.  We study functions using algebraic, numerical, graphical, and verbal methods, and work to establish the connections between these approaches. We want students to learn to write an algebraic expression from a verbal description, recognize trends in a table of data, and extract and interpret information from the graph of a function.  Many students have trouble progressing from a point-wise understanding of graphs to a more global view. By taking advantage of graphing utilities, we can examine a large number of examples and study them in detail, and we can consider more realistic models.</p>
+
+        <p>An in-text Exercise or <q>Checkpoint,</q> with answers, follows each Example, allowing students to try out new concepts and skills as they are presented.  Each Section Summary includes a list of new Vocabulary words that can be found in the Glossary, a brief review of new Concepts introduced in the section, a short set of Study Questions for students to test their understanding of the material, and a list of mastery Skills and the appropriate Homework Problems for practicing each skill.</p>
+
+        <p>The text frequently refers students to the appropriate section of Appendix A, Algebra Skills Refresher.  We hope that this Appendix will be useful both to individual students and to instructors who want to provide <q>just-in-time</q> parallel support for their classes.</p>
+
+        <p>An Activities Workbook is available from xyztextbooks.  The Workbook provides a Lesson for each section in the book, consisting of Activities for students to complete in groups or with guidance from the instructor; or they can be used as support for a lecture format. Each Lesson ends with a Wrap-Up and a set of questions for discussion.</p>
+
+        <p>An Instructor's Manual for the text is also available. The Manual contains objectives and teaching notes for each section of the text, as well as suggested concept questions and topics for writing or discussion. The teaching notes include suggestions for using the Activities booklet and how to structure class time.</p>
+
+        <p>A computer homework system for the text is also available through xyzhomework.</p>
     </description>
 
     <!-- Features (Binary) -->
