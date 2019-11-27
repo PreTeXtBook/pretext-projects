@@ -159,21 +159,20 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>This text covers the basic content of a trigonometry course.</p>
-        <p>Chapter 1 reviews only the most basic facts about triangles and circles that students will need to begin their study of trigonometry, and may be omitted or assigned as homework. Other facts about functions and angles are introduced when they are needed. For example, minutes and seconds are discussed in the context of parallax in the section on Law of Sines in Chapter 3. Nautical bearings occur in Section 4.1, Angles and Rotation.</p>
-        <p>Chapter 2 introduces the three (not six) basic trig ratios, and considers angles in the first quadrant only. We believe this initial simplicity allows students to focus on the fundamental concepts without simultaneously trying to master a welter of peripheral detail.</p>
-        <p>In Chapter 3 we introduce reference angles for the second quadrant in order to study obtuse triangles and the Laws of Sines and Cosines. Reference angles are covered again in more generality in Chapter 4.</p>
-        <p>Chapter 4 considers angles as rotations in preparation for the graphs of sine and cosine. Note that the applications of periodic functions in this chapter are functions of degrees only, to fit with our approach: radians come later, after students have some experience with sinusoidal graphs.</p>
-        <p>Chapter 5 begins with a section on algebraic manipulations with trig ratios, a skill that is often neglected but can engender endless confusion for students. This chapter treats only simple equations and identities; more equations and identities appear in Chapters 7 and 8. We solve equations both graphically and analytically, and we use graphs as well as algebra to verify trigonometric identities.</p>
-        <p>Chapter 6 introduces radians and the circular functions of real numbers. Most of this chapter and Chapter 7 revisit basic skills such as analyzing graphs and solving equations, but working now in radians rather than degrees.</p>
-        <p>Chapter 8 studies identities and their use in more detail, including the sum and difference formulas and the double angle identities. Inverse trig functions are included here, and are the three reciprocal trig functions.</p>
-        <p>Chapters 9 and 10 cover ancillary topics; typical trigonometry courses may include one or more of these topics: vectors, polar coordinates, and complex numbers.</p>
-    </description>
+    <onesentence>An introductory trigonometry text that can be used in a variety of programs, starting with intuitive notions before developing a more abstract and general framework for the ideas.</onesentence>
 
-    <onesentence>
-        This text covers the basic content of a trigonometry course.
-    </onesentence>
+    <description>
+        <p>For flexibility, students who have encountered elements of triangle trig in previous courses may be able to skip all or part of Chapters 1 through 3.  Students preparing for technical courses may not need much of the material after Chapter 6 or 7.  Chapters 9 and 10 cover vectors and polar coordinates, optional topics that occur in some trigonometry courses but are often reserved for precalculus.</p>
+        <p>Chapter 1 reviews only the most basic facts about triangles and circles that students will need to begin their study of trigonometry, and may be omitted or assigned as homework.  Other facts about functions and angles are introduced when they are needed.</p>
+        <p>Chapter 2 introduces the three (not six) basic trig ratios, and considers angles in the first quadrant only.  This initial simplicity allows students to focus on the fundamental concepts without simultaneously trying to master a welter of peripheral detail.</p>
+        <p>Chapter 3 introduces reference angles for the second quadrant in order to study obtuse triangles and the Laws of Sines and Cosines.  Reference angles are covered again in more generality in Chapter 4.</p>
+        <p>Chapter 4 considers angles as rotations in preparation for the graphs of sine and cosine.  Applications of periodic functions in this chapter are functions of degrees only.  Radians come later, after students have some experience with sinusoidal graphs.</p>
+        <p>Chapter 5 begins with a section on algebraic manipulations with trig ratios, a skill that is often neglected but can engender endless confusion for students.   We solve equations both graphically and analytically, and we use graphs as well as algebra to verify trigonometric identities.</p>
+        <p>Chapter 6 introduces radians and the circular functions of real numbers.  Most of this chapter and Chapter 7 revisit basic skills such as analyzing graphs and solving equations, but working now in radians rather than degrees.</p>
+        <p>Chapter 8 studies identities and their use in more detail, including the sum and difference formulas and the double angle identities.  Inverse trig functions are included here, and the three reciprocal trig functions.</p>
+        <p>Chapters 9 and 10 cover ancillary topics; typical trigonometry courses may include one or more of these topics:  vectors, polar coordinates, and complex numbers.</p>
+        <p>Each Example in the book is followed by a similar Exercise for students to test their understanding.  Each Section concludes with a Summary, a set of Study Questions, and a list of Skills to be addressed in the Homework.  A Summary and a set of Review Problems follows each chapter.  Chapters 1 through 8 include Activities for students to work through some of the main ideas.  We have described the use of a graphing calculator, but other graphing utilities can easily be substituted.</p>
+    </description>
 
     <!-- Features (Binary) -->
 
