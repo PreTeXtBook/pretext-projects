@@ -158,19 +158,29 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
+    <onesentence>An activity-based text that studies algebraic skills in the context of modeling and problem solving.</onesentence>
+
     <description>
-<p><pubtitle>Elementary Algebra: Equations and Graphs</pubtitle> was written with two goals in mind: to present the skills of algebra in the context of modeling and problem solving, and to engage students in an activity-based course.</p> 
+        <p>Throughout the book, we incorporate applications to motivate new topics. We present ideas using verbal, numerical, and graphical tools. We use graphs extensively to illustrate algebraic techniques and to help students visualize relationships between variables. In the Homework Problems we break up skills practice into smaller sets of exercises and combine them with conceptual questions, graphing, and applications of various types.</p>
 
-<p>Throughout the book, we use applications to motivate new topics.  We present ideas using verbal, numerical, and graphical tools. We use graphs extensively to illustrate algebraic techniques and to help students visualize relationships between variables. In the Homework Problems we break up skills practice into smaller sets of exercises and combine them with conceptual questions, graphing, and applications of various types.</p>
+        <p>We have included a number of features to encourage student participation.</p>
 
-<p>We have included a number of features to encourage student participation. We want students to learn how to read a math book, so we have included Reading Questions that mirror the content of the lesson.  For example, the first Reading Question is "A numerical quantity that changes over time or in different situations is called a <m><fillin characters="6"/></m>." Ideally, students would answer these questions before class, perhaps through an on-line homework system.  Each section ends with a Skills Warm-Up (with answers) for students to complete on their own. The Skills Warm-Up problems review an arithmetic or algebraic technique needed for the Lesson that follows.</p> 
+        <ul>
+            <li>The reading is broken into small segments by using boxes around Examples, definitions, and rules, and flags including Caution, Look Closer, and Look Ahead.</li>
+            <li>We want students to learn how to read a math book, so we have included Reading Questions that mirror the content of the lesson. For example, the first Reading Question is <q>A numerical quantity that changes over time or in different situations is called a  
+            __________ .</q> Ideally, students would answer these questions before class, perhaps through an on-line homework system.</li>
+            <li>Each section ends with a Skills Warm-Up (with answers) for students to complete on their own. The Skills Warm-Up problems review an arithmetic or algebraic technique needed for the Lesson that follows.</li>
+            <li>Because choosing appropriate scales for the axes is a time-consuming task for beginning students, the text includes labeled grids for most of the graphing exercises. Ready-made grids allow students to consider a wider range of examples (with <q>harder</q> numbers) and to focus on the properties of the graphs, such as intercepts and slope, and on interpreting the information given by the graph. If students are using technology to create graphs, the grids can help them choose an appropriate window.</li>
+        </ul>
 
-<p>Because choosing appropriate scales for the axes is a time-consuming task for beginning
-students, the text includes labeled grids for most of the graphing exercises. Ready-made grids allow students to consider a wider range of examples (with "harder" numbers) and to focus on the properties of the graphs, such as intercepts and slope, and on interpreting the information given by the graph. If students are using technology to create graphs, the grids can help them choose an appropriate window.</p>
+        <p>Chapter Reviews include a Summary, Review Questions for writing or discussion, and a set of Review Problems. Answers to odd-numbered Homework problems are provided, as well as a Glossary of mathematical terms.</p>
 
-<p>The textbook is accompanied by an Activities Workbook that provides a Lesson for each section in the book.  These Lessons consist of Activities for students to complete in groups or with guidance from the instructor; or they can be used as support for a lecture format. Each Lesson ends with a Wrap-Up and a set of Homework Preview exercises.</p>
+        <p>The textbook is accompanied by an Activities Workbook that provides a Lesson for each section in the book. These Lessons consist of Activities for students to complete in groups or with guidance from the instructor; or they can be used as support for a lecture format. Each Lesson ends with a Wrap-Up and a set of Homework Preview exercises.</p>
 
-<p>Chapter Reviews include a Summary, Review Questions, and a set of Review Problems. Answers to odd-numbered Homework problems are provided, as well as a Glossary of mathematical terms. A Review of Arithmetic Skills, with Exercises, appears in Appendix A.</p>    </description>
+        <p>An Instructor's Manual for the text is also available. The Manual contains objectives and teaching notes for each section of the text, as well as suggested concept questions and topics for writing or discussion. The teaching notes include suggestions for using the Activities booklet and how to structure class time.</p>
+
+        <p>A computer homework system for Elementary Algebra is available through xyzhomework.</p>
+    </description>
 
     <!-- Features (Binary) -->
 
