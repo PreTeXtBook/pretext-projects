@@ -40,7 +40,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="judson-lpt" updated="2019-08-25">
+<project xml:id="judson-LPT" updated="2019-08-25">
 
     <!-- Project Title -->
 
@@ -172,9 +172,14 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
+    <onesentence>
+        <i>Logic and Proof for Teachers</i> (<em>LPT</em>) is an open source textbook designed to teach logic and proof to middle and high school teachers. 
+    </onesentence>
+    <!-- 
     <description>
-        <p><em>Logic and Proof for Teachers</em> (<em>LPT</em>) is an open source textbook designed to teach logic and proof to middle and high school teachers.</p> 
+        <p></p>
     </description>
+     -->    
 
     <!-- Features (Binary) -->
 
