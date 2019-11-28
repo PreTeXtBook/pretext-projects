@@ -169,6 +169,8 @@ interest to the individuals named above.
     <!-- onesentence (required) -->
     <!--   * Likely visible, so short and succinct                    -->
     <!--   * "description" (following) will amplify the "onesentence" -->
+    <!--   * HTML respected (e.g. <i> for italics), do not use an     -->
+    <!--     overall element (e.g. <p>) to surround entire sentence   -->
 
     <!-- description (optional, but highly encouraged) -->
     <!--   * optional                                                 -->
@@ -177,6 +179,7 @@ interest to the individuals named above.
     <!--   * a narrative description of the project's aims            -->
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
+    <!--   * HTML respected, do use elements like <p>                 -->
 
     <onesentence>
         One (not too long!) sentence that immediately tells an instructor if

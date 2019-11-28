@@ -156,7 +156,7 @@ interest to the individuals named above.
         <xsl:if test="onesentence|description">
             <div class="blurb">
                 <p>
-                    <xsl:apply-templates select="onesentence"/>
+                    <xsl:copy-of select="onesentence/node()"/>
                     <!-- no optional"description",            -->
                     <!-- then next template won't match       -->
                     <!-- "description" hidden as "More" knowl -->
