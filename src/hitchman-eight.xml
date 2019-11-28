@@ -162,10 +162,15 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
+    <onesentence>
+        A humorous work of mathematical historical fiction aimed at celebrating the greatness of the number 8, while showcasing a variety of features in PreTeXt publishing.
+    </onesentence>
+
+    <!-- 
     <description>
-        <p>A humorous work of mathematical historical fiction aimed at celebrating the greatness of the number 8, while showcasing a variety of features in PreTeXt publishing.</p>
         <p></p>
     </description>
+    -->
 
     <!-- Features (Binary) -->
 

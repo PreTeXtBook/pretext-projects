@@ -162,9 +162,15 @@ interest to the individuals named above.
     <!--   * knowled, so brevity not required                         -->
 
 
+    <onesentence>
+        A tutorial or primer on <tt>git</tt>, using the management of a manuscript for examples.
+    </onesentence>
+
+    <!-- 
     <description>
-        <p>A primer on the use of git to manage a manuscript.</p>
+        <p></p>
     </description>
+     -->
 
     <!-- Features (Binary) -->
 

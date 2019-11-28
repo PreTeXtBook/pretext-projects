@@ -162,10 +162,12 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>This is an open source textbook designed to teach ordinary differential equations to upper level undergraduates. The textbook focus on modeling, an early introduction to systems, and systems of linear equations.  More specifically, the order of topics covered is first-order differential equations, systems of differential equations, linear systems, second-order linear equations, nonlinear systems, and the Laplace transform.  There is more than enough material for a one-semester course.  There are many interactive Sage cells in the HTML version of the book.</p> 
+    <onesentence>
+        An open source textbook designed to teach ordinary differential equations to upper level undergraduates.
+    </onesentence>
 
-            
+    <description>
+        <p>The textbook focuses on modeling, an early introduction to systems, and systems of linear equations.  More specifically, the order of topics covered is first-order differential equations, systems of differential equations, linear systems, second-order linear equations, nonlinear systems, and the Laplace transform.  There is more than enough material for a one-semester course.  There are many interactive Sage cells in the HTML version of the book.</p>
     </description>
 
     <!-- Features (Binary) -->

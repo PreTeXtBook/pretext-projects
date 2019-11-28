@@ -163,11 +163,15 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>A discrete mathematics text for a two semester sequence that includes 
-            applied abstract algebra.</p>
-     </description>
-
+    <onesentence>
+        A discrete mathematics text for a two-semester sequence that includes 
+        applied abstract algebra.
+     </onesentence>
+    <!-- 
+        <description>
+            <p></p>
+         </description>
+     -->
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

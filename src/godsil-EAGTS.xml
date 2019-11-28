@@ -167,10 +167,15 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>A monograph on algebraic graph theory illustrated with many embedded Sage cells.</p>
-    </description>
+    <onesentence>
+        A monograph on algebraic graph theory illustrated with many embedded Sage cells.
+    </onesentence>
 
+    <!-- 
+    <description>
+        <p></p>
+    </description>
+     -->
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

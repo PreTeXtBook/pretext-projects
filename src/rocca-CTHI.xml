@@ -65,10 +65,15 @@ interest to the individuals named above.
         html="https://sites.wcsu.edu/mbxml/html/Intro_Crypto_Main.html"
     />
 
-    <description>
-        <p>A hands-on, original source, look at the evolution of cryptology.</p>
-    </description>
+    <onesentence>
+        A hands-on, original source, look at the evolution of cryptology.
+    </onesentence>
 
+    <!-- 
+    <description>
+        <p></p>
+    </description>
+     -->
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->

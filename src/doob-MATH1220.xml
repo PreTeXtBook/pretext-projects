@@ -154,12 +154,17 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
 
-    <description>
-        <p>A highly tailored linear algebra book to be used at
-	the University of Manitoba for students with mathematical
-	inclinations.</p>
-    </description>
+    <onesentence>
+        A highly tailored linear algebra book to be used at the University 
+        of Manitoba for students with mathematical inclinations.
+    </onesentence>
 
+    <!-- 
+    <description>
+        <p></p>
+    </description>
+     -->
+    
     <!-- Features (Binary) -->
 
     <!--   List of features, present or absent                        -->
