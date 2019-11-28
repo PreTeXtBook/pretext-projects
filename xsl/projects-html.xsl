@@ -66,8 +66,15 @@ interest to the individuals named above.
                     <xsl:with-param name="heading" select="'Humor'"/>
                     <xsl:with-param name="subject" select="'misc'"/>
                 </xsl:apply-templates>
-                 <xsl:apply-templates select="." mode="development">
+                <!-- All texts being converted, lumped together -->
+                 <xsl:apply-templates select="." mode="phase">
+                    <xsl:with-param name="heading" select="'Mature, Converting to PreTeXt'"/>
+                    <xsl:with-param name="phase" select="'converting'"/>
+                </xsl:apply-templates>
+                <!-- All texts under development, lumped together -->
+                 <xsl:apply-templates select="." mode="phase">
                     <xsl:with-param name="heading" select="'In Development'"/>
+                    <xsl:with-param name="phase" select="'develop'"/>
                 </xsl:apply-templates>
              </div>
             <xsl:apply-templates select="." mode="summary-stats"/>
@@ -81,7 +88,8 @@ interest to the individuals named above.
 
 <!-- Create multiple  div.category  holding multiple projects each -->
 
-<!-- Does not include character/@phase = 'develop' -->
+<!-- Restricted to character/@phase = 'ready' | 'mature' -->
+<!-- in order to exclude 'develop' & 'converting'        -->
 <xsl:template match="register" mode="subject-level">
     <xsl:param name="heading"/>
     <xsl:param name="subject"/>
@@ -101,16 +109,18 @@ interest to the individuals named above.
     </div>
 </xsl:template>
 
-<!-- *Everything* with character/@phase = 'develop' -->
-<!-- So no $subject or $level parameters            -->
-<xsl:template match="register" mode="development">
+<!-- *Everything* with character/@phase = $phase -->
+<!-- Meant for 'develop' and 'converting'        -->
+<!-- So no $subject or $level parameters         -->
+<xsl:template match="register" mode="phase">
     <xsl:param name="heading"/>
+    <xsl:param name="phase"/>
 
     <div class="category">
         <span class="title">
             <xsl:value-of select="$heading"/>
         </span>
-        <xsl:for-each select="project[character/@phase = 'ready']">
+        <xsl:for-each select="project[character/@phase = $phase]">
             <xsl:sort select="title"/>
             <xsl:apply-templates select="."/>
         </xsl:for-each>

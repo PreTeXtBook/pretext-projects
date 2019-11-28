@@ -126,7 +126,18 @@ interest to the individuals named above.
     <!--   @subject: math, cs, physics, engr,                         -->
     <!--             writing, music, doc, misc                        -->
     <!--   @level: secondary, ugld, ugud, grad, research              -->
-    <!--   @phase: develop, ready, mature                             -->
+    <!--   @phase: develop, ready, mature, converting                 -->
+    <!--     'develop'                                                -->
+    <!--        in-progress, not ready for other instructors          -->
+    <!--     'ready'                                                  -->
+    <!--        could be used for a course, but more work planned     -->
+    <!--     'mature'                                                 -->
+    <!--        useful and pedagogically complete now, even if        -->
+    <!--        more improvements are planned                         -->
+    <!--     'converting'                                             -->
+    <!--        ready/mature in another format, work in-progress      -->
+    <!--        for PreTeXt versions                                  -->
+
 
     <character 
         subject="math"
