@@ -134,12 +134,42 @@ interest to the individuals named above.
 <!-- Each project is a  div.book-summary -->
 
 <xsl:template match="project">
+    <!-- Determine a good link for title, in preference -->
+    <!-- @landing, @html, @pdf, @print, null            -->
+    <xsl:variable name="best-project-url">
+        <xsl:choose>
+            <xsl:when test="not(normalize-space(sites/@landing) = '')">
+                <xsl:value-of select="normalize-space(sites/@landing)"/>
+            </xsl:when>
+            <xsl:when test="not(normalize-space(sites/@html) = '')">
+                <xsl:value-of select="normalize-space(sites/@html)"/>
+            </xsl:when>
+            <xsl:when test="not(normalize-space(sites/@pdf) = '')">
+                <xsl:value-of select="normalize-space(sites/@pdf)"/>
+            </xsl:when>
+            <xsl:when test="not(normalize-space(sites/@print) = '')">
+                <xsl:value-of select="normalize-space(sites/@print)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <!-- project's div -->
     <div class="book-summary">
         <div class="biblio">
-            <a href="" class="title">
-                <xsl:apply-templates select="title"/>
-            </a>
+            <!-- Title as hyperlink if there is -->
+            <!-- a rational URL, else plain     -->
+            <xsl:choose>
+                <xsl:when test="not($best-project-url = '')">
+                    <a href="{$best-project-url}" class="title">
+                        <xsl:apply-templates select="title"/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="title"/>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:text>, </xsl:text>
             <span class="authors">
                 <xsl:apply-templates select="author"/>

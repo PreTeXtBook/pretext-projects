@@ -149,11 +149,23 @@ interest to the individuals named above.
 
     <!-- * optional, may choose to have all, some, or none            -->
     <!-- * these are all URLs, include the protocol (e.g., https://)  -->
-    <!-- * @landing is an overall project page                        -->
+    <!-- * @landing is dedicated project page, NOT your personal page -->
+    <!-- * @html                                                      -->
     <!-- * @pdf may be the actual PDF or a page with download links   -->
     <!-- * @print is a page with info, or link to a bookseller's page -->
     <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
     <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <!-- N.B. These are used preferentially to create the most        -->
+    <!-- obvious link to your project.  All will (eventually) be      -->
+    <!-- available, but may not be as obvious.  The ordering is       -->
+    <!--                                                              -->
+    <!--   @landing > @html > @pdf > @print > no link                 -->
+    <!--                                                              -->
+    <!-- So, in particular, do not point @landing to your personal    -->
+    <!-- home page.  Only use it to point to a page that is           -->
+    <!-- *dedicated* to your project and will give a visitor a clear  -->
+    <!-- choice of paths from there.                                  -->
 
     <sites
         landing="http://linear.pugetsound.edu/"
