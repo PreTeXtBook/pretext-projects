@@ -214,9 +214,12 @@ interest to the individuals named above.
     <!--   @answers (to exercises)                                    -->
     <!--   @solutions (to exercises)                                  -->
     <!--   @reading-questions                                         -->
+    <!--   @videos                                                    -->
     <!--   @webwork                                                   -->
     <!--   @worksheets                                                -->
     <!--   @projects                                                  -->
+    <!--   @accessible (particular attention paid to)                 -->
+    <!--   @self-study (amenable to)                                  -->
     <!--   @instructor-solutions                                      -->
     <!--   @instructor-guide                                          -->
     <!--   @test-bank                                                 -->
@@ -227,8 +230,11 @@ interest to the individuals named above.
         solutions="no"
         reading-questions="no"
         webwork="no"
+        videos="no"
         worksheets="no"
         projects="no"
+        accessible="no"
+        self-study="no"
         instructor-solutions="no"
         instructor-guide="no"
         test-bank="no"

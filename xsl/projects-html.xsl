@@ -559,6 +559,11 @@ interest to the individuals named above.
                 <span title="WeBWorK">WW</span>
                 <xsl:text> </xsl:text>
             </xsl:if>
+            <!-- Videos -->
+            <xsl:if test="features/@videos = 'yes'">
+                <span title="Videos">V</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
             <!-- Worksheets -->
             <xsl:if test="features/@worksheets = 'yes'">
                 <span title="Worksheets">W</span>
@@ -567,6 +572,16 @@ interest to the individuals named above.
             <!-- Projects -->
             <xsl:if test="features/@projects = 'yes'">
                 <span title="Projects">P</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Self-Study -->
+            <xsl:if test="features/@self-study = 'yes'">
+                <span title="Self Study">SS</span>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <!-- Accessible -->
+            <xsl:if test="features/@accessible = 'yes'">
+                <span title="Accessible">AC</span>
                 <xsl:text> </xsl:text>
             </xsl:if>
             <!-- Instructor Solutions -->
