@@ -204,11 +204,14 @@ interest to the individuals named above.
 </xsl:template>
 
 <xsl:template match="features">
+    <xsl:if test="@webwork = 'yes'">
+        <img class="badge" title="WeBWorK" src="images/webwork.png"/>
+    </xsl:if>
     <xsl:if test="@solutions = 'yes'">
         <img class="badge" title="Solutions" src="images/solutions.png"/>
     </xsl:if>
-    <xsl:if test="@solutions = 'yes'">
-        <img class="badge" title="Projects" src="images/projects.png"/>
+    <xsl:if test="@projects = 'yes'">
+        <img class="badge" title="Projects" src="images/projects.jpg"/>
     </xsl:if>
 </xsl:template>
 
