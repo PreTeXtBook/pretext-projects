@@ -205,18 +205,6 @@ interest to the individuals named above.
 
 <xsl:template match="features">
     <!--  -->
-    <xsl:if test="@hints = 'yes'">
-        <img class="badge" title="Hints" src="images/hints.png"/>
-    </xsl:if>
-    <!--  -->
-    <xsl:if test="@answers = 'yes'">
-        <img class="badge" title="Answers" src="images/answers.png"/>
-    </xsl:if>
-    <!--  -->
-    <xsl:if test="@solutions = 'yes'">
-        <img class="badge" title="Solutions" src="images/solutions.png"/>
-    </xsl:if>
-    <!--  -->
     <xsl:if test="@reading-questions = 'yes'">
         <img class="badge" title="Reading Questions" src="images/reading-questions.png"/>
     </xsl:if>
@@ -235,6 +223,18 @@ interest to the individuals named above.
     <!--  -->
     <xsl:if test="@projects = 'yes'">
         <img class="badge" title="Projects" src="images/projects.jpg"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@hints = 'yes'">
+        <img class="badge" title="Hints" src="images/hints.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@answers = 'yes'">
+        <img class="badge" title="Answers" src="images/answers.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@solutions = 'yes'">
+        <img class="badge" title="Solutions" src="images/solutions.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@accessible = 'yes'">
