@@ -14,6 +14,9 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="beezer-SCLA.xml"/>           <!-- 2019-11-28 -->
+    <xi:include href="boelkins-APC.xml"/>          <!-- 2019-11-28 -->
+    <xi:include href="simonds-MR.xml"/>            <!-- 2019-11-27 -->
     <xi:include href="diez-AHSS.xml"/>             <!-- 2019-11-27 -->
     <xi:include href="hartman-APEX.xml"/>          <!-- 2019-11-27 -->
     <xi:include href="crisman-NTIC.xml"/>          <!-- 2019-11-27 -->

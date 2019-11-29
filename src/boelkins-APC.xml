@@ -40,14 +40,14 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="beezer-FCLA" updated="2019-03-03">
+<project xml:id="boelkins-APC" updated="2019-11-28">
 
     <!-- Project Title -->
 
     <!-- title (required):                                            -->
     <!--   * complete project (book) title, capitalized               -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-    <title>A First Course in Linear Algebra</title>
+    <title>Active Prelude to Calculus</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
     <subtitle></subtitle>
@@ -78,9 +78,9 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://buzzard.ups.edu"> <!-- or mailto: -->
-        <displayname>Robert A. Beezer</displayname>
-        <affiliation>U of Puget Sound</affiliation>
+    <author url="http://faculty.gvsu.edu/boelkinm/"> <!-- or mailto: -->
+        <displayname>Matt Boelkins</displayname>
+        <affiliation>Grand Valley State University</affiliation>
     </author>
     <!-- multiple authors, all colleagues  -->
     <affiliation></affiliation>
@@ -111,11 +111,11 @@ interest to the individuals named above.
     <!--   * include a currency symbol                                -->
 
     <license 
-        code="GFDL"
-        variant="" 
+        code="CC"
+        variant="BY-SA" 
         version="" 
-        pub-year="2006"
-        price="$30.19"
+        pub-year="2019"
+        price="$16.95"
         />
 
     <!-- Character of the Project -->
@@ -156,20 +156,15 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="http://linear.pugetsound.edu/"
-        source="https://github.com/rbeezer/fcla"
-        html="http://linear.pugetsound.edu/fcla/"
-        pdf="http://linear.pugetsound.edu/download.html"
-        print="http://linear.pugetsound.edu/physical.html"
-        ancillary1=""
+        landing="https://activecalculus.org//"
+        source="https://github.com/active-calculus/prep"
+        html="https://activecalculus.org/prelude/"
+        pdf="https://scholarworks.gvsu.edu/books/20/"
+        print="https://www.amazon.com/dp/1085940853"
+        ancillary1="https://activecalculus.org/APC.html"
         />
 
     <!-- Description (Blurb) -->
-
-    <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
-    <!-- So use <i></i> for book titles and <a href=""></a> for       -->
-    <!-- hyperlinks.  (But note that the "sites" element is the       -->
-    <!-- best place to put links pointing to parts of  your project.  -->
 
     <!-- onesentence (required) -->
     <!--   * Likely visible, so short and succinct                    -->
@@ -187,23 +182,14 @@ interest to the individuals named above.
     <!--   * HTML respected, do use elements like <p>                 -->
 
     <onesentence>
-        One (not too long!) sentence that immediately tells an instructor if
-        this book has appropriate topics, at the appropriate level, for their course.
+        <i>Active Prelude</i> is designed for a preparatory course for students not yet ready to take calculus; it is especially suited to students who will later study from <i>Active Calculus</i>.
     </onesentence>
 
     <description>
-        <p>An <em>algebraic</em> approach to linear algebra.</p>
-        <p>And more!</p>
+        <p><em>Active Prelude to Calculus</em> is designed as a college-level preparatory text for students who aspire to take calculus and who either need to take a course to prepare them for calculus or want to do some additional self-study. In particular, the text is intended as an appropriate prerequisite base for students who will go on to study from <em>Active Calculus</em> while also encouraging and promoting an active learning approach. The HTML version of the text includes about 150 anonymous, interactive exercises; static versions of those problems are included in PDF and print. In addition, the text offers about 120 activities designed for student engagement in and out of class.  Learn more at <a href="https://activecalculus.org/APC.html"><tt>activecalculus.org/APC.html</tt></a>.</p>
     </description>
 
     <!-- Features (Binary) -->
-
-    <!-- N.B. It is the author or publisher who decides if a          -->
-    <!-- feature is prominent enough to warrant flagging that         -->
-    <!-- feature.  If every section has an introductory video         -->
-    <!-- then set  @videos='yes'. But if there are only two           -->
-    <!-- videos, and they are both tangential, then do not flag       -->
-    <!-- your project as having a significant video component.        -->
 
     <!--   List of features, present or absent                        -->
     <!--   * "feature" element is optional                            -->
@@ -214,12 +200,9 @@ interest to the individuals named above.
     <!--   @answers (to exercises)                                    -->
     <!--   @solutions (to exercises)                                  -->
     <!--   @reading-questions                                         -->
-    <!--   @videos                                                    -->
     <!--   @webwork                                                   -->
     <!--   @worksheets                                                -->
     <!--   @projects                                                  -->
-    <!--   @accessible (particular attention paid to)                 -->
-    <!--   @self-study (amenable to)                                  -->
     <!--   @instructor-solutions                                      -->
     <!--   @instructor-guide                                          -->
     <!--   @test-bank                                                 -->
@@ -229,12 +212,9 @@ interest to the individuals named above.
         answers="no"
         solutions="no"
         reading-questions="no"
-        webwork="no"
-        videos="no"
+        webwork="yes"
         worksheets="no"
         projects="no"
-        accessible="no"
-        self-study="no"
         instructor-solutions="no"
         instructor-guide="no"
         test-bank="no"
@@ -249,9 +229,10 @@ interest to the individuals named above.
     <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
     <!--                                                              -->
 
-    <recognition
+<!--    <recognition
         aim="no"
         />
+-->
 
     <!-- Awards -->
 
@@ -260,9 +241,11 @@ interest to the individuals named above.
     <!-- * can contain simple markup, additional URLs                 -->
     <!-- * a narrative description of any awards received             -->
 
+<!-- 
     <awards>
         <p>Full details of some <em>award</em> received!</p>
         <p>Second paragraph for second award.</p>
     </awards>
+-->    
 
 </project>
