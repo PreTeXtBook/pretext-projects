@@ -205,56 +205,76 @@ interest to the individuals named above.
 
 <xsl:template match="features">
     <!--  -->
-    <xsl:if test="@hints = 'yes'">
-        <img class="badge" title="Hints" src="images/hints.png"/>
+    <xsl:if test="@printed-book = 'yes'">
+        <img class="badge" title="Printed book" src="https://pretextbook.org/badges/printed-book.png"/>
     </xsl:if>
     <!--  -->
-    <xsl:if test="@answers = 'yes'">
-        <img class="badge" title="Answers" src="images/answers.png"/>
-    </xsl:if>
-    <!--  -->
-    <xsl:if test="@solutions = 'yes'">
-        <img class="badge" title="Solutions" src="images/solutions.png"/>
-    </xsl:if>
-    <!--  -->
-    <xsl:if test="@reading-questions = 'yes'">
-        <img class="badge" title="Reading Questions" src="images/reading-questions.png"/>
+    <xsl:if test="@pdf = 'yes'">
+        <img class="badge" title="PDF available" src="https://pretextbook.org/badges/redPDFadobe.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@videos = 'yes'">
-        <img class="badge" title="Videos" src="images/videos.png"/>
+        <img class="badge" title="Videos" src="https://pretextbook.org/badges/videos.jpg"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@webwork = 'yes'">
-        <img class="badge" title="WeBWorK" src="images/webwork.png"/>
+        <img class="badge" title="WeBWorK" src="https://pretextbook.org/badges/webwork.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@desmos = 'yes'">
+        <img class="badge" title="Desmos" src="https://pretextbook.org/badges/desmos.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@geogebra = 'yes'">
+        <img class="badge" title="Geogebra" src="https://pretextbook.org/badges/geogebra.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@reading-questions = 'yes'">
+        <img class="badge" title="Reading Questions" src="https://pretextbook.org/badges/reading-questions.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@worksheets = 'yes'">
-        <img class="badge" title="Worksheets" src="images/worksheets.png"/>
+        <img class="badge" title="Worksheets" src="https://pretextbook.org/badges/worksheets.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@projects = 'yes'">
-        <img class="badge" title="Projects" src="images/projects.jpg"/>
+        <img class="badge" title="Projects" src="https://pretextbook.org/badges/projects.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@hints = 'yes'">
+        <img class="badge" title="Hints" src="https://pretextbook.org/badges/hints.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@answers = 'yes'">
+        <img class="badge" title="Answers" src="https://pretextbook.org/badges/answers.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@solutions = 'yes'">
+        <img class="badge" title="Solutions" src="https://pretextbook.org/badges/solutions.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@accessible = 'yes'">
-        <img class="badge" title="Accessible" src="images/accessible.png"/>
+        <img class="badge" title="Accessible" src="https://pretextbook.org/badges/accessible.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@self-study = 'yes'">
-        <img class="badge" title="Self Study" src="images/self-study.png"/>
+        <img class="badge" title="Self Study" src="https://pretextbook.org/badges/self-study.jpg"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@group-activities = 'yes'">
+        <img class="badge" title="Group Activities" src="https://pretextbook.org/badges/group-activities.jpg"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@instructor-solutions = 'yes'">
-        <img class="badge" title="Instructor Solutions" src="images/instructor-solutions.png"/>
+        <img class="badge" title="Instructor Solutions" src="https://pretextbook.org/badges/instructor-guide.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@instructor-guide = 'yes'">
-        <img class="badge" title="Instructor Guide" src="images/instructor-guide.png"/>
+        <img class="badge" title="Instructor Guide" src="https://pretextbook.org/badges/instructor-guide.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@test-bank = 'yes'">
-        <img class="badge" title="Test Bank" src="images/test-bank.png"/>
+        <img class="badge" title="Test Bank" src="https://pretextbook.org/badges/test-bank.png"/>
     </xsl:if>
     <!--  -->
 </xsl:template>
@@ -268,13 +288,16 @@ interest to the individuals named above.
     <xsl:if test="@code = 'GFDL'">
         <img class="badge license" title="GNU Free Documentation License" src="https://pretextbook.org/badges/gfdl.png"/>
     </xsl:if>
+    <xsl:if test="@code = 'MIT'">
+        <img class="badge license" title="MIT Open Source License" src="https://pretextbook.org/badges/MiT_opensource.png"/>
+    </xsl:if>
     <!--  -->
     <xsl:if test="@code = 'all-rights'">
-        <img class="badge" title="All Rights Reserved" src="images/all-rights.png"/>
+        <img class="badge" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@code = 'public'">
-        <img class="badge" title="Public Domain" src="images/public.png"/>
+        <img class="badge" title="Public Domain" src="https://pretextbook.org/badges/public.png"/>
     </xsl:if>
     <!--  -->
 </xsl:template>
