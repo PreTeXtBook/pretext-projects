@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<project xml:id="green-MHPC" updated="2019-11-29">
+
+    <title>Precalculus</title>
+    <subtitle>An Active Reading Approach</subtitle>
+
+
+    <author url="mailto:jack.green@mhcc.edu "> <!-- or http(s):// -->
+        <displayname>Jack Green</displayname>
+        <affiliation>Mt.<nbsp/>Hood Community College</affiliation>
+    </author>
+
+    <author url="mailto:nickolas.chura@mhcc.edu "> <!-- or http(s):// -->
+        <displayname>Nick Chura</displayname>
+        <affiliation>Mt.<nbsp/>Hood Community College</affiliation>
+    </author>
+
+    <license 
+        code="CC"
+        variant="BY-SA" 
+        version="4.0" 
+        pub-year="2018"
+        />
+
+    <character 
+        subject="math"
+        level="ugld"
+        phase="ready"
+        />
+
+    <sites
+        landing="https://www.mhcc.edu/JackGreenMathematics/"
+        html="https://www.mhcc.edu/precalc1/"
+        />
+
+    <!-- Description (Blurb) -->
+
+    <!-- onesentence (required) -->
+    <!--   * Likely visible, so short and succinct                    -->
+    <!--   * "description" (following) will amplify the "onesentence" -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+
+    <onesentence>
+        This text aims to address all learning outcomes from the first course in Mt. Hood Community College's preacalculus sequence.
+    </onesentence>
+
+
+    <description>
+        <p>
+            Precalculus is taught at Mt.<nbsp/>Hood Community College over two 10-week courses.
+            This text aims to address all learning outcomes from the first course, suitable for use in a single 10-week term.
+        </p>
+    </description>
+
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="yes"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        geogebra="yes"
+        videos="no"
+        />
+
+    <!-- <recognition
+        /> -->
+</project>
