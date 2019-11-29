@@ -199,7 +199,7 @@ interest to the individuals named above.
 
 <xsl:template match="recognition">
     <xsl:if test="@aim = 'yes'">
-        <img class="badge" title="AIM Approved" src="https://pretextbook.org/badges/aim.png"/>
+        <img class="badge award" title="AIM Approved" src="https://pretextbook.org/badges/aim.png"/>
     </xsl:if>
 </xsl:template>
 
@@ -217,10 +217,10 @@ interest to the individuals named above.
 
 <xsl:template match="license">
     <xsl:if test="@code = 'CC'">
-        <img class="license" title="Creative Commons License" src="https://pretextbook.org/badges/cc.png"/>
+        <img class="badge license" title="Creative Commons License" src="https://pretextbook.org/badges/cc.png"/>
     </xsl:if>
     <xsl:if test="@code = 'GFDL'">
-        <img class="badge" title="GNU Free Documentation License" src="https://pretextbook.org/badges/gfdl.png"/>
+        <img class="badge license" title="GNU Free Documentation License" src="https://pretextbook.org/badges/gfdl.png"/>
     </xsl:if>
 </xsl:template>
 
