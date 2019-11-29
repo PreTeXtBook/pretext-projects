@@ -166,6 +166,11 @@ interest to the individuals named above.
 
     <!-- Description (Blurb) -->
 
+    <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
+    <!-- So use <i></i> for book titles and <a href=""></a> for       -->
+    <!-- hyperlinks.  (But note that the "sites" element is the       -->
+    <!-- best place to put links pointing to parts of  your project.  -->
+
     <!-- onesentence (required) -->
     <!--   * Likely visible, so short and succinct                    -->
     <!--   * "description" (following) will amplify the "onesentence" -->
