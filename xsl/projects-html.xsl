@@ -575,6 +575,9 @@ interest to the individuals named above.
                 <xsl:when test="character/@phase='develop'">
                     <xsl:text>Developing</xsl:text>
                 </xsl:when>
+                <xsl:when test="character/@phase='converting'">
+                    <xsl:text>Mature, Converting</xsl:text>
+                </xsl:when>
                 <xsl:when test="character/@phase='ready'">
                     <xsl:text>Complete, Evolving</xsl:text>
                 </xsl:when>
