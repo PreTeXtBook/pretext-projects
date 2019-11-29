@@ -198,6 +198,13 @@ interest to the individuals named above.
 
     <!-- Features (Binary) -->
 
+    <!-- N.B. It is the author or publisher who decides if a          -->
+    <!-- feature is prominent enough to warrant flagging that         -->
+    <!-- feature.  If every section has an introductory video         -->
+    <!-- then set  @videos='yes'. But if there are only two           -->
+    <!-- videos, and they are both tangential, then do not flag       -->
+    <!-- your project as having a significant video component.        -->
+
     <!--   List of features, present or absent                        -->
     <!--   * "feature" element is optional                            -->
     <!--   * Attribute value is 'yes' if present                      -->
