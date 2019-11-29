@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<project xml:id="beezer-SCLA" updated="2019-11-28">
+    <title>A Second Course in Linear Algebra</title>
+    <author url="http://buzzard.ups.edu">
+        <displayname>Robert A. Beezer</displayname>
+        <affiliation>U of Puget Sound</affiliation>
+    </author>
+    <license 
+        code="GFDL"
+        version="" 
+        pub-year="2004"
+        price=""
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="develop"
+        />
+    <sites
+        html="http://linear.ups.edu/scla/html/"
+        />
+        <!-- landing="" -->
+        <!-- source="" -->
+        <!-- pdf="" -->
+        <!-- print="" -->
+
+    <onesentence>
+        Advanced topics in linear algebra such as canonical forms, with an emphasis on topics inmportant for applications, such as the singular value decomposition and least squares fit.
+    </onesentence>
+
+    <description>
+        <p>The text begins with fundamentals such as invariant subspaces, refelctors, projectors, and positive semi-definite matrics.  A chapter on matrix decompositions includes LU, QR, SVD, and Cholesky, with Schur planned.  Canonical forms is mostly about Jordan canonical form, with plans for rational form.  The final two chapters are applications and further topics.</p>
+
+        <p>Notation agrees with, and cross-references point to, the author's <a href="http://linear.ups.edu/"><i>A First Course in Linear Algebra</i></a>.</p>
+    </description>
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
+    <recognition
+        aim="no"
+        />
+</project>
