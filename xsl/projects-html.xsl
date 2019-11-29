@@ -204,21 +204,79 @@ interest to the individuals named above.
 </xsl:template>
 
 <xsl:template match="features">
+    <!--  -->
+    <xsl:if test="@hints = 'yes'">
+        <img class="badge" title="Hints" src="images/hints.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@answers = 'yes'">
+        <img class="badge" title="Answers" src="images/answers.png"/>
+    </xsl:if>
+    <!--  -->
     <xsl:if test="@solutions = 'yes'">
         <img class="badge" title="Solutions" src="images/solutions.png"/>
     </xsl:if>
-    <xsl:if test="@solutions = 'yes'">
+    <!--  -->
+    <xsl:if test="@reading-questions = 'yes'">
+        <img class="badge" title="Reading Questions" src="images/reading-questions.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@videos = 'yes'">
+        <img class="badge" title="Videos" src="images/videos.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@webwork = 'yes'">
+        <img class="badge" title="WeBWorK" src="images/webwork.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@worksheets = 'yes'">
+        <img class="badge" title="Worksheets" src="images/worksheets.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@projects = 'yes'">
         <img class="badge" title="Projects" src="images/projects.png"/>
     </xsl:if>
+    <!--  -->
+    <xsl:if test="@accessible = 'yes'">
+        <img class="badge" title="Accessible" src="images/accessible.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@self-study = 'yes'">
+        <img class="badge" title="Self Study" src="images/self-study.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@instructor-solutions = 'yes'">
+        <img class="badge" title="Instructor Solutions" src="images/instructor-solutions.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@instructor-guide = 'yes'">
+        <img class="badge" title="Instructor Guide" src="images/instructor-guide.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@test-bank = 'yes'">
+        <img class="badge" title="Test Bank" src="images/test-bank.png"/>
+    </xsl:if>
+    <!--  -->
 </xsl:template>
 
 <xsl:template match="license">
+    <!--  -->
     <xsl:if test="@code = 'CC'">
         <img class="license" title="Creative Commons License" src="images/cc.png"/>
     </xsl:if>
+    <!--  -->
     <xsl:if test="@code = 'GFDL'">
         <img class="badge" title="GNU Free Documentation License" src="images/gfdl.png"/>
     </xsl:if>
+    <!--  -->
+    <xsl:if test="@code = 'all-rights'">
+        <img class="badge" title="All Rights Reserved" src="images/all-rights.png"/>
+    </xsl:if>
+    <!--  -->
+    <xsl:if test="@code = 'public'">
+        <img class="badge" title="Public Domain" src="images/public.png"/>
+    </xsl:if>
+    <!--  -->
 </xsl:template>
 
 
