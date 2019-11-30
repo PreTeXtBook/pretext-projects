@@ -44,6 +44,10 @@ interest to the individuals named above.
                     <xsl:with-param name="subject" select="'cs'"/>
                 </xsl:apply-templates>
                 <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Expository'"/>
+                    <xsl:with-param name="subject" select="'expository'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Documentation'"/>
                     <xsl:with-param name="subject" select="'doc'"/>
                 </xsl:apply-templates>
@@ -61,10 +65,6 @@ interest to the individuals named above.
                     <xsl:with-param name="subject" select="'writing'"/>
                 </xsl:apply-templates>
                  -->
-                <xsl:apply-templates select="." mode="subject-level">
-                    <xsl:with-param name="heading" select="'Humor'"/>
-                    <xsl:with-param name="subject" select="'misc'"/>
-                </xsl:apply-templates>
                 <!-- All texts being converted, lumped together -->
                  <xsl:apply-templates select="." mode="phase">
                     <xsl:with-param name="heading" select="'Mature, Converting to PreTeXt'"/>
@@ -396,6 +396,9 @@ interest to the individuals named above.
         <br/>
         <xsl:text>Documentation: </xsl:text>
         <xsl:value-of select="count(project/character[@subject='doc'])"/>
+        <br/>
+        <xsl:text>Expository: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='expository'])"/>
         <br/>
         <xsl:text>Miscellaneous: </xsl:text>
         <xsl:value-of select="count(project/character[@subject='misc'])"/>
