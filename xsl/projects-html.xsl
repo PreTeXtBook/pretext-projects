@@ -134,6 +134,15 @@ interest to the individuals named above.
 <!-- Each project is a  div.book-summary -->
 
 <xsl:template match="project">
+    <!-- Create complete title.  Documentation suggests no markup, -->
+    <!-- but we do our best to capture and reproduce any HTML      -->
+    <xsl:variable name="project-title">
+        <xsl:copy-of select="title/node()"/>
+        <xsl:if test ="subtitle/node()">
+            <xsl:text>: </xsl:text>
+            <xsl:copy-of select="subtitle/node()"/>
+        </xsl:if>
+    </xsl:variable>
     <!-- Determine a good link for title, in preference -->
     <!-- @landing, @html, @pdf, @print, null            -->
     <xsl:variable name="best-project-url">
@@ -163,11 +172,11 @@ interest to the individuals named above.
             <xsl:choose>
                 <xsl:when test="not($best-project-url = '')">
                     <a href="{$best-project-url}" class="title">
-                        <xsl:apply-templates select="title"/>
+                        <xsl:copy-of select="$project-title"/>
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:apply-templates select="title"/>
+                    <xsl:copy-of select="$project-title"/>
                 </xsl:otherwise>
             </xsl:choose>
             <xsl:text>, </xsl:text>

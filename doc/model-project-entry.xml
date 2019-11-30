@@ -50,7 +50,8 @@ interest to the individuals named above.
     <title>A First Course in Linear Algebra</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
-    <subtitle></subtitle>
+    <!--   * uncomment next line to employ                            -->
+    <!-- <subtitle></subtitle> -->
 
     <!-- Authors   -->
 
