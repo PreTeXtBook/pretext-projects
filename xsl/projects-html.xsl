@@ -300,6 +300,8 @@ interest to the individuals named above.
 </xsl:template>
 
 <xsl:template match="license">
+    <!-- TODO: Presumes just one now.  To expand, fence @code, -->
+    <!-- and adjust tests to be "contains()" fenced versions   -->
     <!--  -->
     <xsl:if test="@code = 'CC'">
         <img class="badge license" title="Creative Commons License" src="https://pretextbook.org/badges/cc.png"/>
@@ -318,6 +320,11 @@ interest to the individuals named above.
     <!--  -->
     <xsl:if test="@code = 'public'">
         <img class="badge license" title="Public Domain" src="https://pretextbook.org/badges/public.png"/>
+    </xsl:if>
+    <!--  -->
+    <!-- No specification is traditional copyright -->
+    <xsl:if test="normalize-space(@code) = ''">
+        <img class="badge license" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
     </xsl:if>
     <!--  -->
 </xsl:template>
@@ -402,11 +409,14 @@ interest to the individuals named above.
         <xsl:text>GFDL License: </xsl:text>
         <xsl:value-of select="count(project/license[@code='GFDL'])"/>
         <br/>
-        <xsl:text>All Rights Reserved: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='all-rights'])"/>
+        <xsl:text>MIT License: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='MIT'])"/>
         <br/>
-        <xsl:text>Not stated: </xsl:text>
-        <xsl:value-of select="$total - count(project/license/@code)"/>
+        <xsl:text>All Rights Reserved: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='all-rights']|project/license[normalize-space(@code)=''])"/>
+        <br/>
+        <xsl:text>Public Domain: </xsl:text>
+        <xsl:value-of select="count(project/license[@code='public'])"/>
         <br/>
     </p>
     <!-- Level -->

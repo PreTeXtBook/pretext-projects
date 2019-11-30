@@ -88,15 +88,28 @@ interest to the individuals named above.
 
     <!-- License/Terms of Distribution -->
 
-    <!-- * license refers to the status of editable source, not       -->
-    <!--   derived products.  Source could be a Word document, but    -->
-    <!--   a PDF is not an editable source                            -->
+    <!-- N.B. "license" refers to the status of editable source, not  -->
+    <!-- derived products.  Source could be a Word document, but      -->
+    <!-- a PDF is not an editable source                              -->
+
+    <!-- N.B. The license/@code attribute is required.  If you plan   -->
+    <!-- to have an open license, but are not decided, then your work -->
+    <!-- does not have license and traditional copyright ("All Rights -->
+    <!-- Reserved") applies.  That is what the law says, not our      -->
+    <!-- decision.  So you can set the "all-rights" value.  Or if you -->
+    <!-- prefer, leave the value of @code empty.  We will then report -->
+    <!-- "All Rights Reserved" in output.  Once you pick a license,   -->
+    <!-- update this entry.  While undecided, you are also welcome    -->
+    <!-- to explain your intentions as part of your free-form         -->
+    <!-- "description" entry.                                         -->
 
     <!-- license/@code (required)                                     -->
     <!--   * CC = Creative Commons                                    -->
     <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * MIT = MIT License                                        -->
     <!--   * all-rights = "All Rights Reserved", regular copyright    -->
     <!--   * public = Public Domain, no copyright                     -->
+    <!--   * <empty> = "All Rights Reserved", regular copyright       -->
     <!--   * request additional                                       -->
     <!-- license/@variant (CC only)                                   -->
     <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
