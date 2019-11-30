@@ -189,9 +189,9 @@ interest to the individuals named above.
             <div class="blurb">
                 <p>
                     <xsl:copy-of select="onesentence/node()"/>
-                    <!-- no optional"description",            -->
-                    <!-- then next template won't match       -->
-                    <!-- "description" hidden as "More" knowl -->
+                    <!-- no optional"description",                 -->
+                    <!-- then next template won't match            -->
+                    <!-- "description" hidden as "Read more" knowl -->
                     <xsl:apply-templates select="description"/>
                 </p>
             </div>
@@ -335,7 +335,7 @@ interest to the individuals named above.
     <a data-knowl="" class="id-ref" data-refid="hk-{$id}" title="Description">
         <!-- space after "onesentence" could be controlled by CSS -->
         <xsl:text> </xsl:text>
-        <xsl:text>More</xsl:text>
+        <xsl:text>Read more</xsl:text>
     </a>
     <div class="description-knowl" id="hk-{$id}">
         <article class="description">
