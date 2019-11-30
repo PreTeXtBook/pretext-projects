@@ -44,6 +44,10 @@ interest to the individuals named above.
                     <xsl:with-param name="subject" select="'cs'"/>
                 </xsl:apply-templates>
                 <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Engineering'"/>
+                    <xsl:with-param name="subject" select="'engr'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Expository'"/>
                     <xsl:with-param name="subject" select="'expository'"/>
                 </xsl:apply-templates>
@@ -387,6 +391,9 @@ interest to the individuals named above.
         <br/>
         <xsl:text>Computer Science: </xsl:text>
         <xsl:value-of select="count(project/character[@subject='cs'])"/>
+        <br/>
+        <xsl:text>Engineering: </xsl:text>
+        <xsl:value-of select="count(project/character[@subject='engr'])"/>
         <br/>
         <xsl:text>Music: </xsl:text>
         <xsl:value-of select="count(project/character[@subject='music'])"/>
