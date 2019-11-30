@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<project xml:id="beezer-EEFFS" updated="2019-11-30">
+    <title>Extended Echelon Form and Four Subspaces</title>
+    <author url="http://buzzard.ups.edu">
+        <displayname>Robert A. Beezer</displayname>
+        <affiliation>U of Puget Sound</affiliation>
+    </author>
+    <license 
+        code="all-rights"
+        pub-year="2014"
+        />
+    <character 
+        subject="expository"
+        phase="mature"
+        />
+    <sites
+        html="http://buzzard.ups.edu/papers/2014-extended-echelon-form/html/index.html"
+        pdf="http://buzzard.ups.edu/papers/2014-extended-echelon-form/amer.math.monthly.121.07.644-beezer.pdf"
+        />
+    <onesentence>
+        The first real PreTeXt project - an expository article on linear algebra published in the <i>American Mathematical Monthly</i>.
+    </onesentence>
+
+    <description>
+        <p>This short expository note was authored in PreTeXt early in the development of PreTeXt itself (Summer&#xa0;2013).  The LaTeX output required very few adjustments to be acceptable to the journal's editorial processes.</p>
+
+        <p>The XML source has been updated to reflect early changes in PreTeXt, and the HTML output was last built in March&#xa0;2015.  As of early 2020 the online version seems to still be rendering just fine, a testimony to certain fundamental technical decisions.</p>
+    </description>
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+    <recognition
+        aim="no"
+        />
+</project>
