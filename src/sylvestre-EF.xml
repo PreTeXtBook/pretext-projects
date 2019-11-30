@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+
+<project xml:id="sylvestre-DLA" updated="2019-11-29">
+    <title>Elementary Foundations</title>
+    <subtitle>An Introduction to Topics in Discrete Mathematics</subtitle>
+    <author url="https://sites.ualberta.ca/~jsylvest/"> <!-- or mailto: -->
+        <displayname>Jeremy Sylvestre</displayname>
+        <affiliation>U of Alberta (Augustana Campus)</affiliation>
+    </author>
+    <license 
+        code="GFDL"
+        variant="" 
+        version="" 
+        pub-year="2010"
+        price=""
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="converting"
+        />
+    <sites
+        landing="https://sites.ualberta.ca/~jsylvest/books/ef.html"
+        source=""
+        html="https://sites.ualberta.ca/~jsylvest/books/EF/"
+        />
+    <description>
+        <p>Introductory material in each of logic, set theory, graph theory, and combinatorics.</p>
+        <p>Includes worksheets for in-class activities suitable for a partially-flipped classroom.</p>
+    </description>
+
+    <onesentence>
+        Textbook for a typical selection of topics in discrete mathematics,
+        with a focus on developing mathematical logic skills.
+    </onesentence>
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        worksheets="yes"
+        projects="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+</project>
+
