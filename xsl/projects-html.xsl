@@ -382,74 +382,78 @@ interest to the individuals named above.
     <!-- Total Projects -->
     <p>
         <xsl:value-of select="$total"/>
-        <xsl:text> projects.</xsl:text>
+        <xsl:text> projects:</xsl:text>
     </p>
-    <!-- Subjects -->
-    <p>
-        <xsl:text>Mathematics: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='math'])"/>
-        <br/>
-        <xsl:text>Computer Science: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='cs'])"/>
-        <br/>
-        <xsl:text>Engineering: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='engr'])"/>
-        <br/>
-        <xsl:text>Music: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='music'])"/>
-        <br/>
-        <xsl:text>Writing: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='writing'])"/>
-        <br/>
-        <xsl:text>Documentation: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='doc'])"/>
-        <br/>
-        <xsl:text>Expository: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='expository'])"/>
-        <br/>
-        <xsl:text>Miscellaneous: </xsl:text>
-        <xsl:value-of select="count(project/character[@subject='misc'])"/>
-        <br/>
-    </p>
-    <!-- Licenses -->
-    <p>
-        <xsl:text>CC License: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='CC'])"/>
-        <br/>
-        <xsl:text>GFDL License: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='GFDL'])"/>
-        <br/>
-        <xsl:text>MIT License: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='MIT'])"/>
-        <br/>
-        <xsl:text>All Rights Reserved: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='all-rights']|project/license[normalize-space(@code)=''])"/>
-        <br/>
-        <xsl:text>Public Domain: </xsl:text>
-        <xsl:value-of select="count(project/license[@code='public'])"/>
-        <br/>
-    </p>
-    <!-- Level -->
-    <p>
-        <xsl:text>Secondary: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='secondary'])"/>
-        <br/>
-        <xsl:text>Undergraduate, Lower-Division: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='ugld'])"/>
-        <br/>
-        <xsl:text>Undergraduate, Upper-Division: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='ugud'])"/>
-        <br/>
-        <xsl:text>Graduate: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='grad'])"/>
-        <br/>
-        <xsl:text>Research: </xsl:text>
-        <xsl:value-of select="count(project/character[@level='research'])"/>
-        <br/>
-        <xsl:text>Not stated: </xsl:text>
-        <xsl:value-of select="$total - count(project/character/@level)"/>
-        <br/>
-    </p>
+    <table>
+        <tr>
+            <!-- Subjects -->
+            <td style="vertical-align:top;padding-right:20px;">
+                <xsl:text>Mathematics: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='math'])"/>
+                <br/>
+                <xsl:text>Computer Science: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='cs'])"/>
+                <br/>
+                <xsl:text>Engineering: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='engr'])"/>
+                <br/>
+                <xsl:text>Music: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='music'])"/>
+                <br/>
+                <xsl:text>Writing: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='writing'])"/>
+                <br/>
+                <xsl:text>Documentation: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='doc'])"/>
+                <br/>
+                <xsl:text>Expository: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='expository'])"/>
+                <br/>
+                <xsl:text>Miscellaneous: </xsl:text>
+                <xsl:value-of select="count(project/character[@subject='misc'])"/>
+                <br/>
+            </td>
+            <!-- Licenses -->
+            <td style="vertical-align:top;padding-right:20px;">
+                <xsl:text>CC License: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='CC'])"/>
+                <br/>
+                <xsl:text>GFDL License: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='GFDL'])"/>
+                <br/>
+                <xsl:text>MIT License: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='MIT'])"/>
+                <br/>
+                <xsl:text>All Rights Reserved: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='all-rights']|project/license[normalize-space(@code)=''])"/>
+                <br/>
+                <xsl:text>Public Domain: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='public'])"/>
+                <br/>
+            </td>
+            <!-- Level -->
+            <td style="vertical-align:top;">
+                <xsl:text>Secondary: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='secondary'])"/>
+                <br/>
+                <xsl:text>Undergraduate, Lower-Division: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='ugld'])"/>
+                <br/>
+                <xsl:text>Undergraduate, Upper-Division: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='ugud'])"/>
+                <br/>
+                <xsl:text>Graduate: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='grad'])"/>
+                <br/>
+                <xsl:text>Research: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='research'])"/>
+                <br/>
+                <xsl:text>Not stated: </xsl:text>
+                <xsl:value-of select="$total - count(project/character/@level)"/>
+                <br/>
+            </td>
+        </tr>
+    </table>
 </xsl:template>
 
 </xsl:stylesheet>
