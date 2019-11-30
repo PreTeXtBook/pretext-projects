@@ -109,15 +109,16 @@ interest to the individuals named above.
     <!--   * if availabe in physical form, the least expensive format -->
     <!--   * include a currency symbol                                -->
 
-    <!-- Still thinking about license - commented out
+    <!-- Still thinking about license - commented out originally      -->
+    <!-- Blank @code yields traditional copyright                     -->
 
     <license 
-        code="GFDL"
+        code=""
         variant="" 
         version="" 
-        pub-year="2006"
-        price="$30.19"
-        /> !-->
+        /> 
+        <!-- pub-year="2006" -->
+        <!-- price="$30.19" -->
 
     <!-- Character of the Project -->
 
