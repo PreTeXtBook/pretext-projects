@@ -313,11 +313,11 @@ interest to the individuals named above.
     </xsl:if>
     <!--  -->
     <xsl:if test="@code = 'all-rights'">
-        <img class="badge" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
+        <img class="badge license" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@code = 'public'">
-        <img class="badge" title="Public Domain" src="https://pretextbook.org/badges/public.png"/>
+        <img class="badge license" title="Public Domain" src="https://pretextbook.org/badges/public.png"/>
     </xsl:if>
     <!--  -->
 </xsl:template>
