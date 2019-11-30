@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="sklar-FSAA.xml"/>                <!-- 2019-11-30 -->
     <xi:include href="sylvestre-EF.xml"/>              <!-- 2019-11-29 -->
     <xi:include href="green-MHPC.xml"/>            <!-- 2019-11-29 -->
     <xi:include href="beezer-SCLA.xml"/>           <!-- 2019-11-28 -->
