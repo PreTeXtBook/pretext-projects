@@ -110,10 +110,9 @@ interest to the individuals named above.
     <!--   * include a currency symbol                                -->
 
     <!-- Still thinking about license - commented out originally      -->
-    <!-- Blank @code yields traditional copyright                     -->
 
     <license 
-        code=""
+        code="undecided"
         variant="" 
         version="" 
         /> 
