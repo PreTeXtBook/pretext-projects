@@ -84,7 +84,7 @@ interest to the individuals named above.
         <affiliation>SUNY, Fredonia</affiliation>
     </author>
     <author url="http://personal.psu.edu/ecb5/"> <!-- or mailto: -->
-        <displayname>Eugene C.Boman</displayname>
+        <displayname>Eugene C. Boman</displayname>
         <affiliation>Penn State U (Harrisburg Campus)</affiliation>
     </author>
     <!-- multiple authors, all colleagues  -->
@@ -129,11 +129,11 @@ interest to the individuals named above.
     <!--   * include a currency symbol                                -->
 
     <license 
-        code=""
+        code="CC"
+        variant="BY-NC-SA" 
+        pub-year="2014"
         />
-        <!-- variant=""  -->
         <!-- version=""  -->
-        <!-- pub-year="" -->
         <!-- price="" -->
 
     <!-- Character of the Project -->
@@ -159,7 +159,7 @@ interest to the individuals named above.
 
     <character 
         subject="math"
-        level="ugld"
+        level="ugud"
         phase="mature"
         />
 
@@ -217,7 +217,7 @@ interest to the individuals named above.
     <!--   * HTML respected, do use elements like <p>                 -->
 
     <onesentence>
-        An historical accurate introduction to real analysis for undergraduates.
+        An historically accurate introduction to real analysis for undergraduates.
     </onesentence>
 
     <description>
