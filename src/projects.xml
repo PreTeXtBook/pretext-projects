@@ -59,6 +59,6 @@ interest to the individuals named above.
     <xi:include href="hitchman-eight.xml"/>               <!-- 2019-04-16 -->
     <xi:include href="nordstrom-IGT.xml"/>                  <!-- 2019-04-16 -->
     <xi:include href="pcc-ORCCA.xml"/>                  <!-- 2019-03-31 -->
-    <xi:include href="beezer-FCLA.xml"/>                  <!-- 2019-03-03 -->
+    <xi:include href="beezer-FCLA.xml"/>                <!-- 2019-03-03 -->
     <xi:include href="fitzpatrick-LAWS"/>                 <!--2019-11-30 -->
 </register>
