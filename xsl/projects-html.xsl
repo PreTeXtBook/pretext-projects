@@ -320,7 +320,8 @@ interest to the individuals named above.
         <img class="badge license" title="MIT Open Source License" src="https://pretextbook.org/badges/MiT_opensource.png"/>
     </xsl:if>
     <!--  -->
-    <xsl:if test="@code = 'all-rights'">
+    <!-- 'undecided displays as traditional copyright -->
+    <xsl:if test="(@code = 'all-rights') or (@code = 'undecided')">
         <img class="badge license" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
     </xsl:if>
     <!--  -->
@@ -328,7 +329,7 @@ interest to the individuals named above.
         <img class="badge license" title="Public Domain" src="https://pretextbook.org/badges/public.png"/>
     </xsl:if>
     <!--  -->
-    <!-- No specification is traditional copyright -->
+    <!-- No specification is traditional copyright, source should be 'undecided' -->
     <xsl:if test="normalize-space(@code) = ''">
         <img class="badge license" title="All Rights Reserved" src="https://pretextbook.org/badges/copyright.jpg"/>
     </xsl:if>
@@ -427,10 +428,13 @@ interest to the individuals named above.
                 <xsl:value-of select="count(project/license[@code='MIT'])"/>
                 <br/>
                 <xsl:text>All Rights Reserved: </xsl:text>
-                <xsl:value-of select="count(project/license[@code='all-rights']|project/license[normalize-space(@code)=''])"/>
+                <xsl:value-of select="count(project/license[@code='all-rights'])"/>
                 <br/>
                 <xsl:text>Public Domain: </xsl:text>
                 <xsl:value-of select="count(project/license[@code='public'])"/>
+                <br/>
+                <xsl:text>Undecided/In-Progress: </xsl:text>
+                <xsl:value-of select="count(project/license[@code='undecided']|project/license[normalize-space(@code)=''])"/>
                 <br/>
             </td>
             <!-- Level -->
