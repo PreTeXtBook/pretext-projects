@@ -50,7 +50,7 @@ interest to the individuals named above.
         <onesentence>Expository writing, with tongue in cheek.</onesentence>
     </exemplar>
     <!--  -->
-   <exemplar ref="hutchinson-mt21c" best-url="html" poster="">
+   <exemplar ref="hutchinson-mt21c" best-url="html" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/On_the_Banks_of_the_Wabash%2C_Far_Away%2C_chorus_sheet_music.jpg/366px-On_the_Banks_of_the_Wabash%2C_Far_Away%2C_chorus_sheet_music.jpg">
         <onesentence>PreTeXt is not just for STEM.</onesentence>
     </exemplar>
     <!--  -->
