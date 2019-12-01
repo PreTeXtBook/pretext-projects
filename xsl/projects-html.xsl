@@ -180,7 +180,9 @@ interest to the individuals named above.
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:copy-of select="$project-title"/>
+                    <span class="title">
+                        <xsl:copy-of select="$project-title"/>
+                    </span>
                 </xsl:otherwise>
             </xsl:choose>
             <xsl:text>, </xsl:text>
