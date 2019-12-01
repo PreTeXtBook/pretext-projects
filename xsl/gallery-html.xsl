@@ -18,7 +18,7 @@ interest to the individuals named above.
 <!-- But with a pointer back to the project entry, we can mine all that. -->
 <xsl:variable name="gallery-rtf">
     <!--  -->
-    <exemplar ref="FRY-CLP1" best-url="landing" poster="clp1-cover.svg">
+    <exemplar ref="FRY-CLP1" best-url="landing" poster="http://www.math.ubc.ca/~CLP/images/clp1-cover.svg">
         <onesentence>First of four volumes of traditional calculus from the University of British Columbia.</onesentence>
      </exemplar>
 
