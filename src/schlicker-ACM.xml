@@ -152,7 +152,7 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="https://activecalculus.org/ACM"
+        landing="https://activecalculus.org/ACM.html"
         source="https://github.com/StevenSchlicker/AC3"
         html="https://activecalculus.org/multi/"
         pdf="https://scholarworks.gvsu.edu/books/19/"
