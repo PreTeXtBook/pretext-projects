@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="boman-ASORA" updated="2019-11-30">
+
+    <!-- Project Title -->
+
+    <!-- title (required):                                            -->
+    <!--   * complete project (book) title, capitalized               -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+    <title>How We Got From There To Here</title>
+    <!-- subtitle (optional):                                         -->
+    <!--   * same formatting as "title"                               -->
+    <!--   * uncomment next line to employ                            -->
+    <subtitle>A Story of Real Analysis</subtitle>
+
+    <!-- Authors   -->
+
+    <!--   * there may be multiple authors, order here will           -->
+    <!--     be respected                                             -->
+    <!--   * each author may have an affiliation, or a group of       -->
+    <!--     colleagues may specify a single overall affiliation.     -->
+    <!--     Do not mix these mechanisms, one or the other            -->
+
+    <!-- author (at least one required)                               -->
+
+    <!-- author/@url (optional)                                       -->
+    <!--   * include protocol (i.e. https://)                         -->
+    <!--   * can be a "mailto:" (e.g. mailto:beezer@ups.edu)          -->
+
+    <!-- author/displayname (required)                                -->
+    <!--   * as suggested, full name in order as written              -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- author/affiliation (optional)                                -->
+    <!--   * use "U" for university, "C" for college, etc             -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- affiliation (optional)                                       -->
+    <!--   * ALL authors at the same institution                      -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <author url="https://sites.google.com/a/fredonia.edu/rcubed/home"> <!-- or mailto: -->
+        <displayname>Robert Rogers</displayname>
+        <affiliation>SUNY, Fredonia</affiliation>
+    </author>
+    <author url="http://personal.psu.edu/ecb5/"> <!-- or mailto: -->
+        <displayname>Eugene C.Boman</displayname>
+        <affiliation>Penn State U (Harrisburg Campus)</affiliation>
+    </author>
+    <!-- multiple authors, all colleagues  -->
+    <affiliation></affiliation>
+
+    <!-- License/Terms of Distribution -->
+
+    <!-- N.B. "license" refers to the status of editable source, not  -->
+    <!-- derived products.  Source could be a Word document, but      -->
+    <!-- a PDF is not an editable source                              -->
+
+    <!-- N.B. The license/@code attribute is required.  If you plan   -->
+    <!-- to have an open license, but are not decided, then your work -->
+    <!-- does not have license and traditional copyright ("All Rights -->
+    <!-- Reserved") applies.  That is what the law says, not our      -->
+    <!-- decision.  So you can set the "all-rights" value.  Or if you -->
+    <!-- prefer, leave the value of @code empty.  We will then report -->
+    <!-- "All Rights Reserved" in output.  Once you pick a license,   -->
+    <!-- update this entry.  While undecided, you are also welcome    -->
+    <!-- to explain your intentions as part of your free-form         -->
+    <!-- "description" entry.                                         -->
+
+    <!-- license/@code (required)                                     -->
+    <!--   * CC = Creative Commons                                    -->
+    <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * MIT = MIT License                                        -->
+    <!--   * all-rights = "All Rights Reserved", regular copyright    -->
+    <!--   * public = Public Domain, no copyright                     -->
+    <!--   * <empty> = "All Rights Reserved", regular copyright       -->
+    <!--   * request additional                                       -->
+    <!-- license/@variant (CC only)                                   -->
+    <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
+
+    <!-- license/@version (optional)                                  -->
+    <!--   * the version of the *license*, if applicable/important    -->
+
+    <!-- license/pub-year (optional)                                  -->
+    <!--   * first year copyright asserted, in any format             -->
+
+    <!-- license/price (optional)                                     -->
+    <!--   * if availabe in physical form, the least expensive format -->
+    <!--   * include a currency symbol                                -->
+
+    <license 
+        code=""
+        />
+        <!-- variant=""  -->
+        <!-- version=""  -->
+        <!-- pub-year="" -->
+        <!-- price="" -->
+
+    <!-- Character of the Project -->
+
+    <!-- * these are all codes, use literally                         -->
+    <!-- * send requests to enable new ones                           -->
+    <!--                                                              -->
+    <!--   @subject: math, cs, physics, engr,                         -->
+    <!--             writing, music, doc, expository, misc            -->
+    <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--   @phase: develop, ready, mature, converting                 -->
+    <!--     'develop'                                                -->
+    <!--        in-progress, not ready for other instructors          -->
+    <!--     'ready'                                                  -->
+    <!--        could be used for a course, but more work planned     -->
+    <!--     'mature'                                                 -->
+    <!--        useful and pedagogically complete now, even if        -->
+    <!--        more improvements are planned                         -->
+    <!--     'converting'                                             -->
+    <!--        ready/mature in another format, work in-progress      -->
+    <!--        for PreTeXt versions                                  -->
+
+
+    <character 
+        subject="math"
+        level="ugld"
+        phase="mature"
+        />
+
+    <!-- Pointers to Project Resources Online -->
+
+    <!-- * optional, may choose to have all, some, or none            -->
+    <!-- * these are all URLs, include the protocol (e.g., https://)  -->
+    <!-- * @landing is dedicated project page, NOT your personal page -->
+    <!-- * @html                                                      -->
+    <!-- * @pdf may be the actual PDF or a page with download links   -->
+    <!-- * @print is a page with info, or link to a bookseller's page -->
+    <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
+    <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <!-- N.B. These are used preferentially to create the most        -->
+    <!-- obvious link to your project.  All will (eventually) be      -->
+    <!-- available, but may not be as obvious.  The ordering is       -->
+    <!--                                                              -->
+    <!--   @landing > @html > @pdf > @print > no link                 -->
+    <!--                                                              -->
+    <!-- So, in particular, do not point @landing to your personal    -->
+    <!-- home page.  Only use it to point to a page that is           -->
+    <!-- *dedicated* to your project and will give a visitor a clear  -->
+    <!-- choice of paths from there.                                  -->
+
+    <sites
+        html="http://personal.psu.edu/ecb5/ASORA/"
+        />
+        <!-- landing="" -->
+        <!-- source="" -->
+        <!-- pdf="" -->
+        <!-- print="" -->
+        <!-- ancillary1="" -->
+
+    <!-- Description (Blurb) -->
+
+    <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
+    <!-- So use <i></i> for book titles and <a href=""></a> for       -->
+    <!-- hyperlinks.  (But note that the "sites" element is the       -->
+    <!-- best place to put links pointing to parts of  your project.  -->
+
+    <!-- onesentence (required) -->
+    <!--   * Likely visible, so short and succinct                    -->
+    <!--   * "description" (following) will amplify the "onesentence" -->
+    <!--   * HTML respected (e.g. <i> for italics), do not use an     -->
+    <!--     overall element (e.g. <p>) to surround entire sentence   -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+    <!--   * HTML respected, do use elements like <p>                 -->
+
+    <onesentence>
+        An historical accurate introduction to real analysis for undergraduates.
+    </onesentence>
+
+    <description>
+
+        <p>The typical introductory real analysis text starts with an analysis of the real number system and uses this to develop the definition of a limit, which is then used as a foundation for the definitions encountered thereafter. While this is certainly a reasonable approach from a logical point of view, it is not how the subject evolved, nor is it necessarily the best way to introduce students to the rigorous but highly non-intuitive definitions and proofs found in analysis.</p>
+
+
+        <p>This book proposes that an effective way to motivate these definitions is to tell one of the stories (there are many) of the historical development of the subject, from its intuitive beginnings to modern rigor. The definitions and techniques are motivated by the actual difficulties encountered by the intuitive approach and are presented in their historical context. However, this is not a history of analysis book. It is an introductory analysis textbook, presented through the lens of history. As such, it does not simply insert historical snippets to supplement the material. The history is an integral part of the topic, and students are asked to solve problems that occur as they arise in their historical context.</p>
+
+
+        <p>This book covers the major topics typically addressed in an introductory undergraduate course in real analysis in their historical order. Written with the student in mind, the book provides guidance for transforming an intuitive understanding into rigorous mathematical arguments. For example, in addition to more traditional problems, major theorems are often stated and a proof is outlined. The student is then asked to fill in the missing details as a homework problem.</p>
+    </description>
+
+    <!-- Features (Binary) -->
+
+    <!-- N.B. It is the author or publisher who decides if a          -->
+    <!-- feature is prominent enough to warrant flagging that         -->
+    <!-- feature.  If every section has an introductory video         -->
+    <!-- then set  @videos='yes'. But if there are only two           -->
+    <!-- videos, and they are both tangential, then do not flag       -->
+    <!-- your project as having a significant video component.        -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises)                                      -->
+    <!--   @answers (to exercises)                                    -->
+    <!--   @solutions (to exercises)                                  -->
+    <!--   @reading-questions                                         -->
+    <!--   @videos                                                    -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @accessible (particular attention paid to)                 -->
+    <!--   @self-study (amenable to)                                  -->
+    <!--   @instructor-solutions                                      -->
+    <!--   @instructor-guide                                          -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="no"
+        worksheets="no"
+        projects="no"
+        accessible="no"
+        self-study="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="no"
+        />
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+<!--     <awards>
+        <p>Full details of some <em>award</em> received!</p>
+        <p>Second paragraph for second award.</p>
+    </awards>
+ -->
+</project>
