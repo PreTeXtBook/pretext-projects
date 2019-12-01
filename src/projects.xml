@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="baker-statics.xml"/>         <!-- 2019-12-01 -->
     <xi:include href="schlicker-ACM.xml"/>         <!-- 2019-12-01 -->
     <xi:include href="fitzpatrick-LAWS.xml"/>      <!--2019-11-30 -->
     <xi:include href="miller-DMCS.xml"/>           <!-- 2019-11-30 -->
