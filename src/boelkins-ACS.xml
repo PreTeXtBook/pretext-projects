@@ -151,9 +151,9 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="https://activecalculus.org"
+        landing="https://activecalculus.org/APC.html"
         source="https://github.com/active-calculus/active-calculus-single-mbx/"
-        html="https://activecalculus.org/single/index.html"
+        html="https://activecalculus.org/single/"
         pdf="https://scholarworks.gvsu.edu/books/18/"
         print="https://amzn.to/2QE4f4a"
         ancillary1="https://amzn.to/2XqtkSW"
@@ -198,11 +198,8 @@ interest to the individuals named above.
       <a title="https://activecalculus.org/single/preface-2.html" href="https://activecalculus.org/single/preface-2.html">in the preface</a>.
       </p>
       <p><em>Active Calculus - single variable</em> has been publicly available since August 2012.
-      The PDF version has been downloaded over 80,000 times since August 2014.
-      The author maintains an email list of interested users and communicates a few times a year with updates to the community.
-      Carroll College (Helena, MT) was an early adopter of the text and their faculty have made <a title="http://opencalculus.wordpress.com/2014/08/10/carroll-college-clicker-questions-and-chapter-zero-for-active-calculus/" href="http://opencalculus.wordpress.com/2014/08/10/carroll-college-clicker-questions-and-chapter-zero-for-active-calculus/">some useful additions</a> including a Chapter 0 precalculus review,
-      clicker questions for the entire text,
-      and a couple of additional sections on modeling with difference equations.</p>
+      The PDF version has been downloaded over 120,000 times since August 2014 (though most users now prefer the HTML version).
+      The author maintains an email list of interested users and communicates a few times a year with updates to the community. </p>
     </description>
 
     <onesentence>
