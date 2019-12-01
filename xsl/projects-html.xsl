@@ -292,7 +292,7 @@ interest to the individuals named above.
     </xsl:if>
     <!--  -->
     <xsl:if test="@instructor-solutions = 'yes'">
-        <img class="badge" title="Instructor Solutions" src="https://pretextbook.org/badges/instructor-guide.png"/>
+        <img class="badge" title="Instructor Solutions" src="https://pretextbook.org/badges/instructor-solutions.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@instructor-guide = 'yes'">
