@@ -222,7 +222,18 @@ interest to the individuals named above.
     <xsl:if test="preceding-sibling::author">
         <xsl:text>, </xsl:text>
     </xsl:if>
-    <xsl:apply-templates select="displayname"/>
+    <xsl:choose>
+        <!-- hyperlinked -->
+        <xsl:when test="not(normalize-space(@url) = '')">
+            <a href="{@url}">
+                <xsl:apply-templates select="displayname"/>
+            </a>
+        </xsl:when>
+        <!-- plain -->
+        <xsl:otherwise>
+            <xsl:apply-templates select="displayname"/>
+        </xsl:otherwise>
+    </xsl:choose>
 </xsl:template>
 
 
