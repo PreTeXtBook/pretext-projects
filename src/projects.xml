@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="hansen-DLD.xml"/>                    <!-- 2019-12-02 -->
     <xi:include href="boman-CPT.xml"/>                     <!-- 2019-11-25 -->
     <xi:include href="NES-MP.xml"/>                        <!-- 2019-11-25 -->
     <xi:include href="EPADEL-BL.xml"/>                     <!-- 2019-11-25 -->
