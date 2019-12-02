@@ -276,11 +276,11 @@ interest to the individuals named above.
     </xsl:if>
     <!--  -->
     <xsl:if test="@answers = 'yes'">
-        <img class="badge" title="Answers" src="https://pretextbook.org/badges/answers.png"/>
+        <img class="badge" title="Student Answers" src="https://pretextbook.org/badges/answers.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@solutions = 'yes'">
-        <img class="badge" title="Solutions" src="https://pretextbook.org/badges/solutions.png"/>
+        <img class="badge" title="Student Solutions" src="https://pretextbook.org/badges/solutions.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@accessible = 'yes'">
@@ -288,7 +288,7 @@ interest to the individuals named above.
     </xsl:if>
     <!--  -->
     <xsl:if test="@self-study = 'yes'">
-        <img class="badge" title="Self Study" src="https://pretextbook.org/badges/self-study.jpg"/>
+        <img class="badge" title="Self Study" src="https://pretextbook.org/badges/self-study.png"/>
     </xsl:if>
     <!--  -->
     <xsl:if test="@group-activities = 'yes'">
