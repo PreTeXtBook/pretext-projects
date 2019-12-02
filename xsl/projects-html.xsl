@@ -55,6 +55,10 @@ interest to the individuals named above.
                     <xsl:with-param name="heading" select="'Documentation'"/>
                     <xsl:with-param name="subject" select="'doc'"/>
                 </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Miscellaneous'"/>
+                    <xsl:with-param name="subject" select="'misc'"/>
+                </xsl:apply-templates>
                 <!-- all "music" are under development -->
                 <!-- 
                 <xsl:apply-templates select="." mode="subject-level">
