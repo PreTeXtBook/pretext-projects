@@ -173,7 +173,7 @@ interest to the individuals named above.
         </xsl:choose>
     </xsl:variable>
     <!-- project's div -->
-    <div class="book-summary">
+    <div class="book-summary" id="{@xml:id}">
         <div class="biblio">
             <!-- Title as hyperlink if there is -->
             <!-- a rational URL, else plain     -->
