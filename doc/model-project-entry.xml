@@ -237,9 +237,9 @@ interest to the individuals named above.
     <!--   * Attribute value is 'yes' if present                      -->
     <!--   * Attribute can be absent, or value can be 'no'            -->
     <!--                                                              -->
-    <!--   @hints (to exercises)                                      -->
-    <!--   @answers (to exercises)                                    -->
-    <!--   @solutions (to exercises)                                  -->
+    <!--   @hints (to exercises, for readers)                         -->
+    <!--   @answers (to exercises, for readers)                       -->
+    <!--   @solutions (to exercises, for readers)                     -->
     <!--   @reading-questions                                         -->
     <!--   @videos                                                    -->
     <!--   @webwork                                                   -->
@@ -247,8 +247,8 @@ interest to the individuals named above.
     <!--   @projects                                                  -->
     <!--   @accessible (particular attention paid to)                 -->
     <!--   @self-study (amenable to)                                  -->
-    <!--   @instructor-solutions                                      -->
-    <!--   @instructor-guide                                          -->
+    <!--   @instructor-solutions (e.g. a "solutions manual")          -->
+    <!--   @instructor-guide (standalone, or "instructor version")    -->
     <!--   @test-bank                                                 -->
 
     <features
