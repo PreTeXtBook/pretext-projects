@@ -34,8 +34,8 @@ interest to the individuals named above.
         <onesentence>Calculus through active learning.</onesentence>
     </exemplar>
     <!--  -->
-   <exemplar ref="yoshiwara-mfg" best-url="landing" poster="https://yoshiwarabooks.org/mfg/images/cover-thumbnail.png">
-        <onesentence></onesentence>
+   <exemplar ref="yoshiwara-mfg" best-url="landing" poster="https://yoshiwarabooks.org/mfg/images/cover.png">
+        <onesentence>Comprehensive treatment of college algebra organized around modeling, functions, and graphs.</onesentence>
     </exemplar>
     <!--  -->
    <exemplar ref="pcc-ORCAA" best-url="landing" poster="https://spot.pcc.edu/math/orcca/ed2/html/images/ORCCAbrandlogo.png">
@@ -50,7 +50,7 @@ interest to the individuals named above.
         <onesentence>Expository writing, with tongue in cheek.</onesentence>
     </exemplar>
     <!--  -->
-   <exemplar ref="hutchinson-mt21c" best-url="html" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/On_the_Banks_of_the_Wabash%2C_Far_Away%2C_chorus_sheet_music.jpg/366px-On_the_Banks_of_the_Wabash%2C_Far_Away%2C_chorus_sheet_music.jpg">
+   <exemplar ref="hutchinson-mt21c" best-url="html" poster="http://musictheory.pugetsound.edu/mt21c/images/unit6/enh-mod-waltz-of-flowers-all.svg">
         <onesentence>PreTeXt is not just for STEM.</onesentence>
     </exemplar>
     <!--  -->
@@ -77,15 +77,16 @@ interest to the individuals named above.
             <script src="https://pretextbook.org/js/lib/jquery.min.js"/>
             <script src="https://pretextbook.org/js/lib/knowl.js"/>
             <link rel="stylesheet" type="text/css" href="https://pretextbook.org/css/0.31/catalog.css"/>
-        </head>
-        
-        <body>
             <style>
+                <xsl:text>.posters {padding-bottom:30px;}&#xa;</xsl:text>
                 <xsl:text>.posterbox {height:180px; width:150px; display:inline-block; text-align:center;}&#xa;</xsl:text>
                 <xsl:text>.poster {height:100%; width:auto;}&#xa;</xsl:text>
             </style>
+        </head>
+        
+        <body>
 
-            <div>
+            <div class="posters">
                 <xsl:for-each select="$gallery">
                     <!-- select "register" context for project look-ups -->
                     <!-- context switch via for-each is an "exemplar"   -->
