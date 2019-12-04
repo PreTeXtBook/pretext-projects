@@ -182,7 +182,7 @@ interest to the individuals named above.
             <!-- a rational URL, else plain     -->
             <xsl:choose>
                 <xsl:when test="not($best-project-url = '')">
-                    <a href="{$best-project-url}" class="title">
+                    <a href="{$best-project-url}" class="title" target="_blank">
                         <xsl:copy-of select="$project-title"/>
                     </a>
                 </xsl:when>
@@ -225,7 +225,7 @@ interest to the individuals named above.
     <xsl:choose>
         <!-- hyperlinked -->
         <xsl:when test="not(normalize-space(@url) = '')">
-            <a href="{@url}">
+            <a href="{@url}" target="_blank">
                 <xsl:apply-templates select="displayname"/>
             </a>
         </xsl:when>

@@ -127,7 +127,7 @@ interest to the individuals named above.
         </xsl:apply-templates>
     </xsl:variable>
     <div class="posterbox">
-    <a href="{$best-project-url}">
+    <a href="{$best-project-url}" target="_blank">
         <img class="poster" src="{$exemplar/@poster}"/>
     </a>
 </div>
@@ -159,7 +159,7 @@ interest to the individuals named above.
     <div class="book-summary">
         <div class="biblio">
             <!-- Title as hyperlink, always a good URL -->
-            <a href="{$best-project-url}" class="title">
+            <a href="{$best-project-url}" class="title" target="_blank">
                 <xsl:copy-of select="$project-title"/>
             </a>
             <xsl:text>, </xsl:text>
@@ -184,7 +184,7 @@ interest to the individuals named above.
     <xsl:choose>
         <!-- hyperlinked -->
         <xsl:when test="not(normalize-space(@url) = '')">
-            <a href="{@url}">
+            <a href="{@url}" target="_blank">
                 <xsl:apply-templates select="displayname"/>
             </a>
         </xsl:when>
