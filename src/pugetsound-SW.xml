@@ -110,9 +110,9 @@ interest to the individuals named above.
     <!--   * include a currency symbol                                -->
 
     <license 
-        code="undecided"
-        variant="" 
-        version="" 
+        code="CC"
+        variant="BY-SA"
+        version="4.0"
         pub-year="2017"
         />
         <!-- price="$30.19" -->
@@ -144,12 +144,12 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
+        landing="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
         html="https://soundwriting.pugetsound.edu/"
         pdf="https://www.pugetsound.edu/files/resources/SoundWriting-electronic.pdf"
+        source="https://github.com/UPS-CWLT/soundwriting"
         ancillary1="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
         />
-        <!-- landing="" -->
-        <!-- source="" -->
         <!-- print="" -->
 
     <!-- Description (Blurb) -->
