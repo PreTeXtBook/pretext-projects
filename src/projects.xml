@@ -14,6 +14,9 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="ted-discrete.xml"/>                  <!-- 2020-02-12 -->
+    <xi:include href="ted-calculus.xml"/>                  <!-- 2020-02-12 -->
+    <xi:include href="ted-analysis.xml"/>                  <!-- 2020-02-12 -->
     <xi:include href="janssen-MA.xml"/>                    <!-- 2019-12-06 -->
     <xi:include href="judson-AAFT.xml"/>                   <!-- 2019-12-02 -->
     <xi:include href="hansen-DLD.xml"/>                    <!-- 2019-12-02 -->
