@@ -141,6 +141,8 @@ interest to the individuals named above.
     <!--   @subject: math, cs, physics, engr,                         -->
     <!--             writing, music, doc, expository, misc            -->
     <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--      'ugld', undergrad lower division                        -->
+    <!--      'ugud', undergrad upper division                        -->
     <!--   @phase: develop, ready, mature, converting                 -->
     <!--     'develop'                                                -->
     <!--        in-progress, not ready for other instructors          -->

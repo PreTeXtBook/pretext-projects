@@ -127,9 +127,6 @@ interest to the individuals named above.
     <!--   * if availabe in physical form, the least expensive format -->
     <!--   * include a currency symbol                                -->
 
-<!-- ROB I've read a bit on these and don't care to read more; if you have
-a recommendation other than CC which you believe to be better, I'll follow
-your wishes.  -->
     <license 
         code="CC"  
         variant="" 
@@ -146,6 +143,8 @@ your wishes.  -->
     <!--   @subject: math, cs, physics, engr,                         -->
     <!--             writing, music, doc, expository, misc            -->
     <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--      'ugld', undergrad lower division                        -->
+    <!--      'ugud', undergrad upper division                        -->
     <!--   @phase: develop, ready, mature, converting                 -->
     <!--     'develop'                                                -->
     <!--        in-progress, not ready for other instructors          -->
@@ -158,7 +157,6 @@ your wishes.  -->
     <!--        ready/mature in another format, work in-progress      -->
     <!--        for PreTeXt versions                                  -->
 
-<!-- ROB, I guessed since I don't know  what ugld, ugud, etc. mean. -->
     <character 
         subject="math"
         level="ugld"  
