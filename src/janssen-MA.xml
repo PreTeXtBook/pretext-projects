@@ -39,14 +39,14 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="janssen-MA" updated="2019-12-06">
+<project xml:id="janssen-MA" updated="2020-06-09">
 
     <!-- Project Title -->
 
     <!-- title (required):                                            -->
     <!--   * complete project (book) title, capitalized               -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-    <title>Modern Algebra: A Rings-First Approach with Inquiry</title>
+    <title>Rings with Inquiry</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
     <!--   * uncomment next line to employ                            -->
@@ -85,7 +85,7 @@ interest to the individuals named above.
     
     <author> <!-- or mailto: -->
         <displayname>Melissa Lindsey</displayname>
-        <affiliation>Dordt University</affiliation>
+        <affiliation>University of Wisconsin-Madison</affiliation>
     </author>
     <!-- multiple authors, all colleagues  -->
     <affiliation></affiliation>
@@ -187,9 +187,9 @@ interest to the individuals named above.
     <!-- choice of paths from there.                                  -->
 
     <sites
-        landing="https://mkjanssen.org/books"
+        landing="https://ringswithinquiry.org/"
         source="https://github.com/mkjanssen/IBL-modernalgebra"
-        html="https://book.mkjanssen.org/"
+        html="https://ringswithinquiry.org/"
         ancillary1=""
         />
 
@@ -253,7 +253,7 @@ interest to the individuals named above.
     <!--   @test-bank                                                 -->
 
     <features
-        hints="no"
+        hints="yes"
         answers="no"
         solutions="no"
         reading-questions="no"
@@ -262,8 +262,8 @@ interest to the individuals named above.
         worksheets="no"
         projects="no"
         accessible="no"
-        self-study="no"
-        instructor-solutions="no"
+        self-study="yes"
+        instructor-solutions="yes"
         instructor-guide="yes"
         test-bank="no"
         />
