@@ -40,7 +40,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="FRY-CLP2" updated="2019-05-29">
+<project xml:id="FRY-CLP2" updated="2020-08-12">
 
     <!-- Project Title -->
 
@@ -218,7 +218,7 @@ interest to the individuals named above.
     <!--                                                              -->
 
     <recognition
-        aim="no"
+        aim="yes"
         />
 
     <!-- Awards -->
@@ -228,9 +228,9 @@ interest to the individuals named above.
     <!-- * can contain simple markup, additional URLs                 -->
     <!-- * a narrative description of any awards received             -->
 
-<!-- 
+<!--
     <awards>
     </awards>
  -->
- 
+
 </project>
