@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="lyonsdw-algeom" updated="2020-11-05">
+
+    <!-- Project Title -->
+
+    <!-- title (required):                                            -->
+    <!--   * complete project (book) title, capitalized               -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+    <title>Introduction to Groups and Geometries</title>
+    <!-- subtitle (optional):                                         -->
+    <!--   * same formatting as "title"                               -->
+    <subtitle></subtitle>
+
+    <!-- Authors   -->
+
+    <!--   * there may be multiple authors, order here will           -->
+    <!--     be respected                                             -->
+    <!--   * each author may have an affiliation, or a group of       -->
+    <!--     colleagues may specify a single overall affiliation.     -->
+    <!--     Do not mix these mechanisms, one or the other            -->
+
+    <!-- author (at least one required)                               -->
+
+    <!-- author/@url (optional)                                       -->
+    <!--   * include protocol (i.e. https://)                         -->
+    <!--   * can be a "mailto:" (e.g. mailto:beezer@ips.edu)          -->
+
+    <!-- author/displayname (required)                                -->
+    <!--   * as suggested, full name in order as written              -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- author/affiliation (optional)                                -->
+    <!--   * use "U" for university, "C" for college, etc             -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- affiliation (optional)                                       -->
+    <!--   * ALL authors at the same institution                      -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <author url="https://quantum.lvc.edu/lyons"> <!-- or mailto: -->
+        <displayname>David W. Lyons</displayname>
+        <affiliation>Lebanon Valley College</affiliation>
+    </author>
+    <!-- multiple authors, all colleagues  -->
+    <affiliation></affiliation>
+
+    <!-- License/Terms of Distribution -->
+
+    <!-- * license refers to the status of editable source, not       -->
+    <!--   derived products.  Source could be a Word document, but    -->
+    <!--   a PDF is not an editable source                            -->
+
+    <!-- license/@code (required)                                     -->
+    <!--   * CC = Creative Commons                                    -->
+    <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * all-rights = "All Rights Reserved", regular copyright    -->
+    <!--   * public = Public Domain, no copyright                     -->
+    <!--   * request additional                                       -->
+    <!-- license/@variant (CC only)                                   -->
+    <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
+
+    <!-- license/@version (optional)                                  -->
+    <!--   * the version of the *license*, if applicable/important    -->
+
+    <!-- license/pub-year (optional)                                  -->
+    <!--   * first year copyright asserted, in any format             -->
+
+    <!-- license/price (optional)                                     -->
+    <!--   * if availabe in physical form, the least expensive format -->
+    <!--   * include a currency symbol                                -->
+
+    <license 
+        code="CC"
+        variant="BY-NC-SA" 
+        version="4.0" 
+        pub-year="2020"
+        />
+
+    <!-- Character of the Project -->
+
+    <!-- * these are all codes, use literally                         -->
+    <!-- * send requests to enable new ones                           -->
+    <!--                                                              -->
+    <!--   @subject: math, cs, physics, engr,                         -->
+    <!--             writing, music, doc, misc                        -->
+    <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--   @phase: develop, ready, mature                             -->
+
+    <character 
+        subject="math"
+        level="ugud"
+        phase="ready"
+        />
+
+    <!-- Pointers to Project Resources Online -->
+
+    <!-- * optional, may choose to have all, some, or none            -->
+    <!-- * these are all URLs, include the protocol (e.g., https://)  -->
+    <!-- * @landing is an overall project page                        -->
+    <!-- * @pdf may be the actual PDF or a page with download links   -->
+    <!-- * @print is a page with info, or link to a bookseller's page -->
+    <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
+    <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <sites
+        landing="https://mathvista.org/algeom_text_home_page.html"
+        html="https://mathvista.org/algeom_text_files/frontmatter.html"
+        />
+
+    <!-- Description (Blurb) -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+
+    <description>
+      <p>This free, online text is designed for a one-semester undergraduate mathematics course that combines an introduction to group theory with an introduction to modern geometries using the Kleinian paradigm.</p>
+
+      <p>The chapter on groups develops the basic theory of groups and homomorphisms, culminating with group actions. The chapter on geometry makes use of group symmetries in the basic theory of Möbius, hyperbolic, elliptic, and projective geometries.</p>
+
+      <p>The text is designed for active engagement, with carefully structured exercises throughout.</p>
+
+      <p>The text assumes prerequisite courses in calculus, linear algebra, and experience with proof writing.</p>
+    </description>
+
+    <onesentence>
+        A one-semester course combining introductory group theory
+        with Möbius, hyperbolic, elliptic, and projective geometries in
+        the Kleinian framework.
+    </onesentence>
+
+    <!-- Features (Binary) -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises)                                      -->
+    <!--   @answers (to exercises)                                    -->
+    <!--   @solutions (to exercises)                                  -->
+    <!--   @reading-questions                                         -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @instructor-solutions                                      -->
+    <!--   @instructor-guide                                          -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="yes"
+        answers="yes"
+        solutions="yes"
+        reading-questions="yes"
+        webwork="no"
+        worksheets="no"
+        projects="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+
+</project>
