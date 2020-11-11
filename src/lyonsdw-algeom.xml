@@ -77,7 +77,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="https://quantum.lvc.edu/lyons"> <!-- or mailto: -->
+    <author url="http://quantum.lvc.edu/lyons"> <!-- or mailto: -->
         <displayname>David W. Lyons</displayname>
         <affiliation>Lebanon Valley College</affiliation>
     </author>
