@@ -199,7 +199,7 @@ interest to the individuals named above.
         webwork="no"
         worksheets="no"
         projects="no"
-        instructor-solutions="yes"
+        instructor-solutions="no"
         instructor-guide="no"
         test-bank="no"
         />
