@@ -69,13 +69,10 @@ interest to the individuals named above.
                     <xsl:with-param name="subject" select="'music'"/>
                 </xsl:apply-templates>
                  -->
-                <!-- all "writing" are under development -->
-                <!-- 
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Writing'"/>
                     <xsl:with-param name="subject" select="'writing'"/>
                 </xsl:apply-templates>
-                 -->
                 <!-- All texts being converted, lumped together -->
                  <xsl:apply-templates select="." mode="phase">
                     <xsl:with-param name="heading" select="'Mature, Converting to PreTeXt'"/>
