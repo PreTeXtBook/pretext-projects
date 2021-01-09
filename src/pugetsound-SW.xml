@@ -40,7 +40,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="pugetsound-SW" updated="2019-04-25">
+<project xml:id="pugetsound-SW" updated="2020-01-08">
 
     <!-- Project Title -->
 
@@ -130,7 +130,7 @@ interest to the individuals named above.
     <character 
         subject="writing"
         level="ugld"
-        phase="develop"
+        phase="mature"
         />
 
     <!-- Pointers to Project Resources Online -->
@@ -145,8 +145,8 @@ interest to the individuals named above.
 
     <sites
         landing="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
-        html="https://soundwriting.pugetsound.edu/"
-        pdf="https://www.pugetsound.edu/files/resources/SoundWriting-electronic.pdf"
+        html="https://soundwriting.pugetsound.edu/pugetsound"
+        pdf="https://soundwriting.pugetsound.edu/pugetsound/soundwriting.pdf"
         source="https://github.com/UPS-CWLT/soundwriting"
         ancillary1="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
         />
@@ -220,10 +220,8 @@ interest to the individuals named above.
     <!-- * can contain simple markup, additional URLs                 -->
     <!-- * a narrative description of any awards received             -->
 
-<!-- 
     <awards>
-        <p>Full details of some <em>award</em> received!</p>
-        <p>Second paragraph for second award.</p>
+        <p>Winner of the "2021 SLAC-WPA Martinson Award for Innovation" from the Small Liberal Arts Colleges-Writing Program Administrators organization.  <url href="https://slacwpa.org/index.php/martinson-award-of-excellence/">Award Description</url></p>
     </awards>
- -->
+
 </project>
