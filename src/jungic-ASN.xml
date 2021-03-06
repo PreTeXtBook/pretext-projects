@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2021  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<project xml:id="jungic-ASN" updated="2021-03-02">
+    <title>Adventures of Small Number</title>
+    <subtitle>A collection of Short Stories</subtitle>
+    <author>
+        <displayname>Veselin Jungic</displayname>
+        <affiliation>Simon Frasier University</affiliation>
+    </author>
+    <author>
+        <displayname>Mark MacLean</displayname>
+        <affiliation>University of British Columbia</affiliation>
+    </author>
+    <license 
+        code="CC"
+        variant="BY-NC-SA"
+        version="4.0" 
+        pub-year="2020"
+        price=""
+        />
+    <character 
+        subject="math"
+        level="primary"
+        phase="ready"
+        />
+    <sites
+        landing=""
+        source=""
+        html="http://www.sfu.ca/~vjungic/Small-Number"
+        pdf=""
+        print=""
+        />
+    <description>
+        <p>
+            To promote mathematics among Indigenous learners, we have created a series of stories with mathematical themes.
+            These stories are based on the storytelling tradition of Indigenous peoples.
+            The fact that most of our stories have been translated into several Indigenous languages
+            as well as French is probably the biggest recognition that an author could hope for.
+        </p>
+        <p>
+            The first story, <pubtitle>Small Number Counts to 100</pubtitle> was inspired
+            by narration from Ms.<nbsp/>Rina Sinclair of the Siksika Nation.
+            The story can be shown to elementary school students as a counting practice/puzzle or as a pattern recognition problem.
+            For high school students it can be a way to introduce arithmetic progressions,
+            modular addition, or an idea of number systems with a base different than <m>10</m>.
+        </p>
+    </description>
+
+    <onesentence>
+        To promote mathematics among Indigenous learners, we have created a series of stories with mathematical themes.
+        These stories are based on the storytelling tradition of Indigenous peoples.
+    </onesentence>
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="yes"
+        worksheets="no"
+        projects="no"
+        accessible="no"
+        self-study="yes"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+    <recognition
+        aim="no"
+        />
+    <awards>
+    </awards>
+</project>

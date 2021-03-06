@@ -34,6 +34,8 @@ interest to the individuals named above.
 <!--      of your project                                             -->
 <!--   *  A single lower-case name of the primary author              -->
 <!--      ("beezer") or the organization ("pretext")                  -->
+<!--      When absolutely ncessary, a dash-separated list of names,   -->
+<!--      in alphabetical order ("beezer-farmer")                     -->
 <!--   *  Then a single dash                                          -->
 <!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
 
@@ -140,7 +142,7 @@ interest to the individuals named above.
     <!--                                                              -->
     <!--   @subject: math, cs, physics, engr,                         -->
     <!--             writing, music, doc, expository, misc            -->
-    <!--   @level: secondary, ugld, ugud, grad, research              -->
+    <!--   @level: primary, secondary, ugld, ugud, grad, research     -->
     <!--   @phase: develop, ready, mature, converting                 -->
     <!--     'develop'                                                -->
     <!--        in-progress, not ready for other instructors          -->
