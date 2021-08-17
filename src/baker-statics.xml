@@ -39,7 +39,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="baker-statics" updated="2019-12-01">
+<project xml:id="baker-statics" updated="2021-08-17">
 
     <!-- Project Title -->
 
@@ -49,7 +49,7 @@ interest to the individuals named above.
     <title>Engineering Statics</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
-    <!-- <subtitle></subtitle> -->
+    <subtitle>Open and Interactive</subtitle>
 
     <!-- Authors   -->
 
@@ -81,7 +81,7 @@ interest to the individuals named above.
      <displayname>Dan Baker</displayname>
      <affiliation>Colorado State U</affiliation>
     </author>
-    <author url="http://weh.maritime.edu"> <!-- or mailto: -->
+    <author url="mailto:whaynes@maritime.edu"> <!-- or mailto: -->
      <displayname>William Haynes</displayname>
      <affiliation>Massachusetts Maritime Academy</affiliation>
     </author>
@@ -130,7 +130,7 @@ interest to the individuals named above.
     <character
      subject="engr"
      level="ugld"
-     phase="develop"
+     phase="ready"
     />
 
     <!-- Pointers to Project Resources Online -->
@@ -143,7 +143,12 @@ interest to the individuals named above.
     <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
     <!-- * @ancillary2 does not yet exist, send request               -->
 
-
+ <sites
+  landing="https://engineeringstatics.org"
+  source="https://github.com/dantheboatman/EngineeringStatics"
+  html="https://engineeringstatics.org"
+  pdf="https://engineeringstatics.org/pdf/statics.pdf"
+ />
 
     <!-- Description (Blurb) -->
 
@@ -155,12 +160,12 @@ interest to the individuals named above.
     <!--   * include distinctive features not possible above/below    -->
     <!--   * knowled, so brevity not required                         -->
     <onesentence>
-     A collaboratively authored textbook for a traditional, one-semester, engineering mechanics course.
+     A free and open source textbook for a traditional, one-semester, engineering mechanics course.  Contains interactive diagrams illustrating important concepts.
     </onesentence>
 
     <description>
-     <p>Topics include forces, moments, equilibrium of particles, rigid bodies and structures.</p>
-     <p>Currently in progress and soliciting additional contributors.</p>
+     <p>Topics include forces and moments; equilibrium of particles, rigid bodies, and structures; centroids and moments of inertia.</p>
+     
     </description>
 
     <!-- Features (Binary) -->
