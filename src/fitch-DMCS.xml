@@ -74,7 +74,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://math.uaa.alaska.edu/~mfitch"> <!-- or mailto: -->
+    <author url="http://math.uaa.alaska.edu/~afmaf"> <!-- or mailto: -->
         <displayname>Mark Fitch</displayname>
         <affiliation>U of Alaska Anchorage</affiliation>
     </author>
@@ -172,7 +172,11 @@ interest to the individuals named above.
     <!-- home page.  Only use it to point to a page that is           -->
     <!-- *dedicated* to your project and will give a visitor a clear  -->
     <!-- choice of paths from there.                                  -->
-
+<sites
+        landing="http://www.math.uaa.alaska.edu/~afmaf/classes/math261/text"
+        source="https://github.com/mafitch/fitch-dmcs.git"
+        html="http://www.math.uaa.alaska.edu/~afmaf/classes/math261/text"
+        />
     <!-- Description (Blurb) -->
 
     <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
