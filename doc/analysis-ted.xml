@@ -40,14 +40,14 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="beezer-FCLA" updated="2019-03-03">
+<project xml:id="taterheadted-analysis" updated="2020-02-12">
 
     <!-- Project Title -->
 
     <!-- title (required):                                            -->
     <!--   * complete project (book) title, capitalized               -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
-    <title>A First Course in Linear Algebra</title>
+    <title>Analysis</title>
     <!-- subtitle (optional):                                         -->
     <!--   * same formatting as "title"                               -->
     <!--   * uncomment next line to employ                            -->
@@ -79,9 +79,9 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://buzzard.ups.edu"> <!-- or mailto: -->
-        <displayname>Robert A. Beezer</displayname>
-        <affiliation>U of Puget Sound</affiliation>
+    <author url="www.jiblm.org/mahavier/analysis/html/index.html"> <!-- or mailto: -->
+        <displayname>W. Ted Mahavier</displayname>
+        <affiliation>Lamar University</affiliation>
     </author>
     <!-- multiple authors, all colleagues  -->
     <affiliation></affiliation>
@@ -126,11 +126,11 @@ interest to the individuals named above.
     <!--   * include a currency symbol                                -->
 
     <license 
-        code="GFDL"
+        code="CC"  
         variant="" 
         version="" 
-        pub-year="2006"
-        price="$30.19"
+        pub-year="2019"
+        price="$0"
         />
 
     <!-- Character of the Project -->
@@ -155,10 +155,9 @@ interest to the individuals named above.
     <!--        ready/mature in another format, work in-progress      -->
     <!--        for PreTeXt versions                                  -->
 
-
     <character 
         subject="math"
-        level="ugld"
+        level="ugud"  
         phase="mature"
         />
 
@@ -184,6 +183,7 @@ interest to the individuals named above.
     <!-- *dedicated* to your project and will give a visitor a clear  -->
     <!-- choice of paths from there.                                  -->
 
+<!--
     <sites
         landing="http://linear.pugetsound.edu/"
         source="https://github.com/rbeezer/fcla"
@@ -192,7 +192,7 @@ interest to the individuals named above.
         print="http://linear.pugetsound.edu/physical.html"
         ancillary1=""
         />
-
+-->
     <!-- Description (Blurb) -->
 
     <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
@@ -216,13 +216,12 @@ interest to the individuals named above.
     <!--   * HTML respected, do use elements like <p>                 -->
 
     <onesentence>
-        One (not too long!) sentence that immediately tells an instructor if
-        this book has appropriate topics, at the appropriate level, for their course.
+        An undergraduate, introductory, inquiry-based learning course in
+	undergraduate real analysis on the real line.
     </onesentence>
 
     <description>
-        <p>An <em>algebraic</em> approach to linear algebra.</p>
-        <p>And more!</p>
+        <p>An <em>inquiry-based learning</em> approach to Analysis.</p>
     </description>
 
     <!-- Features (Binary) -->
@@ -263,7 +262,7 @@ interest to the individuals named above.
         worksheets="no"
         projects="no"
         accessible="no"
-        self-study="no"
+        self-study="yes"
         instructor-solutions="no"
         instructor-guide="no"
         test-bank="no"
@@ -289,9 +288,11 @@ interest to the individuals named above.
     <!-- * can contain simple markup, additional URLs                 -->
     <!-- * a narrative description of any awards received             -->
 
+<!--
     <awards>
         <p>Full details of some <em>award</em> received!</p>
         <p>Second paragraph for second award.</p>
     </awards>
+-->
 
 </project>
