@@ -25,6 +25,11 @@ interest to the individuals named above.
         <body>
             <div class="projects">
                 <xsl:apply-templates select="." mode="subject-level">
+                    <xsl:with-param name="heading" select="'Mathematics, Primary'"/>
+                    <xsl:with-param name="subject" select="'math'"/>
+                    <xsl:with-param name="level"   select="'primary'"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Mathematics, Lower Division'"/>
                     <xsl:with-param name="subject" select="'math'"/>
                     <xsl:with-param name="level"   select="'ugld'"/>
@@ -454,6 +459,9 @@ interest to the individuals named above.
             </td>
             <!-- Level -->
             <td style="vertical-align:top;">
+                <xsl:text>Primary: </xsl:text>
+                <xsl:value-of select="count(project/character[@level='primary'])"/>
+                <br/>
                 <xsl:text>Secondary: </xsl:text>
                 <xsl:value-of select="count(project/character[@level='secondary'])"/>
                 <br/>

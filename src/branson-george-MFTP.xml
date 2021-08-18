@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2021  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<project xml:id="branson-george-MFTP" updated="2021-03-02">
+    <title>Math for the People</title>
+    <author>
+        <displayname>Mark Branson</displayname>
+        <affiliation>Stevenson University</affiliation>
+    </author>
+    <author>
+        <displayname>Whitney George</displayname>
+        <affiliation>University of Wisconsin La Crosse</affiliation>
+    </author>
+    <license
+        code="undecided"
+        variant=""
+        version="" 
+        pub-year=""
+        price=""
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="develop"
+        />
+    <sites
+        landing=""
+        source="https://web.stevenson.edu/mbranson/math-for-the-people.xml"
+        html="https://web.stevenson.edu/mbranson/math-for-the-people.html"
+        pdf=""
+        print=""
+        />
+    <description>
+        <p>
+            The text will be structured in stand-alone modules, each related to a single social justice topic.
+            Each module will begin with an overview of the topic, historical context,
+            and a discussion of current questions and concerns related to the topic.
+            This section may include particular case studies related to the topic,
+            articles discussing the topic, and other resources.
+            This section will followed by discussion prompts for faculty to use in helping students explore the issue.
+        </p>
+        <p>
+            The mathematical content will follow.
+            Each topic will be paired with 2<ndash/>4 mathematical topics
+            which will help the reader to ask questions and build understanding about the social justice topic being discussed.
+            These mathematical topic sections will stand alone, and may be repeated in multiple places throughout the text
+            (for example, a section on exponential growth may be included in the module on climate change
+            as well as the module on predatory lending).
+        </p>
+        <p>
+            Each module will end with homework exercises related to the social justice and mathematics topics,
+            longer prompts intended to support more extensive explorations of the topics,
+            and reflection questions to encourage students to consider what they’ve learned.
+        </p>
+    </description>
+
+    <onesentence>
+        <pubtitle>Math for the People</pubtitle>is a revolutionary new textbook<mdash/>with an emphasis on the revolution<mdash/>which teaches quantitative reasoning skills through social justice topics.
+    </onesentence>
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="no"
+        worksheets="no"
+        projects="no"
+        accessible="no"
+        self-study="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+    <recognition
+        aim="no"
+        />
+    <awards>
+    </awards>
+</project>
