@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="lee-MIS.xml"/>                       <!-- 2021-03-02 -->
     <xi:include href="branson-george-MFTP.xml"/>           <!-- 2021-03-02 -->
     <xi:include href="jungic-ASN.xml"/>                    <!-- 2021-03-02 -->
     <xi:include href="lyonsdw-algeom.xml"/>                <!-- 2020-11-07 -->

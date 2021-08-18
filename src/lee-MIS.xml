@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--**********************************************************
+Copyright 2021  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<project xml:id="lee-MIS" updated="2021-02-27">
+    <title>Math in Society</title>
+    <subtitle>Mathematics for Liberal Arts Majors</subtitle>
+    <author>
+        <displayname>Jess Brooks</displayname>
+    </author>
+    <author>
+        <displayname>Cara Lee</displayname>
+    </author>
+    <author>
+        <displayname>Sonya Redmond</displayname>
+    </author>
+    <author>
+        <displayname>Cindy Rochester-Gefre</displayname>
+    </author>
+
+    <affiliation>Portland Community College</affiliation>
+    <license 
+        code="CC"
+        variant="BY-SA"
+        version="4.0" 
+        pub-year="2020"
+        price=""
+        />
+    <character 
+        subject="math"
+        level="ugld"
+        phase="ready"
+        />
+    <sites
+        landing="http://spot.pcc.edu/~caralee/Math_105.html"
+        source="https://github.com/vegatron916/MathInSocietyPCC"
+        html="https://spot.pcc.edu/math/mathinsociety"
+        pdf=""
+        print=""
+        />
+    <description>
+        <p>
+            The five chapters are logic and sets, financial math, statistics, probability and the math of democracy (United States). Additional sections can be used from David Lippman's Math In Society. There are video lectures in each section of the book and corresponding fill-in notes. Group activity pages are also available under resources. A MyOpenMath course shell is available. We emphasize spreadsheets in the financial math chapter and also include the formulas. We use spreadsheets and GeoGebra in the statistics chapter except in the normal section we use the onlinestatbook.com normal calculator and spreadsheets.
+        </p>
+        <p>
+            The United States democracy chapter includes apportionment, voting methods, popular vote, electoral college and electoral power, gerrymandering and how to measure it and federal debt and deficit. The gerrymandering section focuses on how to calculate the efficiency gap.
+        </p>
+        <p>
+            The culturally responsive features are diverse names, gender pronouns and sexual orientations throughout the book. Each chapter begins with the biography of an underrepresented mathematician or economist who contributed to that subject. In the apportionment section we include the racial context of the formation of the United States, including race-based chattel slavery and the genocide of Native Americans. A timeline of major events runs parallel to the apportionment method timeline. Hamilton, Jefferson and Webster's relationship to slavery is discussed. The names in the examples for this section are the names of civil rights leaders and Black victims of police brutality.
+        </p>
+    </description>
+
+    <onesentence>
+        A textbook for a 100-level math for liberal art majors course, emphasizing technology and culturally responsive features. This book is a derivative of David Lippman's Math in Society.
+    </onesentence>
+
+    <features
+        hints="no"
+        answers="yes"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="yes"
+        worksheets="yes"
+        projects="yes"
+        accessible="yes"
+        self-study="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
+    <recognition
+        aim="no"
+        />
+    <awards>
+    </awards>
+</project>
