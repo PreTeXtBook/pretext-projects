@@ -74,7 +74,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://math.uaa.alaska.edu/~mfitch"> <!-- or mailto: -->
+    <author url="http://math.uaa.alaska.edu/~afmaf"> <!-- or mailto: -->
         <displayname>Mark Fitch</displayname>
         <affiliation>U of Alaska Anchorage</affiliation>
     </author>
@@ -157,7 +157,11 @@ interest to the individuals named above.
     <!-- So use <i></i> for book titles and <a href=""></a> for       -->
     <!-- hyperlinks.  (But note that the "sites" element is the       -->
     <!-- best place to put links pointing to parts of  your project.  -->
-
+    <sites
+        landing="http://www.math.uaa.alaska.edu/~afmaf/classes/math305/text"
+        source="https://github.com/mafitch/geometries-ibl.git"
+        html="http://www.math.uaa.alaska.edu/~afmaf/classes/math305/text"
+        />
     <!-- onesentence (required) -->
     <!--   * Likely visible, so short and succinct                    -->
     <!--   * "description" (following) will amplify the "onesentence" -->
@@ -178,7 +182,8 @@ interest to the individuals named above.
     </onesentence>
 
     <description>
-        <p>An IBL approach to a introduction to geometries course for future secondary teachers.</p>
+        <p>This text was designed for an IBL approach to MATH A305 Introduction to Geometries at the University of Alaska Anchorage. Its purpose in the mathematics baccalaureates at UAA is to cover geometry topics required for secondary teacher certification. As a result it covers synthetic, transformational, and a tiny bit of analytic approaches to geometry and covers both Euclidean (parabolic), hyperbolic, and some projective geometry.</p>
+        <p>Students are expected to have completed a proofs course covering proof techniques, basic set operations, and cardinality as a prerequisite. The students have typically taken high school geometry. </p>
     </description>
 
     <!-- Features (Binary) -->
