@@ -78,8 +78,8 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="https://www.pugetsound.edu/academics/academic-resources/cwlt/"> <!-- or mailto: -->
-        <displayname>Center for Writing, Learning and Teaching</displayname>
+    <author url="https://www.pugetsound.edu/center-writing-learning"> <!-- or mailto: -->
+        <displayname>Center for Writing, Learning</displayname>
     </author>
     <!-- multiple authors, all colleagues  -->
     <affiliation>University of Puget Sound</affiliation>
@@ -144,11 +144,11 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
-        html="https://soundwriting.pugetsound.edu/pugetsound"
-        pdf="https://soundwriting.pugetsound.edu/pugetsound/soundwriting.pdf"
+        landing="https://www.pugetsound.edu/center-writing-learning/sound-writing"
+        html="https://soundwriting.pugetsound.edu/universal/"
+        pdf="https://soundwriting.pugetsound.edu/universal/soundwriting.pdf"
         source="https://github.com/UPS-CWLT/soundwriting"
-        ancillary1="https://www.pugetsound.edu/academics/academic-resources/cwlt/sound-writing-resources/"
+        ancillary1="https://www.pugetsound.edu/center-writing-learning/sound-writing/sound-writing-resources"
         />
         <!-- print="" -->
 
