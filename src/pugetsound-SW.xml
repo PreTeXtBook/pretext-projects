@@ -79,7 +79,7 @@ interest to the individuals named above.
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
     <author url="https://www.pugetsound.edu/center-writing-learning"> <!-- or mailto: -->
-        <displayname>Center for Writing, Learning</displayname>
+        <displayname>Center for Writing &amp; Learning</displayname>
     </author>
     <!-- multiple authors, all colleagues  -->
     <affiliation>University of Puget Sound</affiliation>
