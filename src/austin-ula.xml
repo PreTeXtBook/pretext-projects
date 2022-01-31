@@ -77,7 +77,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://merganser.math.gvsu.edu/david/"> <!-- or mailto: -->
+    <author url="https://davidaustinm.github.io/index.html"> <!-- or mailto: -->
         <displayname>David Austin</displayname>
         <affiliation>Grand Valley State University</affiliation>
     </author>
@@ -143,10 +143,10 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="http://merganser.math.gvsu.edu/david/linear.algebra/ula/"
+        landing="https://davidaustinm.github.io/ula/home.html"
         source="https://github.com/davidaustinm/ula"
-        html="http://merganser.math.gvsu.edu/david/linear.algebra/ula/ula/ula.html"
-        pdf="http://merganser.math.gvsu.edu/david/linear.algebra/ula/ula.pdf"
+        html="https://davidaustinm.github.io/ula/ula.html"
+        pdf="https://davidaustinm.github.io/ula/ula.pdf"
         print=""
         ancillary1=""
         />

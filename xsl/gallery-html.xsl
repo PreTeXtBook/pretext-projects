@@ -26,7 +26,7 @@ interest to the individuals named above.
         <onesentence>An example of applying style to content.</onesentence>
     </exemplar>
     <!--  -->
-    <exemplar ref="austin-ula" best-url="html" poster="http://merganser.math.gvsu.edu/david/linear.algebra/ula/span.jpg">
+    <exemplar ref="austin-ula" best-url="html" poster="https://davidaustinm.github.io/ula/cover.jpg">
         <onesentence>Applied linear algebra with custom interactive explorations.</onesentence>
     </exemplar>
 
