@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--      When absolutely ncessary, a dash-separated list of names,   -->
+<!--      in alphabetical order ("beezer-farmer")                     -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="sundstrom-MRWP" updated="2022-02-18">
+
+    <!-- Project Title -->
+
+    <!-- title (required):                                            -->
+    <!--   * complete project (book) title, capitalized               -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+    <title>Mathematical Reasoning</title>
+    <!-- subtitle (optional):                                         -->
+    <!--   * same formatting as "title"                               -->
+    <!--   * uncomment next line to employ                            -->
+      <subtitle>Writing and Proof (<pretext/> Edition)</subtitle>
+
+    <!-- Authors   -->
+
+    <!--   * there may be multiple authors, order here will           -->
+    <!--     be respected                                             -->
+    <!--   * each author may have an affiliation, or a group of       -->
+    <!--     colleagues may specify a single overall affiliation.     -->
+    <!--     Do not mix these mechanisms, one or the other            -->
+
+    <!-- author (at least one required)                               -->
+
+    <!-- author/@url (optional)                                       -->
+    <!--   * include protocol (i.e. https://)                         -->
+    <!--   * can be a "mailto:" (e.g. mailto:beezer@ups.edu)          -->
+
+    <!-- author/displayname (required)                                -->
+    <!--   * as suggested, full name in order as written              -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- author/affiliation (optional)                                -->
+    <!--   * use "U" for university, "C" for college, etc             -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- affiliation (optional)                                       -->
+    <!--   * ALL authors at the same institution                      -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <author url="http://www.tedsundstrom.com"> <!-- or mailto: -->
+        <displayname>Ted Sundstrom, Professor Emeritus</displayname>
+        <affiliation>Grand Valley State University</affiliation>
+    </author>
+    <!-- multiple authors, all colleagues  -->
+    <!-- <affiliation></affiliation> -->
+
+    <!-- License/Terms of Distribution -->
+
+    <!-- N.B. "license" refers to the status of editable source, not  -->
+    <!-- derived products.  Source could be a Word document, but      -->
+    <!-- a PDF is not an editable source                              -->
+
+    <!-- N.B. The license/@code attribute is *required*.  If you plan -->
+    <!-- to have an open license, but are not decided, then your work -->
+    <!-- does not have license and traditional copyright ("All Rights -->
+    <!-- Reserved") applies.  That is what the law says, not our      -->
+    <!-- decision.  But you can set the value to 'undecided' and      -->
+    <!-- we will make a distinction in our statistics.  But badges    -->
+    <!-- will still show traditional copyright.                       -->
+    <!--                                                              -->
+    <!-- Once you pick a license, update this entry.  While           -->
+    <!-- undecided, you are also welcome to explain your intentions   -->
+    <!-- as part of your free-form "description" entry.               -->
+
+    <!-- license/@code (required)                                     -->
+    <!--   * CC = Creative Commons                                    -->
+    <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * MIT = MIT License                                        -->
+    <!--   * all-rights = "All Rights Reserved", regular copyright    -->
+    <!--   * public = Public Domain, no copyright                     -->
+    <!--   * undecided = "All Rights Reserved", regular copyright     -->
+    <!--   * request additional                                       -->
+    <!-- license/@variant (CC only)                                   -->
+    <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
+
+    <!-- license/@version (optional)                                  -->
+    <!--   * the version of the *license*, if applicable/important    -->
+
+    <!-- license/pub-year (optional)                                  -->
+    <!--   * first year copyright asserted, in any format             -->
+
+    <!-- license/price (optional)                                     -->
+    <!--   * if availabe in physical form, the least expensive format -->
+    <!--   * include a currency symbol                                -->
+
+    <license 
+        code="CC"
+        variant="BY-NC-SA" 
+        version="3.0" 
+        pub-year="2013" 
+        price="$22.00"
+        />
+
+    <!-- I believe year is correct, may need to confirm and come back -->
+    <!-- Price may fluctuate as author dictates -->
+
+    <!-- Character of the Project -->
+
+    <!-- * these are all codes, use literally                         -->
+    <!-- * send requests to enable new ones                           -->
+    <!--                                                              -->
+    <!--   @subject: math, cs, physics, engr,                         -->
+    <!--             writing, music, doc, expository, misc            -->
+    <!--   @level: primary, secondary, ugld, ugud, grad, research     -->
+    <!--   @phase: develop, ready, mature, converting                 -->
+    <!--     'develop'                                                -->
+    <!--        in-progress, not ready for other instructors          -->
+    <!--     'ready'                                                  -->
+    <!--        could be used for a course, but more work planned     -->
+    <!--     'mature'                                                 -->
+    <!--        useful and pedagogically complete now, even if        -->
+    <!--        more improvements are planned                         -->
+    <!--     'converting'                                             -->
+    <!--        ready/mature in another format, work in-progress      -->
+    <!--        for PreTeXt versions                                  -->
+
+
+    <character 
+        subject="math"
+        level="ugld"
+        phase="mature"
+        />
+
+    <!-- Pointers to Project Resources Online -->
+
+    <!-- * optional, may choose to have all, some, or none            -->
+    <!-- * these are all URLs, include the protocol (e.g., https://)  -->
+    <!-- * @landing is dedicated project page, NOT your personal page -->
+    <!-- * @html                                                      -->
+    <!-- * @pdf may be the actual PDF or a page with download links   -->
+    <!-- * @print is a page with info, or link to a bookseller's page -->
+    <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
+    <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <!-- N.B. These are used preferentially to create the most        -->
+    <!-- obvious link to your project.  All will (eventually) be      -->
+    <!-- available, but may not be as obvious.  The ordering is       -->
+    <!--                                                              -->
+    <!--   @landing > @html > @pdf > @print > no link                 -->
+    <!--                                                              -->
+    <!-- So, in particular, do not point @landing to your personal    -->
+    <!-- home page.  Only use it to point to a page that is           -->
+    <!-- *dedicated* to your project and will give a visitor a clear  -->
+    <!-- choice of paths from there.                                  -->
+
+    <sites
+        landing="https://scholarworks.gvsu.edu/books/24/"
+        source="https://github.com/gvsuoer/sundstrom-textbook"
+        html="https://gvsuoer.github.io/sundstrom-textbook"
+        pdf="https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1024&amp;context=books"
+        print="https://www.amazon.com/dp/B0863V6HJG/ref=sr_1_11?crid=1CD8YRE1Z1J2U&amp;keywords=mathematical%20reasoning%20writing%20and%20proof&amp;qid=1584988255&amp;sprefix=mathematical%20reasoning%3A%20writing%2Caps%2C203&amp;sr=8-11"
+        ancillary1="https://www.tedsundstrom.com/study-guides"
+        />
+    <!-- ancillary2="https://www.youtube.com/playlist?list=PL2419488168AE7001" -->
+
+
+    <!-- Description (Blurb) -->
+
+    <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
+    <!-- So use <i></i> for book titles and <a href=""></a> for       -->
+    <!-- hyperlinks.  (But note that the "sites" element is the       -->
+    <!-- best place to put links pointing to parts of  your project.  -->
+
+    <!-- onesentence (required) -->
+    <!--   * Likely visible, so short and succinct                    -->
+    <!--   * "description" (following) will amplify the "onesentence" -->
+    <!--   * HTML respected (e.g. <i> for italics), do not use an     -->
+    <!--     overall element (e.g. <p>) to surround entire sentence   -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+    <!--   * HTML respected, do use elements like <p>                 -->
+
+    <onesentence>
+        <i>Mathematical Reasoning: Writing and Proof</i> is a text for the ﬁrst college 
+        mathematics course that introduces students to the processes of constructing 
+        and writing proofs and focuses on the formal development of mathematics.
+    </onesentence>
+
+    <description>
+        <p>
+          <i>Mathematical Reasoning: Writing and Proof</i> is a text for the ﬁrst college 
+          mathematics course that introduces students to the processes of constructing 
+          and writing proofs and focuses on the formal development of mathematics. Version 3 of 
+          this book is almost identical to Version 2.1. The main change is that the preview 
+          activities in Version 2.1 have been renamed to beginning activities in Version 3. 
+          This was done to emphasize that these activities are meant to be completed before 
+          starting the rest of the section and are not just a short preview of what is to 
+          come in the rest of the section.
+        </p>
+        <p>
+          The primary goals of the text are to help students:
+          <ul>
+            <li>
+              <p>
+                Develop logical thinking skills;
+              </p>
+            </li>
+            <li>
+              <p>
+                develop the ability to think more abstractly in a proof-oriented setting;
+              </p>
+            </li>
+            <li>
+              <p>
+                develop the ability to construct and write mathematical proofs using 
+                standard methods of mathematical proof including direct proofs, proof by 
+                contradiction, mathematical induction, case analysis, and counterexamples;
+              </p>
+            </li>
+            <li>
+              <p>
+                develop the ability to read and understand written mathematical proofs;
+              </p>
+            </li>
+            <li>
+              <p>
+                develop talents for creative thinking and problem solving;
+              </p>
+            </li>
+            <li>
+              <p>
+                improve their quality of communication in mathematics, which includes 
+                improving writing techniques, reading comprehension, and oral communication 
+                in mathematics;
+              </p>
+            </li>
+            <li>
+              <p>
+                better understand the nature of mathematics and its language.
+              </p>
+            </li>
+            <li>
+              <p>
+                Another important goal of this text is to provide students with material 
+                that will be needed for their further study of mathematics.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          Important features of the book include: Emphasis on writing in mathematics; 
+          instruction in the process of constructing proofs; and an emphasis on active learning.
+        </p>
+        <p>
+          Screencasts designed for use with the book can be found on 
+          <a href="http://www.youtube.com/playlist?list=PL2419488168AE7001">YouTube</a>.
+        </p>
+        <p>
+          Note to Instructors: Please contact Ted Sundstrom at 
+          <a href="mailto:mathreasoning@gmail.com">mathreasoning@gmail.com</a> for 
+          information about instructor resources such as solutions to the preview activities 
+          and solutions to the exercises. In your email, please include the name of your 
+          institution (school, college, or university), the course for which you are 
+          considering using the text, and a link to a website that can be used to verify 
+          your position at your institution.
+        </p>
+    </description>
+
+    <!-- Features (Binary) -->
+
+    <!-- N.B. It is the author or publisher who decides if a          -->
+    <!-- feature is prominent enough to warrant flagging that         -->
+    <!-- feature.  If every section has an introductory video         -->
+    <!-- then set  @videos='yes'. But if there are only two           -->
+    <!-- videos, and they are both tangential, then do not flag       -->
+    <!-- your project as having a significant video component.        -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises, for readers)                         -->
+    <!--   @answers (to exercises, for readers)                       -->
+    <!--   @solutions (to exercises, for readers)                     -->
+    <!--   @reading-questions                                         -->
+    <!--   @videos                                                    -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @accessible (particular attention paid to)                 -->
+    <!--   @self-study (amenable to)                                  -->
+    <!--   @instructor-solutions (e.g. a "solutions manual")          -->
+    <!--   @instructor-guide (standalone, or "instructor version")    -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="yes"
+        answers="yes"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="no"
+        worksheets="yes"
+        projects="yes"
+        accessible="no"
+        self-study="no"
+        instructor-solutions="yes"
+        instructor-guide="no"
+        test-bank="no"
+        />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="yes"
+        />
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+    <awards>
+        <p>
+          Version 2.1 was the recipient of the inaugural 
+          <a href="https://www.maa.org/programs/maa-awards/writing-awards/daniel-solow-authors-award">Daniel Solow Author's Award</a>
+          in 2017 from the Mathematical Association of America. 
+        </p>
+        <p>
+          <a href="https://www.gvsu.edu/clas/clas-acts-february-2017-850.htm">Click here for an article that appeared in CLAS Acts</a>,
+          a newsletter from the College of Liberal Arts and Sciences at Grand Valley State University.
+        </p>
+    </awards>
+
+</project>
