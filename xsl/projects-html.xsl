@@ -48,13 +48,10 @@ interest to the individuals named above.
                     <xsl:with-param name="heading" select="'Computer Science'"/>
                     <xsl:with-param name="subject" select="'cs'"/>
                 </xsl:apply-templates>
-                <!-- all "engr" are under development -->
-                <!--
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Engineering'"/>
                     <xsl:with-param name="subject" select="'engr'"/>
                 </xsl:apply-templates>
-                -->
                 <xsl:apply-templates select="." mode="subject-level">
                     <xsl:with-param name="heading" select="'Expository'"/>
                     <xsl:with-param name="subject" select="'expository'"/>
