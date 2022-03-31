@@ -81,7 +81,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="http://buzzard.ups.edu"> <!-- or mailto: -->
+    <author url="mailto:StaceyRodman@augustana.edu"> <!-- or mailto: -->
         <displayname>Stacey Rodman</displayname>
         <affiliation>Augustana College</affiliation>
     </author>
@@ -285,9 +285,9 @@ interest to the individuals named above.
     <!-- * can contain simple markup, additional URLs                 -->
     <!-- * a narrative description of any awards received             -->
 
-    <awards>
+    <!-- <awards>
         <p>Full details of some <em>award</em> received!</p>
         <p>Second paragraph for second award.</p>
-    </awards>
+    </awards> -->
 
 </project>
