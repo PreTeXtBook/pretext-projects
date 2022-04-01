@@ -40,7 +40,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="EPADEL-BL.xml" updated="2019-12-01">
+<project xml:id="EPADEL-BL" updated="2019-12-01">
 
     <!-- Project Title -->
 
