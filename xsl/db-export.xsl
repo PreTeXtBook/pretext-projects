@@ -627,8 +627,9 @@ Robert A. Beezer
                 <xsl:value-of select="substring(@url, 8)"/>
                 <xsl:text>'</xsl:text>
             </xsl:when>
+            <!-- NULL not allowed -->
             <xsl:otherwise>
-                <xsl:text>NULL</xsl:text>
+                <xsl:text>'private'</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </dbvalue>
