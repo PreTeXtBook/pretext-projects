@@ -57,7 +57,7 @@ Robert A. Beezer
         <!-- FEATURES -->
         <xsl:apply-templates select="features" mode="features"/>
         <!-- RECOGNITION -->
-        <xsl:apply-templates select="recognition" mode="recognition"/>
+        <xsl:apply-templates select="." mode="recognition"/>
     </xsl:variable>
     <!-- and as a node-set for production -->
     <xsl:variable name="project-db" select="exsl:node-set($project-rtf)"/>
@@ -563,17 +563,17 @@ Robert A. Beezer
 
 <!-- RECOGNITION -->
 
-<xsl:template match="recognition" mode="recognition">
+<xsl:template match="project" mode="recognition">
     <dbkey>project_recognition_code</dbkey>
     <dbvalue>
         <xsl:choose>
-            <xsl:when test="@aim = 'yes'">
+            <xsl:when test="recognition/@aim = 'yes'">
                 <xsl:text>'AIM'</xsl:text>
             </xsl:when>
             <!--  -->
-            <xsl:otherwwise>
+            <xsl:otherwise>
                 <xsl:text>NULL</xsl:text>
-            </xsl:otherwwise>
+            </xsl:otherwise>
         </xsl:choose>
     </dbvalue>
 </xsl:template>
