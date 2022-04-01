@@ -81,7 +81,7 @@ Robert A. Beezer
     <exsl:document href="{@xml:id}.txt" method="text" encoding="UTF-8">
 
         <!-- list/tuple of keys -->
-        <xsl:text>INSERT into coauthors&#xa;</xsl:text>
+        <xsl:text>INSERT into projects&#xa;</xsl:text>
         <xsl:text>(&#xa;</xsl:text>
         <xsl:for-each select="$project-db/dbkey">
             <xsl:value-of select="."/>
@@ -109,7 +109,7 @@ Robert A. Beezer
 
         <xsl:for-each select="$author-db/coauthor">
             <!-- list/tuple of keys -->
-            <xsl:text>INSERT into projects&#xa;</xsl:text>
+            <xsl:text>INSERT into coauthors&#xa;</xsl:text>
             <xsl:text>(&#xa;</xsl:text>
             <xsl:for-each select="./dbkey">
                 <xsl:value-of select="."/>
