@@ -14,6 +14,7 @@ interest to the individuals named above.
 <!-- with dates.  Output will be sorted, so order here is not relevant. -->
 
 <register xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="beckmann-BAMU.xml"/>                 <!-- 2022-07-14 -->
     <xi:include href="dray-MNEG.xml"/>                     <!-- 2022-03-30 -->
     <xi:include href="rodman-IBLA.xml"/>                   <!-- 2022-03-30 -->
     <xi:include href="TBIL-LA.xml"/>                       <!-- 2022-02-21 -->
