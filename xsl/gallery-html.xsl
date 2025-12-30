@@ -42,7 +42,7 @@ interest to the individuals named above.
         <onesentence>7,000 exercises, with 5,600 implemented in WeBWorK.</onesentence>
     </exemplar>
     <!--  -->
-   <exemplar ref="judson-AATA" best-url="landing" poster="http://abstract.ups.edu/graphics/cover_aata_2019.png">
+   <exemplar ref="judson-AATA" best-url="landing" poster="https://judsonbooks.org/aata-files/aata-html/external/cover/cover_aata_2022.png">
         <onesentence>Traditional abstract algebra with a heavy dose of modern Sage computational cells.</onesentence>
     </exemplar>
     <!-- Keep "Story of 8" in location 8 ;-) -->
