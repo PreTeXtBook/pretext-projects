@@ -30,11 +30,11 @@ interest to the individuals named above.
         <onesentence>Applied linear algebra with custom interactive explorations.</onesentence>
     </exemplar>
 
-   <exemplar ref="boelkins-ACS" best-url="landing" poster="https://activecalculus.org/images/ACScover2018-updated.jpg">
+   <exemplar ref="boelkins-ACS" best-url="landing" poster="https://activecalculus.org/wp-content/uploads/2025/12/ACS2E-cover.png">
         <onesentence>Calculus through active learning.</onesentence>
     </exemplar>
     <!--  -->
-   <exemplar ref="yoshiwara-mfg" best-url="landing" poster="https://yoshiwarabooks.org/mfg/images/cover.png">
+   <exemplar ref="yoshiwara-mfg" best-url="landing" poster="https://yoshiwarabooks.org/mfg/external/images/cover.png">
         <onesentence>Comprehensive treatment of college algebra organized around modeling, functions, and graphs.</onesentence>
     </exemplar>
     <!--  -->
@@ -46,7 +46,7 @@ interest to the individuals named above.
         <onesentence>Traditional abstract algebra with a heavy dose of modern Sage computational cells.</onesentence>
     </exemplar>
     <!-- Keep "Story of 8" in location 8 ;-) -->
-   <exemplar ref="hitchman-eight" best-url="html" poster="http://mphitchman.com/eight/images/8.jpg">
+   <exemplar ref="hitchman-eight" best-url="html" poster="https://mphitchman.com/images/surface8.svg">
         <onesentence>Expository writing, with tongue in cheek.</onesentence>
     </exemplar>
     <!--  -->
