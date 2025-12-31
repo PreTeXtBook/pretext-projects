@@ -145,11 +145,11 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="http://abstract.pugetsound.edu/"
+        landing="https://judsonbooks.org/abstract-algebra-theory-and-applications/"
         source="https://github.com/twjudson/aata"
-        html="http://abstract.ups.edu/aata"
-        pdf="http://abstract.ups.edu/download.html"
-        print="http://abstract.ups.edu/purchase.html"
+        html="https://judsonbooks.org/aata-files/aata-html/aata.html"
+        pdf="https://judsonbooks.org/abstract-algebra-theory-and-applications/"
+        print="https://judsonbooks.org/abstract-algebra-theory-and-applications/"
         ancillary1=""
         />
 
