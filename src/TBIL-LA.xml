@@ -39,7 +39,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="TBIL-LA" updated="2022-02-22">
+<project xml:id="TBIL-LA" updated="2022-07-29">
 
     <!-- Project Title -->
 
@@ -147,9 +147,9 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        landing="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library"
+        landing="https://teambasedinquirylearning.github.io/linear-algebra/"
         source="https://github.com/TeamBasedInquiryLearning/linear-algebra/"
-        html="https://teambasedinquirylearning.github.io/linear-algebra/"
+        html=""
         pdf=""
         print=""
         ancillary1=""
