@@ -19,9 +19,8 @@ interest to the individuals named above.
 <!-- ########### -->
 
 
-<project xml:id="sylvestre-DLA" updated="2019-05-27">
+<project xml:id="sylvestre-DLA" updated="2026-02-11">
     <title>Discover Linear Algebra</title>
-    <subtitle>A First Course in Linear Algebra</subtitle>
     <author url="https://sites.ualberta.ca/~jsylvest/"> <!-- or mailto: -->
         <displayname>Jeremy Sylvestre</displayname>
         <affiliation>U of Alberta (Augustana Campus)</affiliation>
@@ -42,14 +41,63 @@ interest to the individuals named above.
         landing="https://sites.ualberta.ca/~jsylvest/books/dla.html"
         source="https://github.com/jjrsylvestre/dla"
         html="https://sites.ualberta.ca/~jsylvest/books/DLA/"
+        pdf="https://sites.ualberta.ca/~jsylvest/books/dla.html#book-links"
+        ancillary1="https://sites.ualberta.ca/~jsylvest/books/dla.html#resources"
         />
     <description>
-        <p>A discovery-based approach to linear algebra.</p>
-        <p>Extended material to cover a second course in linear algebra is being finalized and will be released Summer 2019.</p>
+        <p>
+        	The goal of this book is to help students <em>learn about</em> mathematics rather than try to <em>teach</em> them <em>a bunch of</em> mathematics.
+        	Using the paradigm of <em>guided-discovery</em>,
+        	students are led to model mathematics as a <em>discipline</em> and <em>practice of thought and investigation</em>,
+        	rather than merely <em>subject matter</em> to <em>absorb</em>.
+        	The beautiful topic of linear algebra is well-suited to this philosophy and pedagogical approach,
+        	as many of its fundamental patterns are readily apparent from approachable examples.
+        </p>
+        <p>
+        	<alert>One-semester version:</alert>
+        	systems and matrices;
+        	vectors and vector spaces;
+        	eigenvalues/eigenvectors and diagonalization.
+        </p>
+        <p>
+        	<alert>Two-semester version:</alert>
+        	material from the one-semester version with additional chapters on
+        	complex matrices and spaces, and change of basis;
+        	similarity and matrix forms;
+        	inner product spaces;
+        	linear transformations.
+        	Also included are appendices on complex numbers and on performing typical calculations using
+        	<url href="https://www.sagemath.org/" visual="sagemath.org">SageMath</url>.
+        </p>
+        <p>
+        	Chapters are (mostly) consistently structured into the following sections to give the student a uniform flow to encountering each new collection of ideas and patterns:
+        	<ul>
+        		<li><alert>Discovery guide:</alert>
+        			Initial encounter through discovery- and problem-solving-based activities.
+        		</li>
+        		<li><alert>Terminology and notation:</alert>
+        			Introduction of the communication tools necessary to begin a more sophisticated conversation about the new topics.
+        		</li>
+        		<li><alert>Concepts:</alert>
+        			Fuller discussion of the new topics, grounded in reflections on the questions and results of the Discovery guide section.
+        		</li>
+        		<li><alert>Examples:</alert>
+        			Computational examples to assist students with the procedural tasks related to the new topics, as well as additional examples that serve to illustrate certain concepts.
+        		</li>
+        		<li><alert>Theory:</alert> A more formal and general description of the concepts, with proofs.</li>
+        	</ul>
+        	In addition,
+        	<em>Exercises</em> and <em>Reflect on your understanding</em> (reading questions) sections are currently being added.
+        </p>
+        <p>
+        	See the <url href="https://sites.ualberta.ca/~jsylvest/books/dla.html">landing page</url>
+        	and the <url href="https://sites.ualberta.ca/~jsylvest/books/DLA/preface.html#preface">Preface</url>
+        	for more details on the pedagogical choices made in this book.
+        </p>
     </description>
 
     <onesentence>
-        Textbook for a discovery-based approach to linear algebra.
+        A discovery-based approach to linear algebra.
     </onesentence>
     <features
         hints="no"
@@ -62,6 +110,7 @@ interest to the individuals named above.
         instructor-solutions="no"
         instructor-guide="no"
         test-bank="no"
+        self-study="yes"
         />
 </project>
 
