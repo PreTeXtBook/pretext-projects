@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This first line needs to be here, without explanation            -->
+
+<!-- Copyright Notice:                                                -->
+<!--   do not remove or alter                                         -->
+
+<!--**********************************************************
+Copyright 2019  All Rights Reserved
+Robert A. Beezer, David W. Farmer, Alex Jordan
+
+This file is used by the PreTeXt project to track projects
+authored and distributed with PreTeXt.  By contributing edits,
+or new project files, you agree to transfer your copyright
+interest to the individuals named above.
+***********************************************************-->
+
+<!-- Version Marker:                                                 -->
+<!--   do not remove or alter, it is necessary for maintenance       -->
+
+<!-- ########### -->
+<!-- Version   2 -->
+<!-- ########### -->
+
+<!-- File:                                                            -->
+<!--   * name this file identically to the @xml:id below              -->
+<!--   * add the file to the  src  directory for a pull request,      -->
+<!--     and add an entry to the master file  src/projects.xml        -->
+
+<!-- N.B. Comment out, or remove, empty elements and                  -->
+<!-- empty attributes included here as examples                       -->
+
+<!-- project/@xml-id (highly recommended):                            -->
+<!--   *  This should match the docinfo/document-id element           -->
+<!--      of your project                                             -->
+<!--   *  A single lower-case name of the primary author              -->
+<!--      ("beezer") or the organization ("pretext")                  -->
+<!--      When absolutely ncessary, a dash-separated list of names,   -->
+<!--      in alphabetical order ("beezer-farmer")                     -->
+<!--   *  Then a single dash                                          -->
+<!--   *  Then an upper-case initialism, resembling the title (FCLA)  -->
+
+<!-- project/@updated (required):                                     -->
+<!--   * date of most recent review for correctness YYYY-MM-DD        -->
+
+<project xml:id="beckmann-BAMU" updated="2022-07-14">
+
+    <!-- Project Title -->
+
+    <!-- title (required):                                            -->
+    <!--   * complete project (book) title, capitalized               -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+    <title>Beginning Algebra Made Useful</title>
+    <!-- subtitle (optional):                                         -->
+    <!--   * same formatting as "title"                               -->
+    <!--   * uncomment next line to employ                            -->
+    <!-- <subtitle></subtitle> -->
+
+    <!-- Authors   -->
+
+    <!--   * there may be multiple authors, order here will           -->
+    <!--     be respected                                             -->
+    <!--   * each author may have an affiliation, or a group of       -->
+    <!--     colleagues may specify a single overall affiliation.     -->
+    <!--     Do not mix these mechanisms, one or the other            -->
+
+    <!-- author (at least one required)                               -->
+
+    <!-- author/@url (optional)                                       -->
+    <!--   * include protocol (i.e. https://)                         -->
+    <!--   * can be a "mailto:" (e.g. mailto:beezer@ups.edu)          -->
+
+    <!-- author/displayname (required)                                -->
+    <!--   * as suggested, full name in order as written              -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- author/affiliation (optional)                                -->
+    <!--   * use "U" for university, "C" for college, etc             -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <!-- affiliation (optional)                                       -->
+    <!--   * ALL authors at the same institution                      -->
+    <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
+
+    <author> <!-- or mailto: -->
+        <displayname>Charlene E. Beckmann</displayname>
+        <affiliation>Grand Valley State University</affiliation>
+    </author>
+    <!-- multiple authors, all colleagues  -->
+    <!-- <affiliation></affiliation> -->
+
+    <!-- License/Terms of Distribution -->
+
+    <!-- N.B. "license" refers to the status of editable source, not  -->
+    <!-- derived products.  Source could be a Word document, but      -->
+    <!-- a PDF is not an editable source                              -->
+
+    <!-- N.B. The license/@code attribute is *required*.  If you plan -->
+    <!-- to have an open license, but are not decided, then your work -->
+    <!-- does not have license and traditional copyright ("All Rights -->
+    <!-- Reserved") applies.  That is what the law says, not our      -->
+    <!-- decision.  But you can set the value to 'undecided' and      -->
+    <!-- we will make a distinction in our statistics.  But badges    -->
+    <!-- will still show traditional copyright.                       -->
+    <!--                                                              -->
+    <!-- Once you pick a license, update this entry.  While           -->
+    <!-- undecided, you are also welcome to explain your intentions   -->
+    <!-- as part of your free-form "description" entry.               -->
+
+    <!-- license/@code (required)                                     -->
+    <!--   * CC = Creative Commons                                    -->
+    <!--   * GFDL = GNU Free Documentation License                    -->
+    <!--   * MIT = MIT License                                        -->
+    <!--   * all-rights = "All Rights Reserved", regular copyright    -->
+    <!--   * public = Public Domain, no copyright                     -->
+    <!--   * undecided = "All Rights Reserved", regular copyright     -->
+    <!--   * request additional                                       -->
+    <!-- license/@variant (CC only)                                   -->
+    <!--   * just for CC, e.g. "BY-SA", no leading dash               -->
+
+    <!-- license/@version (optional)                                  -->
+    <!--   * the version of the *license*, if applicable/important    -->
+
+    <!-- license/pub-year (optional)                                  -->
+    <!--   * first year copyright asserted, in any format             -->
+
+    <!-- license/price (optional)                                     -->
+    <!--   * if availabe in physical form, the least expensive format -->
+    <!--   * include a currency symbol                                -->
+
+    <license 
+        code="CC"
+        variant="BY-NC-SA" 
+        version="4.0" 
+        pub-year="2000"
+        
+        />
+
+    <!-- Character of the Project -->
+
+    <!-- * these are all codes, use literally                         -->
+    <!-- * send requests to enable new ones                           -->
+    <!--                                                              -->
+    <!--   @subject: math, cs, physics, engr,                         -->
+    <!--             writing, music, doc, expository, misc            -->
+    <!--   @level: primary, secondary, ugld, ugud, grad, research     -->
+    <!--   @phase: develop, ready, mature, converting                 -->
+    <!--     'develop'                                                -->
+    <!--        in-progress, not ready for other instructors          -->
+    <!--     'ready'                                                  -->
+    <!--        could be used for a course, but more work planned     -->
+    <!--     'mature'                                                 -->
+    <!--        useful and pedagogically complete now, even if        -->
+    <!--        more improvements are planned                         -->
+    <!--     'converting'                                             -->
+    <!--        ready/mature in another format, work in-progress      -->
+    <!--        for PreTeXt versions                                  -->
+
+
+    <character 
+        subject="math"
+        level="ugld"
+        phase="mature"
+        />
+
+    <!-- Pointers to Project Resources Online -->
+
+    <!-- * optional, may choose to have all, some, or none            -->
+    <!-- * these are all URLs, include the protocol (e.g., https://)  -->
+    <!-- * @landing is dedicated project page, NOT your personal page -->
+    <!-- * @html                                                      -->
+    <!-- * @pdf may be the actual PDF or a page with download links   -->
+    <!-- * @print is a page with info, or link to a bookseller's page -->
+    <!-- * @ancillary1 is a workbook or WW problem sets or ...        -->
+    <!-- * @ancillary2 does not yet exist, send request               -->
+
+    <!-- N.B. These are used preferentially to create the most        -->
+    <!-- obvious link to your project.  All will (eventually) be      -->
+    <!-- available, but may not be as obvious.  The ordering is       -->
+    <!--                                                              -->
+    <!--   @landing > @html > @pdf > @print > no link                 -->
+    <!--                                                              -->
+    <!-- So, in particular, do not point @landing to your personal    -->
+    <!-- home page.  Only use it to point to a page that is           -->
+    <!-- *dedicated* to your project and will give a visitor a clear  -->
+    <!-- choice of paths from there.                                  -->
+
+    <sites
+        landing="https://scholarworks.gvsu.edu/books/25/"
+        source="https://github.com/gvsuoer/beckmann-textbook"
+        html="https://gvsuoer.github.io/beckmann-textbook/frontmatter.html"
+        pdf="https://github.com/gvsuoer/beckmann-textbook/blob/main/output/latex/main.pdf"
+        />
+
+    <!-- Description (Blurb) -->
+
+    <!-- N.B. Markup here (and elsewhere) is HTML, not PreTeXt!       -->
+    <!-- So use <i></i> for book titles and <a href=""></a> for       -->
+    <!-- hyperlinks.  (But note that the "sites" element is the       -->
+    <!-- best place to put links pointing to parts of  your project.  -->
+
+    <!-- onesentence (required) -->
+    <!--   * Likely visible, so short and succinct                    -->
+    <!--   * "description" (following) will amplify the "onesentence" -->
+    <!--   * HTML respected (e.g. <i> for italics), do not use an     -->
+    <!--     overall element (e.g. <p>) to surround entire sentence   -->
+
+    <!-- description (optional, but highly encouraged) -->
+    <!--   * optional                                                 -->
+    <!--   * a sequence of HTML "p" elements, lists should be OK      -->
+    <!--   * can contain simple markup, additional URLs               -->
+    <!--   * a narrative description of the project's aims            -->
+    <!--   * include distinctive features not possible above/below    -->
+    <!--   * knowled, so brevity not required                         -->
+    <!--   * HTML respected, do use elements like <p>                 -->
+
+    <onesentence>
+        <i>Beginning Algebra Made Useful</i> addresses the needs of learners to make sense of algebra by quantifying and generalizing everyday occurrences such as commuting to work, buying gas or pizza, and determining the better deal.
+    </onesentence>
+
+    <description>
+        <p><i>Beginning Algebra Made Useful</i> requires learners to actively engage with algebraic concepts through physical and thought experiments in ways that help them connect ideas, representations, and contexts, and solve problems that arise in their daily lives. The text helps learners grow their brains and develop growth mindsets as they learn algebra conceptually. Problem sets continue the process, extending work begun in each lesson, applying new understandings to new contexts, and considering ideas that arise more fully in upcoming lessons. Longer assignments that can be used as group projects are included in the text. Group work is encouraged throughout the text; suggestions for orchestrating group work are included.</p>
+        <p>The text is open access and free for download by students and instructors in .pdf format. In the electronic format, graphics are in full color and there are live html links to resources, software, and applets.</p>
+    </description>
+
+    <!-- Features (Binary) -->
+
+    <!-- N.B. It is the author or publisher who decides if a          -->
+    <!-- feature is prominent enough to warrant flagging that         -->
+    <!-- feature.  If every section has an introductory video         -->
+    <!-- then set  @videos='yes'. But if there are only two           -->
+    <!-- videos, and they are both tangential, then do not flag       -->
+    <!-- your project as having a significant video component.        -->
+
+    <!--   List of features, present or absent                        -->
+    <!--   * "feature" element is optional                            -->
+    <!--   * Attribute value is 'yes' if present                      -->
+    <!--   * Attribute can be absent, or value can be 'no'            -->
+    <!--                                                              -->
+    <!--   @hints (to exercises, for readers)                         -->
+    <!--   @answers (to exercises, for readers)                       -->
+    <!--   @solutions (to exercises, for readers)                     -->
+    <!--   @reading-questions                                         -->
+    <!--   @videos                                                    -->
+    <!--   @webwork                                                   -->
+    <!--   @worksheets                                                -->
+    <!--   @projects                                                  -->
+    <!--   @accessible (particular attention paid to)                 -->
+    <!--   @self-study (amenable to)                                  -->
+    <!--   @instructor-solutions (e.g. a "solutions manual")          -->
+    <!--   @instructor-guide (standalone, or "instructor version")    -->
+    <!--   @test-bank                                                 -->
+
+    <features
+        hints="no"
+        answers="no"
+        solutions="no"
+        reading-questions="no"
+        webwork="no"
+        videos="no"
+        worksheets="yes"
+        projects="yes"
+        accessible="no"
+        self-study="no"
+        instructor-solutions="no"
+        instructor-guide="no"
+        test-bank="no"
+        />
+
+    <!-- Recognition -->
+
+    <!-- Binary approvals, etc,                                       -->
+    <!-- * "recognition" element is optional                          -->
+    <!-- * attributes are nature of approvals                         -->
+    <!-- * value is 'yes', else 'no' or absent                        -->
+    <!-- * @aim is American Inst. of Mathematics Approved Textbooks   -->
+    <!--                                                              -->
+
+    <recognition
+        aim="no"
+        />
+
+    <!-- Awards -->
+
+    <!-- * "awards" element is optional                               -->
+    <!-- * a sequence of HTML "p" elements, lists should be OK        -->
+    <!-- * can contain simple markup, additional URLs                 -->
+    <!-- * a narrative description of any awards received             -->
+
+    <!-- <awards>
+        <p>Full details of some <em>award</em> received!</p>
+        <p>Second paragraph for second award.</p>
+    </awards> -->
+
+</project>
