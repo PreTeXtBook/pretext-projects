@@ -40,7 +40,7 @@ interest to the individuals named above.
 <!-- project/@updated (required):                                     -->
 <!--   * date of most recent review for correctness YYYY-MM-DD        -->
 
-<project xml:id="doob-MATH1220" updated="2019-06-20">
+<project xml:id="doob-MATH1220" updated="2019-09-29">
 
     <!-- Project Title -->
 
@@ -77,7 +77,7 @@ interest to the individuals named above.
     <!--   * ALL authors at the same institution                      -->
     <!--   * no extra whitespace (tight), no markup, Unicode OK       -->
 
-    <author url="mailto:MichaelDoob@UManitoba.ca"> <!-- or mailto: -->
+    <author url="mailto:Michael.Doob@UManitoba.ca"> <!-- or mailto: -->
         <displayname>Michael Doob</displayname>
         <affiliation>U of Manitoba</affiliation>
     </author>
@@ -141,7 +141,7 @@ interest to the individuals named above.
     <!-- * @ancillary2 does not yet exist, send request               -->
 
     <sites
-        html="http://linearalgebra.math.umanitoba.ca/math1220"
+        html="https://cayley.ad.umanitoba.ca/"
         />
 
     <!-- Description (Blurb) -->
